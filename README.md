@@ -49,6 +49,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `log_analyzer_free.py` | Log file analysis | `python log_analyzer_free.py access.log` |
 | `http_request_free.py` | HTTP requests | `python http_request_free.py https://api.com` |
 | `color_converter_free.py` | Color conversion | `python color_converter_free.py \"#FF5733\"` |
+| `unit_converter_free.py` | Unit conversion | `python unit_converter_free.py 100 cm m` |
 
 ---
 
