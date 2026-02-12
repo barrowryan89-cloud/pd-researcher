@@ -51,6 +51,21 @@ python3 url_checker_free.py https://example.com
 
 [Download](url_checker_free.py)
 
+### JSON Formatter
+Format and validate JSON files.
+
+```bash
+python3 json_formatter_free.py data.json
+```
+
+**Features:**
+- Pretty print JSON
+- Validation with stats
+- Error detection
+- Zero dependencies
+
+[Download](json_formatter_free.py)
+
 ---
 
 ## 💎 Pro Version
