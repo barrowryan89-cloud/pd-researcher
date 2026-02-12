@@ -44,6 +44,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `duplicate_finder_free.py` | Find duplicate files | `python duplicate_finder_free.py /path` |
 | `directory_size_free.py` | Directory size analysis | `python directory_size_free.py /path` |
 | `ip_info_free.py` | IP address information | `python ip_info_free.py` |
+| `memory_monitor_free.py` | System memory monitoring | `python memory_monitor_free.py` |
 
 ---
 
