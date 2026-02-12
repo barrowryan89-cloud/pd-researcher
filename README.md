@@ -53,6 +53,9 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `wallet_monitor_free.py` | Crypto wallet tracking | `python wallet_monitor_free.py <address>` |
 | `diff_tool_free.py` | File comparison | `python diff_tool_free.py file1.txt file2.txt` |
 | `regex_tester_free.py` | Regex testing | `python regex_tester_free.py "[a-z]+" "test"` |
+| `cron_parser_free.py` | Cron expression parser | `python cron_parser_free.py "*/5 * * * *"` |
+| `random_gen_free.py` | Random generator | `python random_gen_free.py password 20` |
+| `line_counter_free.py` | Line/word counter | `python line_counter_free.py file.txt` |
 
 ---
 
