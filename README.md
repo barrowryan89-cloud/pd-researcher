@@ -80,6 +80,21 @@ python3 base64_tool_free.py encode "Hello World"
 
 [Download](base64_tool_free.py)
 
+### Password Generator
+Generate secure, random passwords.
+
+```bash
+python3 password_gen_free.py 20
+```
+
+**Features:**
+- Configurable length
+- Entropy calculation
+- Strength indicator
+- Zero dependencies
+
+[Download](password_gen_free.py)
+
 ---
 
 ## 💎 Pro Version
