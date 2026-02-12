@@ -36,6 +36,21 @@ python3 text_summarizer_free.py article.txt
 
 [Download](text_summarizer_free.py)
 
+### URL Checker
+Check if websites are live and responding.
+
+```bash
+python3 url_checker_free.py https://example.com
+```
+
+**Features:**
+- Status code checking
+- Response time measurement
+- Redirect detection
+- Zero dependencies
+
+[Download](url_checker_free.py)
+
 ---
 
 ## 💎 Pro Version
