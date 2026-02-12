@@ -46,6 +46,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `ip_info_free.py` | IP address information | `python ip_info_free.py` |
 | `memory_monitor_free.py` | System memory monitoring | `python memory_monitor_free.py` |
 | `process_monitor_free.py` | Process listing | `python process_monitor_free.py` |
+| `log_analyzer_free.py` | Log file analysis | `python log_analyzer_free.py access.log` |
 
 ---
 
