@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD_Researcher — Free Developer Tools</title>
+    <meta name="description" content="Free command-line tools for developers. HTML cleaner, text summarizer, URL checker, JSON formatter, Base64 encoder. Zero dependencies.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 48px; margin-bottom: 16px; }
+        .subtitle { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+        }
+        .tool-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+        .tool-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .tool-card p {
+            color: #666;
+            margin-bottom: 16px;
+        }
+        .code-block {
+            background: #1a1a1a;
+            color: #00d084;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 13px;
+            overflow-x: auto;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #00d084 0%, #00b368 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        .cta-box h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .price {
+            font-size: 56px;
+            font-weight: 800;
+            margin: 20px 0;
+        }
+        .crypto-address {
+            background: rgba(0,0,0,0.3);
+            padding: 16px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            word-break: break-all;
+            margin: 20px 0;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 8px;
+        }
+        .btn:hover {
+            background: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛠️ PD_Researcher</h1>
+        <p class="subtitle">Free command-line tools for developers. Zero dependencies. Just Python.</p>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🆓</div>
+                <strong>Free Forever</strong>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🐍</div>
+                <strong>Pure Python</strong>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <strong>Zero Dependencies</strong>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <strong>Instant Install</strong>
+            </div>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-icon">🧹</div>
+                <h3>HTML Cleaner</h3>
+                <p>Convert messy web articles to clean Markdown. Removes ads, scripts, and tracking.</p>
+                <div class="code-block">python3 html_cleaner_free.py https://example.com</div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">📝</div>
+                <h3>Text Summarizer</h3>
+                <p>Summarize long articles and documents using extractive summarization.</p>
+                <div class="code-block">python3 text_summarizer_free.py article.txt</div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">🔗</div>
+                <h3>URL Checker</h3>
+                <p>Check if websites are live. Get status codes, response times, redirects.</p>
+                <div class="code-block">python3 url_checker_free.py https://example.com</div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">📋</div>
+                <h3>JSON Formatter</h3>
+                <p>Format and validate JSON files. Pretty print with stats and error detection.</p>
+                <div class="code-block">python3 json_formatter_free.py data.json</div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">🔐</div>
+                <h3>Base64 Tool</h3>
+                <p>Encode/decode Base64 strings and files. Works with text and binary data.</p>
+                <div class="code-block">python3 base64_tool_free.py encode "Hello"</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="btn">View on GitHub</a>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip" class="btn">Download All</a>
+        </div>
+
+        <div class="cta-box">
+            <h2>💎 Need More Power?</h2>
+            <p>Upgrade to <strong>PD_Researcher v1</strong> for professional features:</p>
+            <ul style="text-align: left; max-width: 400px; margin: 24px auto; list-style: none;">
+                <li>✅ Batch processing</li>
+                <li>✅ API access</li>
+                <li>✅ Research automation</li>
+                <li>✅ Structured JSON output</li>
+                <li>✅ Custom rules & configs</li>
+                <li>✅ Lifetime updates</li>
+            </ul>
+            <div class="price">$29</div>
+            <p>One-time payment. Yours forever.</p>
+            <p style="margin-top: 24px;"><strong>Pay with Crypto:</strong></p>
+            <div class="crypto-address">FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ</div>
+            <p style="font-size: 14px; opacity: 0.9;">Send $29 worth of SOL or USDC<br>Email screenshot to support@sandstreet.holdings</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with ❤️ by <strong>Sand Street Holdings</strong></p>
+        <p>Questions? <a href="mailto:support@sandstreet.holdings">support@sandstreet.holdings</a></p>
+    </footer>
+</body>
+</html>
