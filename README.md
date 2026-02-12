@@ -95,6 +95,21 @@ python3 password_gen_free.py 20
 
 [Download](password_gen_free.py)
 
+### Timestamp Converter
+Convert between Unix timestamps and human-readable dates.
+
+```bash
+python3 timestamp_converter_free.py 1707772800
+```
+
+**Features:**
+- Unix timestamp ↔ Date
+- Multiple input formats
+- UTC and local time
+- Zero dependencies
+
+[Download](timestamp_converter_free.py)
+
 ---
 
 ## 💎 Pro Version
