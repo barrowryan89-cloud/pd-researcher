@@ -66,6 +66,20 @@ python3 json_formatter_free.py data.json
 
 [Download](json_formatter_free.py)
 
+### Base64 Tool
+Encode/decode Base64 strings and files.
+
+```bash
+python3 base64_tool_free.py encode "Hello World"
+```
+
+**Features:**
+- String encoding/decoding
+- File encoding/decoding
+- Zero dependencies
+
+[Download](base64_tool_free.py)
+
 ---
 
 ## 💎 Pro Version
