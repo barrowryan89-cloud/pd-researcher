@@ -42,6 +42,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `hash_generator_free.py` | File/string hashing | `python hash_generator_free.py file.txt` |
 | `port_scanner_free.py` | Port scanning | `python port_scanner_free.py example.com` |
 | `duplicate_finder_free.py` | Find duplicate files | `python duplicate_finder_free.py /path` |
+| `directory_size_free.py` | Directory size analysis | `python directory_size_free.py /path` |
 
 ---
 
