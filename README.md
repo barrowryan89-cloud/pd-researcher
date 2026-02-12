@@ -48,6 +48,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `process_monitor_free.py` | Process listing | `python process_monitor_free.py` |
 | `log_analyzer_free.py` | Log file analysis | `python log_analyzer_free.py access.log` |
 | `http_request_free.py` | HTTP requests | `python http_request_free.py https://api.com` |
+| `color_converter_free.py` | Color conversion | `python color_converter_free.py \"#FF5733\"` |
 
 ---
 
