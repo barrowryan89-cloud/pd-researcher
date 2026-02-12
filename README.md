@@ -19,7 +19,22 @@ python3 html_cleaner_free.py https://example.com/article
 - Outputs clean Markdown
 - Zero dependencies
 
-[Download](tools/html_cleaner_free.py) | [Web Interface](https://sandstreet.holdings/tools/)
+[Download](html_cleaner_free.py)
+
+### Text Summarizer
+Summarize long articles and documents instantly.
+
+```bash
+python3 text_summarizer_free.py article.txt
+```
+
+**Features:**
+- Extractive summarization
+- 20% compression ratio
+- Works offline
+- Zero dependencies
+
+[Download](text_summarizer_free.py)
 
 ---
 
