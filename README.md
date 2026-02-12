@@ -45,6 +45,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `directory_size_free.py` | Directory size analysis | `python directory_size_free.py /path` |
 | `ip_info_free.py` | IP address information | `python ip_info_free.py` |
 | `memory_monitor_free.py` | System memory monitoring | `python memory_monitor_free.py` |
+| `process_monitor_free.py` | Process listing | `python process_monitor_free.py` |
 
 ---
 
