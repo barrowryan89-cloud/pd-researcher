@@ -1,6 +1,6 @@
 # PD Researcher — Free Developer Tools
 
-> 22 command-line utilities that respect your time and privacy.
+> 23 command-line utilities that respect your time and privacy.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
@@ -52,6 +52,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `unit_converter_free.py` | Unit conversion | `python unit_converter_free.py 100 cm m` |
 | `wallet_monitor_free.py` | Crypto wallet tracking | `python wallet_monitor_free.py <address>` |
 | `diff_tool_free.py` | File comparison | `python diff_tool_free.py file1.txt file2.txt` |
+| `regex_tester_free.py` | Regex testing | `python regex_tester_free.py "[a-z]+" "test"` |
 
 ---
 
