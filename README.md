@@ -40,6 +40,7 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `uuid_generator_free.py` | UUID generation | `python uuid_generator_free.py --count 10` |
 | `csv_processor_free.py` | CSV processing | `python csv_processor_free.py data.csv` |
 | `hash_generator_free.py` | File/string hashing | `python hash_generator_free.py file.txt` |
+| `port_scanner_free.py` | Port scanning | `python port_scanner_free.py example.com` |
 
 ---
 
