@@ -1,6 +1,6 @@
 # PD Researcher — Free Developer Tools
 
-> 24 command-line utilities that respect your time and privacy.
+> 26 command-line utilities that respect your time and privacy.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
