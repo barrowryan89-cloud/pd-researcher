@@ -131,6 +131,9 @@ def main():
     print("\n💡 Want memorable passphrases or strength analysis?")
     print("   Upgrade to PD_Researcher v1 for advanced password tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n🔐 Managing passwords for a team? Try 1Password:")
+    print("   https://1password.com/?utm_source=pdresearcher")
+    print("   (The password manager trusted by developers)")
     print("="*60)
 
 if __name__ == "__main__":
