@@ -3,7 +3,7 @@
 ## 🧵 Thread 1: The "Builder's Journey" (Twitter/X & LinkedIn)
 
 **Hook:**
-I built 60+ developer tools in 48 hours. 🛠️
+I built 98 developer tools in 48 hours. 🛠️
 
 Most devs spend weeks on one tool. I went for volume to solve EVERY friction point in my workflow.
 
@@ -46,7 +46,7 @@ Stop paying for basic CLI tools. 🛑
 
 I see SaaS companies charging $10/mo for things you can do in 3 lines of code.
 
-Here are 60+ FREE alternatives to paid developer tools that I use daily. 🧵
+Here are 98 FREE alternatives to paid developer tools that I use daily. 🧵
 
 **Body 1:**
 💸 Paid: "Cloud Asset Manager" ($29/mo)
@@ -75,7 +75,7 @@ Download the pack: https://github.com/barrowryan89-cloud/pd-researcher
 
 ## 🧵 Thread 3: The "Zero Dollar Stack" (Reddit / Dev.to)
 
-**Title:** The $0 Dev Stack: 60 Tools I Use Daily to Ship Faster
+**Title:** The $0 Dev Stack: 98 Tools I Use Daily to Ship Faster
 
 **Body:**
 Hey r/webdev,

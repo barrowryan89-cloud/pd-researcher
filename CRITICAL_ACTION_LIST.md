@@ -1,83 +1,106 @@
-# 🚨 CRITICAL ACTION LIST — Ryan
+# 🚨 CRITICAL ACTION CHECKLIST — PD_Researcher Launch
+**Created:** 2026-02-13 23:51 UTC  
+**Status:** BLOCKED on GitHub Pages — All other assets READY
 
-## BLOCKING ISSUE: GitHub Pages 404
-**Status:** ❌ STILL RETURNING 404
-**Impact:** ZERO conversions from all traffic efforts
+---
 
-**Fix Required (Manual — GitHub Settings):**
-1. Go to https://github.com/barrowryan89-cloud/pd-researcher/settings/pages
-2. Under "Build and deployment" → Source: Select **"Deploy from a branch"**
-3. Branch: Select **"main"** / Folder: **"/ (root)"**
+## 🔴 BLOCKING: Fix This First (5 Minutes)
+
+### GitHub Pages 404 Error
+**Impact:** Landing page is DOWN. Zero conversions possible.
+
+**Fix:**
+1. Go to → https://github.com/barrowryan89-cloud/pd-researcher/settings/pages
+2. Source → Select **"Deploy from a branch"**
+3. Branch: **main** / Folder: **/ (root)**
 4. Click **Save**
-5. Wait 2-5 minutes for deployment
+5. Wait 2-5 minutes, then verify: https://barrowryan89-cloud.github.io/pd-researcher/
 
-**Verify:** `curl -I https://barrowryan89-cloud.github.io/pd-researcher/` should return 200
-
----
-
-## ✅ COMPLETED BY AUTONOMOUS ENGINE (Feb 13)
-
-### 1. REPO POLISH — DONE
-- README.md optimized with quick-start curl command
-- Value proposition added ("Why this toolkit?")
-- Badges and social proof structure in place
-
-### 2. CONTENT CREATION — DONE
-- `content/social_drafts.md` — 3 ready-to-post threads
-  - Thread 1: "Builder's Journey" (Story/engagement)
-  - Thread 2: "Cost Saver" (Comparison hook)
-  - Thread 3: "Zero Dollar Stack" (Reddit/Dev.to)
-
-### 3. SEO AUDIT — DONE
-- `content/seo_audit.md` — Full technical SEO checklist
-- OpenGraph tags already in index.html ✅
-- Meta descriptions optimized
-- Structured data (Schema.org) present
-
-### 4. DIRECTORY SUBMISSIONS — READY
-- `content/directory_submissions.md` — 7 high-value targets
-  - Product Hunt (Day 2)
-  - Hacker News Show HN (Day 1, 8-10 AM ET)
-  - Reddit (r/commandline, r/webdev, r/devops)
-  - Dev.to / Hashnode article
-  - Awesome Lists PRs
-
-### 5. AFFILIATE RESEARCH — DONE
-- `content/affiliate_opportunities.md` — 4 categories
-  - Cloud: DigitalOcean ($25/sale), Vultr ($35-70/sale)
-  - Dev Tools: JetBrains, Warp, SetApp
-  - VPN: NordVPN (30-40% commission)
-  - Learning: Udemy, Frontend Masters
-- Strategy: "Recommended Stack" doc approach (non-spammy)
+**Why this blocks everything:**
+- All social posts link to this landing page
+- No conversions without working landing page
+- Wasted traffic if posted while 404
 
 ---
 
-## 🎯 NEXT ACTIONS (Prioritized)
+## 🟡 READY TO POST (After 404 Fixed)
 
-### IMMEDIATE (Today)
-1. **Fix GitHub Pages 404** ← BLOCKING ALL CONVERSION
-2. **Post Thread 1** to X/Twitter (content ready in social_drafts.md)
-3. **Submit Show HN** — Title: "Show HN: I built 98 free CLI tools to replace my paid SaaS subscriptions"
+### Option 1: Show HN (Highest Impact)
+**File:** `content/social_drafts.md` (Show HN section at bottom)  
+**Best Time:** Friday 6-9 AM PT or Sunday 8-10 AM PT  
+**Link:** https://news.ycombinator.com/submit
 
-### THIS WEEK
-4. **Product Hunt Launch** — Submit at 12:01 AM PT for maximum exposure
-5. **Reddit Posts** — r/commandline, r/webdev (content ready)
-6. **Awesome List PRs** — Submit to awesome-cli, awesome-shell
-
-### ONGOING
-7. **Affiliate Integration** — Create `RECOMMENDED_STACK.md` with DigitalOcean link
-8. **Email Capture** — Verify newsletter signup flow works post-404-fix
+**Title:** "Show HN: 98 free CLI tools, zero dependencies, single-file Python"
 
 ---
 
-## 📊 SUCCESS METRICS TO TRACK
-- GitHub Stars (current: baseline unknown)
-- Landing page visitors (need Google Analytics or Plausible)
-- Newsletter signups
-- Affiliate link clicks
-- Tool download counts
+### Option 2: Twitter/X Thread (Copy-Paste Ready)
+**File:** `content/social_drafts.md`  
+**Best Time:** 8-10 AM ET for max engagement  
+
+Hook tweet ready. 6-tweet thread written. Just copy and post.
 
 ---
 
-**Last Updated:** 2026-02-13 22:30 UTC
-**Engine Status:** BLOCKED on GitHub Pages settings (requires manual fix)
+### Option 3: Reddit r/webdev (High Engagement)
+**File:** `content/reddit_strategy.md`  
+**Best Time:** Monday 8-10 AM ET  
+**Subreddit:** r/webdev, r/commandline, r/programming, r/selfhosted  
+
+Multiple angle options ready. Pick one, post, respond to comments.
+
+---
+
+## 🟢 THIS WEEK (Medium Priority)
+
+- [ ] **Apply to DigitalOcean Affiliate** → `content/affiliate_opportunities.md`
+- [ ] **Apply to 1Password Affiliate** → aligns with security tools
+- [ ] **Post Product Hunt** → `content/product_hunt_launch_kit.md` has full strategy
+- [ ] **Publish Dev.to Article** → `content/devto_article.md` is written
+- [ ] **Submit to Newsletter Curators** → `content/newsletter_outreach.md`
+
+---
+
+## 📊 Files Ready for You
+
+| File | Purpose |
+|------|---------|
+| `content/social_drafts.md` | Twitter, LinkedIn, Show HN copy |
+| `content/reddit_strategy.md` | 4 subreddit posts + schedule |
+| `content/product_hunt_launch_kit.md` | Complete PH launch strategy |
+| `content/devto_article.md` | Technical article ready to publish |
+| `content/affiliate_opportunities.md` | 8 programs to apply to |
+| `content/newsletter_outreach.md` | 15 curator contacts + pitch |
+| `content/utm_tracking_setup.md` | Pre-built tracking links |
+
+---
+
+## ✅ Already Done (By Propulsion Engine)
+
+- [x] README optimized (98 tools, clear value prop)
+- [x] Landing page HTML complete with SEO meta
+- [x] Social content drafted (6 platforms)
+- [x] Affiliate research (8 programs, revenue projections)
+- [x] Directory targets identified (7 sites)
+- [x] UTM tracking links created
+- [x] Email welcome sequence written
+- [x] Reddit strategy (4 subreddits)
+- [x] Product Hunt launch kit complete
+- [x] Newsletter curator list (15 targets)
+
+---
+
+## 💰 Revenue Potential
+
+| Channel | Timeline | Expected |
+|---------|----------|----------|
+| Show HN | Immediate | 500-2000 visitors |
+| Reddit | 2-3 days | 300-1000 visitors |
+| Product Hunt | Week 2 | 1000-5000 visitors |
+| Affiliates | Month 1-3 | $400-950/month |
+
+---
+
+**Next Action:** Fix GitHub Pages 404 → Post Show HN → Post Twitter thread
+
+**Questions?** Check `memory/2026-02-13.md` for full execution log.

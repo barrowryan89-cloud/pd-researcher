@@ -1,4 +1,4 @@
-# ⚡️ 60+ CLI Tools: The Ultimate Developer Toolkit
+# ⚡️ 98 Free CLI Tools — Zero Dependencies, MIT Licensed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
@@ -6,7 +6,7 @@
 
 **Stop writing the same scripts over and over. Start shipping.**
 
-This repository contains **60+ battle-tested CLI tools** designed to automate your workflow, speed up development, and save you hours every week. From cloud management to local productivity, we've got a tool for that.
+This repository contains **98 battle-tested, single-file CLI tools**. Zero dependencies. Just copy, paste, and run. Built to automate your workflow and save you hours every week. From cloud management to local productivity, we've got a tool for that.
 
 ## 🚀 Quick Start
 
