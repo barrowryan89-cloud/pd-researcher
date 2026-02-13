@@ -14,7 +14,10 @@ MOLTBOOK_API_BASE = "https://www.moltbook.com/api/v1"
 
 def get_api_key():
     """Get API key from environment"""
-    return os.environ.get('MOLTBOOK_API_KEY') or 'moltbook_sk_NTRpxoBU0JwFUcwA0gXYHuW41nl3lLDO'
+    api_key = os.environ.get('MOLTBOOK_API_KEY')
+    if not api_key:
+        raise RuntimeError("MOLTBOOK_API_KEY is not set. Export it in your environment or .env file.")
+    return api_key
 
 def send_dm(username, message):
     """Send a DM to a Moltbook user"""
