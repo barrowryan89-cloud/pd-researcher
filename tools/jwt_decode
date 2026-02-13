@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""
+jwt_decode — Inspect JWT tokens without verification
+Debug authentication tokens quickly and safely
+"""
+
+import argparse
+import base64
+import json
+import sys
+from typing import Dict, Any, Optional
+
+
+def base64_decode_padded(data: str) -> bytes:
+    """Decode base64 with proper padding."""
+    padding = 4 - len(data) % 4
+    if padding != 4:
+        data += "=" * padding
+    return base64.urlsafe_b64decode(data)
+
+
+def decode_jwt(token: str) -> Optional[Dict[str, Any]]:
+    """Decode JWT token without verification."""
+    parts = token.split(".")
+    
+    if len(parts) != 3:
+        return None
+    
+    try:
+        header = json.loads(base64_decode_padded(parts[0]))
+        payload = json.loads(base64_decode_padded(parts[1]))
+        
+        return {
+            "header": header,
+            "payload": payload,
+            "signature": parts[2]
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def format_timestamp(ts: int) -> str:
+    """Format Unix timestamp to human-readable."""
+    from datetime import datetime, timezone
+    try:
+        dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+        return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
+    except:
+        return str(ts)
+
+
+def analyze_token(decoded: Dict) -> list:
+    """Analyze token and return insights."""
+    insights = []
+    payload = decoded.get("payload", {})
+    
+    # Check expiration
+    if "exp" in payload:
+        from datetime import datetime, timezone
+        exp = payload["exp"]
+        now = datetime.now(timezone.utc).timestamp()
+        if exp < now:
+            insights.append(("⚠️", "Expired", format_timestamp(exp)))
+        else:
+            insights.append(("✅", "Valid until", format_timestamp(exp)))
+    
+    # Check not before
+    if "nbf" in payload:
+        insights.append(("ℹ️", "Not valid before", format_timestamp(payload["nbf"])))
+    
+    # Check issued at
+    if "iat" in payload:
+        insights.append(("ℹ️", "Issued at", format_timestamp(payload["iat"])))
+    
+    # Common claims
+    if "sub" in payload:
+        insights.append(("👤", "Subject", payload["sub"]))
+    if "iss" in payload:
+        insights.append(("🏢", "Issuer", payload["iss"]))
+    if "aud" in payload:
+        insights.append(("🎯", "Audience", payload["aud"]))
+    
+    return insights
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Inspect JWT tokens without verification",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  jwt_decode eyJhbGciOiJIUzI1NiIs...
+  jwt_decode eyJhbG... --compact
+  echo "$TOKEN" | jwt_decode -
+  
+⚠️  This tool decodes only — it does NOT verify signatures!
+Use this for debugging, not security decisions.
+        """
+    )
+    parser.add_argument("token", help="JWT token (or - for stdin)")
+    parser.add_argument("--compact", "-c", action="store_true",
+                        help="Single-line compact output")
+    parser.add_argument("--raw", "-r", action="store_true",
+                        help="Output raw JSON only")
+    parser.add_argument("--header-only", action="store_true",
+                        help="Show header only")
+    parser.add_argument("--payload-only", action="store_true",
+                        help="Show payload only")
+    
+    args = parser.parse_args()
+    
+    # Read token
+    if args.token == "-":
+        token = sys.stdin.read().strip()
+    else:
+        token = args.token.strip()
+    
+    # Remove "Bearer " prefix if present
+    if token.lower().startswith("bearer "):
+        token = token[7:]
+    
+    # Decode
+    decoded = decode_jwt(token)
+    
+    if decoded is None:
+        print("❌ Invalid JWT format (expected: header.payload.signature)", file=sys.stderr)
+        sys.exit(1)
+    
+    if "error" in decoded:
+        print(f"❌ Decode error: {decoded['error']}", file=sys.stderr)
+        sys.exit(1)
+    
+    # Raw JSON output
+    if args.raw:
+        if args.header_only:
+            print(json.dumps(decoded["header"], indent=2))
+        elif args.payload_only:
+            print(json.dumps(decoded["payload"], indent=2))
+        else:
+            print(json.dumps(decoded, indent=2))
+        return
+    
+    # Compact output
+    if args.compact:
+        header = json.dumps(decoded["header"], separators=(",", ":"))
+        payload = json.dumps(decoded["payload"], separators=(",", ":"))
+        print(f"Header:  {header}")
+        print(f"Payload: {payload}")
+        return
+    
+    # Full formatted output
+    if not args.header_only and not args.payload_only:
+        print("═" * 50)
+        print("🔓 JWT Token Inspector (not verified)")
+        print("═" * 50)
+        print()
+    
+    if not args.payload_only:
+        print("📋 HEADER (Algorithm & Type):")
+        print(json.dumps(decoded["header"], indent=2))
+        print()
+    
+    if not args.header_only:
+        print("📦 PAYLOAD (Data):")
+        print(json.dumps(decoded["payload"], indent=2))
+        print()
+    
+    if not args.header_only and not args.payload_only:
+        insights = analyze_token(decoded)
+        if insights:
+            print("🔍 ANALYSIS:")
+            for emoji, label, value in insights:
+                print(f"  {emoji} {label}: {value}")
+            print()
+        
+        print("─" * 50)
+        print("⚠️  SECURITY NOTE: Signature NOT verified!")
+        print("   Anyone can create a token. Verify server-side.")
+
+
+if __name__ == "__main__":
+    main()
