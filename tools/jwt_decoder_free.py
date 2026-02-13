@@ -1,231 +1,264 @@
 #!/usr/bin/env python3
 """
-jwt_decoder.py - Tool #53: JWT Token Decoder & Validator
-Quickly decode and inspect JWT tokens without sending them anywhere.
-Part of the 50+ Essential Python CLI Tools collection.
+PD Free Tool #59: JWT Decoder & Validator
+Parse, decode, and validate JSON Web Tokens
+Part of the PD_Researcher Free Tools Collection
 """
 
 import argparse
 import base64
 import json
 import sys
-from datetime import datetime, timezone
-from typing import Optional
+import hmac
+import hashlib
+from datetime import datetime
+from typing import Optional, Dict, Any
 
-def decode_base64(data: str) -> bytes:
-    """Decode base64url encoded data."""
+__version__ = "1.0.0"
+
+def base64url_decode(data: str) -> bytes:
+    """Decode base64url encoded string"""
     padding = 4 - len(data) % 4
     if padding != 4:
         data += '=' * padding
     return base64.urlsafe_b64decode(data)
 
+def base64url_encode(data: bytes) -> str:
+    """Encode bytes to base64url string"""
+    return base64.urlsafe_b64encode(data).rstrip(b'=').decode('ascii')
+
+def decode_jwt(token: str) -> Optional[Dict[str, Any]]:
+    """Decode a JWT token without verification"""
+    try:
+        parts = token.split('.')
+        if len(parts) != 3:
+            return None
+        
+        header = json.loads(base64url_decode(parts[0]))
+        payload = json.loads(base64url_decode(parts[1]))
+        signature = parts[2]
+        
+        return {
+            'header': header,
+            'payload': payload,
+            'signature': signature,
+            'raw_header': parts[0],
+            'raw_payload': parts[1]
+        }
+    except Exception as e:
+        return None
+
+def verify_signature(token: str, secret: str, algorithm: str = 'HS256') -> bool:
+    """Verify JWT signature with secret"""
+    try:
+        parts = token.split('.')
+        if len(parts) != 3:
+            return False
+        
+        message = f"{parts[0]}.{parts[1]}"
+        
+        if algorithm == 'HS256':
+            expected_sig = base64url_encode(
+                hmac.new(secret.encode(), message.encode(), hashlib.sha256).digest()
+            )
+        elif algorithm == 'HS384':
+            expected_sig = base64url_encode(
+                hmac.new(secret.encode(), message.encode(), hashlib.sha384).digest()
+            )
+        elif algorithm == 'HS512':
+            expected_sig = base64url_encode(
+                hmac.new(secret.encode(), message.encode(), hashlib.sha512).digest()
+            )
+        else:
+            return False
+        
+        # Compare signatures (constant time)
+        return hmac.compare_digest(expected_sig, parts[2])
+    except Exception:
+        return False
+
 def format_timestamp(ts: int) -> str:
-    """Format Unix timestamp to readable date."""
+    """Format Unix timestamp to human readable"""
     try:
         dt = datetime.fromtimestamp(ts)
-        return dt.strftime('%Y-%m-%d %H:%M:%S UTC')
+        now = datetime.now()
+        diff = dt - now
+        
+        if diff.total_seconds() > 0:
+            status = f"expires in {diff.days}d {diff.seconds//3600}h"
+        else:
+            status = "EXPIRED"
+        
+        return f"{dt.isoformat()} ({status})"
     except:
         return str(ts)
 
-def decode_jwt(token: str) -> tuple[dict, dict, str]:
-    """Decode JWT token into header, payload, and signature."""
-    parts = token.split('.')
-    
-    if len(parts) != 3:
-        raise ValueError("Invalid JWT format: expected 3 parts separated by dots")
-    
-    # Decode header
-    header_json = decode_base64(parts[0])
-    header = json.loads(header_json)
-    
-    # Decode payload
-    payload_json = decode_base64(parts[1])
-    payload = json.loads(payload_json)
-    
-    # Return signature as-is (it's binary)
-    signature = parts[2]
-    
-    return header, payload, signature
+def colorize(text: str, color: str) -> str:
+    """Add color to terminal output"""
+    colors = {
+        'red': '\033[91m',
+        'green': '\033[92m',
+        'yellow': '\033[93m',
+        'blue': '\033[94m',
+        'magenta': '\033[95m',
+        'cyan': '\033[96m',
+        'white': '\033[97m',
+        'bold': '\033[1m',
+        'reset': '\033[0m'
+    }
+    return f"{colors.get(color, '')}{text}{colors['reset']}"
 
-def check_expiration(payload: dict) -> Optional[str]:
-    """Check if token is expired and return status."""
-    now = datetime.now(timezone.utc).timestamp()
+def print_token_info(token_data: Dict[str, Any], verified: Optional[bool] = None):
+    """Pretty print JWT information"""
+    print()
+    print(colorize("═" * 60, 'blue'))
+    print(colorize("  🔐 JWT DECODER & VALIDATOR", 'bold'))
+    print(colorize("═" * 60, 'blue'))
     
-    exp = payload.get('exp')
-    iat = payload.get('iat')
-    nbf = payload.get('nbf')
+    # Header Section
+    print(colorize("\n┌─ HEADER ─────────────────────────────────────────────────┐", 'cyan'))
+    header = token_data['header']
+    for key, value in header.items():
+        print(f"│  {colorize(key, 'yellow'):15} {str(value)[:40]:43} │")
+    print("└──────────────────────────────────────────────────────────┘")
     
-    status_lines = []
+    # Payload Section
+    print(colorize("\n┌─ PAYLOAD ────────────────────────────────────────────────┐", 'green'))
+    payload = token_data['payload']
     
-    if exp:
-        exp_time = format_timestamp(exp)
-        if now > exp:
-            status_lines.append(f"❌ EXPIRED (was valid until {exp_time})")
-        else:
-            remaining = exp - now
-            hours = remaining / 3600
-            if hours < 24:
-                status_lines.append(f"⏰ EXPIRES SOON: {exp_time} ({hours:.1f} hours)")
+    # Handle standard claims with special formatting
+    standard_claims = ['iss', 'sub', 'aud', 'exp', 'nbf', 'iat', 'jti']
+    
+    for key in standard_claims:
+        if key in payload:
+            value = payload[key]
+            if key in ['exp', 'nbf', 'iat'] and isinstance(value, (int, float)):
+                formatted = format_timestamp(int(value))
+                color = 'red' if key == 'exp' and 'EXPIRED' in formatted else 'green'
+                print(f"│  {colorize(key, 'yellow'):15} {formatted:43} │"[:75])
             else:
-                days = hours / 24
-                status_lines.append(f"✅ VALID until {exp_time} ({days:.1f} days)")
+                print(f"│  {colorize(key, 'yellow'):15} {str(value)[:43]:43} │")
     
-    if iat:
-        status_lines.append(f"📅 Issued at: {format_timestamp(iat)}")
+    # Custom claims
+    for key, value in payload.items():
+        if key not in standard_claims:
+            val_str = str(value)[:43]
+            if len(str(value)) > 43:
+                val_str += "..."
+            print(f"│  {colorize(key, 'yellow'):15} {val_str:43} │")
     
-    if nbf:
-        nbf_time = format_timestamp(nbf)
-        if now < nbf:
-            status_lines.append(f"⏳ Not valid before: {nbf_time}")
+    print("└──────────────────────────────────────────────────────────┘")
+    
+    # Verification status
+    if verified is not None:
+        print()
+        if verified:
+            print(colorize("  ✅ SIGNATURE VALID", 'green'))
         else:
-            status_lines.append(f"✅ Valid from: {nbf_time}")
+            print(colorize("  ❌ SIGNATURE INVALID", 'red'))
     
-    return '\n'.join(status_lines) if status_lines else None
-
-def print_colored_json(data: dict) -> None:
-    """Print JSON with basic terminal colors."""
-    json_str = json.dumps(data, indent=2)
+    # Security warnings
+    print()
+    alg = token_data['header'].get('alg', 'none')
+    if alg == 'none':
+        print(colorize("  ⚠️  WARNING: Algorithm 'none' - Token is unsigned!", 'red'))
+    elif alg in ['HS256', 'HS384', 'HS512']:
+        print(colorize(f"  ℹ️  HMAC Algorithm: {alg}", 'blue'))
     
-    # Simple color highlighting
-    lines = json_str.split('\n')
-    for line in lines:
-        if ':' in line:
-            key_part = line.split(':', 1)[0]
-            val_part = line[len(key_part)+1:]
-            print(f"\033[36m{key_part}\033[0m:{val_part}")
+    # Expiration check
+    exp = payload.get('exp')
+    if exp:
+        now = datetime.now().timestamp()
+        if exp < now:
+            print(colorize("  ⚠️  WARNING: Token has EXPIRED", 'red'))
         else:
-            print(line)
+            days_left = int((exp - now) / 86400)
+            print(colorize(f"  ℹ️  Token valid for {days_left} more days", 'green'))
+    
+    print(colorize("\n" + "═" * 60, 'blue'))
 
 def main():
     parser = argparse.ArgumentParser(
-        description='🔓 JWT Token Decoder & Validator - Inspect tokens locally',
+        description="🔐 JWT Decoder & Validator - Parse and verify JSON Web Tokens",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  %(prog)s eyJhbGciOiJIUzI1NiIs...
-  %(prog)s "eyJhbGciOiJIUzI1NiIs..." --pretty
-  echo $JWT_TOKEN | %(prog)s -
+  %(prog)s "eyJhbGciOiJIUzI1NiIs..."
+  %(prog)s token.txt --secret mykey
+  echo "$JWT_TOKEN" | %(prog)s --secret mykey
 
-Note: This tool only DECODES tokens (base64). It does NOT verify signatures.
+Part of PD_Researcher Free Tools: https://barrowryan89-cloud.github.io/pd-researcher/
         """
     )
-    parser.add_argument('token', help='JWT token to decode (or "-" for stdin)')
-    parser.add_argument('--pretty', '-p', action='store_true', 
-                        help='Pretty print with colors')
-    parser.add_argument('--raw', '-r', action='store_true',
-                        help='Output raw JSON only (for piping)')
+    
+    parser.add_argument('token', nargs='?', help='JWT token string or file containing token')
+    parser.add_argument('-s', '--secret', help='Secret key for signature verification')
+    parser.add_argument('-a', '--algorithm', default='HS256', 
+                       choices=['HS256', 'HS384', 'HS512'],
+                       help='Algorithm for verification (default: HS256)')
+    parser.add_argument('-o', '--output', help='Output file (default: stdout)')
+    parser.add_argument('--json', action='store_true', help='Output as JSON')
+    parser.add_argument('-v', '--version', action='version', version=f'%(prog)s {__version__}')
     
     args = parser.parse_args()
     
-    # Read token
-    if args.token == '-':
-        token = sys.stdin.read().strip()
-    else:
-        token = args.token.strip()
+    # Get token from args, file, or stdin
+    token = args.token
+    if not token:
+        if not sys.stdin.isatty():
+            token = sys.stdin.read().strip()
+        else:
+            parser.print_help()
+            sys.exit(1)
     
-    # Remove "Bearer " prefix if present
-    if token.startswith('Bearer '):
-        token = token[7:]
+    # Check if token is a file
+    import os
+    if os.path.isfile(token):
+        with open(token, 'r') as f:
+            token = f.read().strip()
     
-    # Remove quotes if present
-    token = token.strip('"\'')
+    # Decode token
+    token_data = decode_jwt(token)
     
-    try:
-        header, payload, signature = decode_jwt(token)
-    except ValueError as e:
-        print(f"\033[31mError: {e}\033[0m", file=sys.stderr)
+    if not token_data:
+        print(colorize("❌ Error: Invalid JWT token format", 'red'), file=sys.stderr)
         sys.exit(1)
-    except Exception as e:
-        print(f"\033[31mError decoding JWT: {e}\033[0m", file=sys.stderr)
-        sys.exit(1)
     
-    if args.raw:
-        print(json.dumps({'header': header, 'payload': payload}))
-        return
+    # Verify signature if secret provided
+    verified = None
+    if args.secret:
+        alg = token_data['header'].get('alg', 'HS256')
+        if alg in ['HS256', 'HS384', 'HS512']:
+            verified = verify_signature(token, args.secret, alg)
     
-    # Print output
-    print("\n" + "="*60)
-    print("🔓 JWT TOKEN DECODER")
-    print("="*60)
-    
-    # Header section
-    print("\n📋 HEADER (Algorithm & Token Type):")
-    print("-"*40)
-    if args.pretty:
-        print_colored_json(header)
+    # JSON output
+    if args.json:
+        output = {
+            'header': token_data['header'],
+            'payload': token_data['payload'],
+            'signature_valid': verified
+        }
+        result = json.dumps(output, indent=2)
     else:
-        print(json.dumps(header, indent=2))
+        # Capture pretty print output
+        import io
+        old_stdout = sys.stdout
+        sys.stdout = buffer = io.StringIO()
+        print_token_info(token_data, verified)
+        sys.stdout = old_stdout
+        result = buffer.getvalue()
     
-    # Show algorithm warning
-    alg = header.get('alg', 'unknown')
-    if alg == 'none':
-        print("\n\033[31m⚠️  WARNING: Algorithm is 'none' - token is unverified!\033[0m")
-    elif alg in ['HS256', 'HS384', 'HS512']:
-        print(f"\n🔐 Algorithm: {alg} (HMAC SHA-based)")
-    elif alg in ['RS256', 'RS384', 'RS512']:
-        print(f"\n🔐 Algorithm: {alg} (RSA-based)")
-    elif alg in ['ES256', 'ES384', 'ES512']:
-        print(f"\n🔐 Algorithm: {alg} (ECDSA-based)")
-    
-    # Payload section
-    print("\n📦 PAYLOAD (Claims & Data):")
-    print("-"*40)
-    if args.pretty:
-        print_colored_json(payload)
+    # Output
+    if args.output:
+        with open(args.output, 'w') as f:
+            f.write(result)
+        print(f"Output written to: {args.output}")
     else:
-        print(json.dumps(payload, indent=2))
+        print(result)
     
-    # Expiration check
-    print("\n⏱️  TOKEN STATUS:")
-    print("-"*40)
-    status = check_expiration(payload)
-    if status:
-        print(status)
-    else:
-        print("ℹ️  No expiration data found in token")
-    
-    # Common claims summary
-    print("\n📝 CLAIMS SUMMARY:")
-    print("-"*40)
-    claims_map = {
-        'sub': 'Subject (user ID)',
-        'iss': 'Issuer',
-        'aud': 'Audience',
-        'jti': 'JWT ID',
-        'typ': 'Token type',
-        'azp': 'Authorized party',
-        'scope': 'Scopes/permissions',
-        'permissions': 'Permissions',
-        'role': 'Role',
-        'roles': 'Roles',
-        'email': 'Email',
-        'name': 'Name',
-    }
-    
-    found_claims = []
-    for claim, desc in claims_map.items():
-        if claim in payload:
-            val = payload[claim]
-            if isinstance(val, list):
-                val = ', '.join(str(v) for v in val)
-            found_claims.append(f"  • {desc}: {val}")
-    
-    if found_claims:
-        print('\n'.join(found_claims))
-    else:
-        print("  No standard claims found")
-    
-    # Signature info
-    print("\n🔏 SIGNATURE:")
-    print("-"*40)
-    print(f"  Length: {len(signature)} characters")
-    print(f"  Preview: {signature[:20]}...")
-    print("\n\033[33m⚠️  Note: Signature verification requires the secret key.\033[0m")
-    print("\033[33m   This tool decodes only — it cannot verify authenticity.\033[0m")
-    
-    print("\n" + "="*60)
-    print(f"Decoded {len(token)} characters successfully")
-    print("="*60 + "\n")
+    # Exit with error code if signature verification failed
+    if verified is False:
+        sys.exit(2)
 
 if __name__ == '__main__':
     main()
