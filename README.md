@@ -1,6 +1,6 @@
 # PD Researcher — Free Developer Tools
 
-> 33 command-line utilities that respect your time and privacy.
+> 36 command-line utilities that respect your time and privacy.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
@@ -60,6 +60,9 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `api_tester.py` | REST API testing | `python api_tester.py https://api.com` |
 | `password_analyzer.py` | Password strength analyzer | `python password_analyzer.py -g` |
 | `csv_to_json.py` | CSV to JSON converter | `python csv_to_json.py data.csv` |
+| `json_to_csv.py` | JSON to CSV converter | `python json_to_csv.py data.json` |
+| `url_encoder.py` | URL encoder/decoder | `python url_encoder.py encode "hello world"` |
+| `hash_generator.py` | Hash generator & verifier | `python hash_generator.py file doc.pdf` |
 
 ---
 
