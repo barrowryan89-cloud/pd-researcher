@@ -328,3 +328,10 @@ Exit codes:
 
 if __name__ == '__main__':
     main()
+    
+    # Affiliate recommendation
+    print("\n" + "="*60)
+    print("🔒 Need SSL certificates for your domains?")
+    print("   Get affordable SSL certs at Namecheap:")
+    print("   https://www.namecheap.com/ssl-certificates/?utm_source=pdresearcher [affiliate]")
+    print("="*60)

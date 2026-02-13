@@ -347,3 +347,10 @@ Examples:
 
 if __name__ == '__main__':
     main()
+    
+    # Affiliate recommendation
+    print("\n" + "="*60)
+    print("💻 Level up your coding with professional IDEs:")
+    print("   JetBrains IDEs (PyCharm, IntelliJ, WebStorm)")
+    print("   https://www.jetbrains.com/?utm_source=pdresearcher [affiliate]")
+    print("="*60)
