@@ -97,8 +97,11 @@
   - `tools/email_collector.py` — Lightweight email collection endpoint
   - `tools/git_analyzer_free.py` — Tool #30: Git repo statistics
 - **Newsletter System:** Landing page live, email capture enabled on all properties
-- **Free Tools Built:** 50 CLI tools (see GitHub repo)
+- **Free Tools Built:** 98 CLI tools (see GitHub repo)
 - **50-Tool Milestone:** Achieved Feb 13, 2026 — https://github.com/barrowryan89-cloud/pd-researcher
+- **Affiliate Integration:** 12/98 tools with affiliate footers
+- **Affiliate Revenue Projection:** $270-850/month by Month 3
+- **Directory Submissions:** 25+ targets researched, templates ready
 - **Social Content:** Ready-to-post pack created (tweets, Reddit, LinkedIn)
 
 ---

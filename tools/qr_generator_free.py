@@ -77,6 +77,9 @@ def main():
     print("\n💡 Want full QR generation with PNG/SVG output?")
     print("   Upgrade to PD_Researcher v1 for complete QR tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n📱 Mobile Development:")
+    print("   Build apps that scan QR codes with Expo")
+    print("   https://expo.dev/")
     print("="*60)
 
 if __name__ == "__main__":

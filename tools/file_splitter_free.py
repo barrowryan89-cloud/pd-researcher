@@ -115,6 +115,10 @@ def main():
     print("\n💡 Want size-based splitting and auto-rejoin?")
     print("   Upgrade to PD_Researcher v1 for advanced file tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n☁️  Cloud Storage:")
+    print("   Need to store large files? Try Backblaze B2")
+    print("   $0.005/GB/month — cheaper than S3")
+    print("   https://www.backblaze.com/b2/cloud-storage.html")
     print("="*60)
 
 if __name__ == "__main__":

@@ -284,6 +284,13 @@ def main():
         print(json.dumps(data, indent=2))
     else:
         print_results(data, verbose=check_all)
+    
+    print("\n" + "="*60)
+    print("💡 Domain Management:")
+    print("   Need DNS hosting or domain registration?")
+    print("   Namecheap offers affordable domains + free WHOIS privacy")
+    print("   https://www.namecheap.com/domains/")
+    print("="*60)
 
 
 if __name__ == '__main__':

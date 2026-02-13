@@ -153,6 +153,9 @@ def main():
     print("\n💡 Want to process multiple URLs?")
     print("   Upgrade to PD_Researcher v1 for batch processing")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n🔒 Privacy Tip:")
+    print("   Track your content performance without cookies")
+    print("   Try Plausible: https://plausible.io/")
     print("="*60)
 
 if __name__ == "__main__":

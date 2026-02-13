@@ -128,6 +128,9 @@ def main():
     print("\n💡 Want adjustable summary length or different algorithms?")
     print("   Upgrade to PD_Researcher v1 for advanced summarization")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n🎓 Learning Recommendation:")
+    print("   Master NLP and text processing with DataCamp")
+    print("   https://www.datacamp.com/")
     print("="*60)
 
 if __name__ == "__main__":

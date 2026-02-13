@@ -116,6 +116,9 @@ def main():
     print("\n💡 Want SQL export and data analysis?")
     print("   Upgrade to PD_Researcher v1 for advanced CSV tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n🔧 Developer Recommendation:")
+    print("   Level up your data workflow with JetBrains DataGrip")
+    print("   Professional database IDE: https://www.jetbrains.com/datagrip/")
     print("="*60)
 
 if __name__ == "__main__":
