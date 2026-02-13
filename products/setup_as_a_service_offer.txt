@@ -1,0 +1,40 @@
+PD SETUP-AS-A-SERVICE (OPENCLAW)
+
+What you’re buying:
+A working, reliable assistant. Not “AI.” You get time back and fewer dropped balls.
+
+TIER 1: BASIC SETUP ($500)
+- 1 channel (Telegram)
+- 1 default model
+- Backups + stability defaults
+- 60-minute setup + handoff
+Turnaround: 24 hours
+
+TIER 2: PRO SETUP ($1,200)
+- Multi-channel (Telegram + email)
+- Cost controls + budget alerts
+- Hourly backups to Drive
+- Daily brief + follow-up reminders
+- 30 days of light support
+Turnaround: 48 hours
+
+TIER 3: ENTERPRISE ($3,000+)
+- Custom skills
+- Security audit + hardening
+- Team onboarding/training
+- Monitoring + runbooks
+Turnaround: scoped
+
+What you send me:
+- Your server/VPS details (or I provision one)
+- The channels you want (Telegram/email/etc.)
+- Your API keys (or I show you how to store them safely)
+- What you want it to do (top 3 workflows)
+
+What you get back:
+- A Setup Doctor health report
+- A stable, backed-up OpenClaw instance
+- A 1-page “how to use it daily” cheat sheet
+
+To start:
+Reply with “SETUP BASIC” or “SETUP PRO” + your desired channel(s).

@@ -310,6 +310,8 @@ def print_text_report(data):
     print("\n" + "=" * 60)
     print("Part of PD's Free Developer Tools")
     print("https://barrowryan89-cloud.github.io/pd-researcher/")
+    print(f"\n💻 Level up your coding with JetBrains IDEs:")
+    print("   https://www.jetbrains.com/?utm_source=pdresearcher [affiliate]")
     print("=" * 60)
 
 def main():

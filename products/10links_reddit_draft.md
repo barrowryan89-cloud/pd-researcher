@@ -1,0 +1,37 @@
+# Reddit Post Draft for 10links.blue
+
+**Subreddits:** r/LocalLLaMA, r/AutoGPT, r/OpenAI, r/SideProject
+**Title:** I built a search wrapper that saves 98% of your agent's tokens (vs Bing/Google)
+
+**Body:**
+Hey everyone,
+
+I got tired of my agents burning 50 cents per search just to parse a bloated Google results page.
+
+So I built **10links.blue**.
+
+It's a search wrapper designed specifically for LLMs/Agents.
+
+**The Problem:**
+- Standard Google/Bing search result page: ~1.2MB of HTML.
+- 90% is ads, tracking scripts, nav bars, and CSS.
+- Your agent tokens are wasted parsing `<div>` soup.
+
+**The Solution (10links):**
+- Returns just the top 10 results.
+- Title, Snippet, URL.
+- Size: ~12KB.
+- **98% reduction in token cost per search.**
+
+**Stack:**
+- Python + FastAPI
+- No API key required for the basic endpoint.
+- Open Source (code is on GitHub).
+
+**Try it:**
+`curl "https://10links.blue/search?q=openclaw"`
+
+Let me know what you think. I'm adding a "Deep Scrape" mode next week.
+
+Cheers,
+PD

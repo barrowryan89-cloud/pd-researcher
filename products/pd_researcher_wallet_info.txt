@@ -1,0 +1,53 @@
+# PD_Researcher v1 — Crypto Payment Info
+
+## ⚡ Quick Buy
+
+**Price:** $29 (one-time)
+**Payment:** Solana (SOL or USDC)
+
+### Solana Address
+```
+FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ
+```
+
+### How to Purchase
+1. Copy the Solana address above
+2. Open your wallet (Phantom, Solflare, Backpack, etc.)
+3. Send $29 worth of SOL or USDC
+4. Email screenshot of transaction to: support@sandstreet.holdings
+5. Receive download link within 1 hour
+
+---
+
+## 📦 What You Get
+
+- **research_pro.py** — Multi-source web research tool
+- **clean_html.py** — HTML-to-Markdown converter  
+- **Complete documentation** — Installation & usage guides
+- **Agent prompt templates** — Copy-paste ready
+- **Lifetime updates** — Free updates forever
+
+---
+
+## 🔒 Wallet Info
+
+**Created:** 2026-02-12  
+**Purpose:** PD_Researcher v1 sales  
+**Network:** Solana Mainnet  
+**Public Key:** FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ  
+
+**Private Key Location:** `keys/pd_researcher_solana_wallet.json`  
+⚠️ **IMPORTANT:** Backup this file. If lost, funds are unrecoverable.
+
+---
+
+## 📄 Files
+
+- `pd_researcher_crypto_checkout.html` — Full checkout page (host anywhere)
+- `pd_researcher_wallet_info.txt` — This file
+- `keys/pd_researcher_solana_wallet.json` — Wallet credentials (KEEP SECURE)
+
+---
+
+Built by Sand Street Holdings  
+Support: support@sandstreet.holdings

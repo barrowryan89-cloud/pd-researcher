@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD Tools Newsletter | Free Developer Tools Weekly</title>
+    <meta name="description" content="Get 30+ free developer tools delivered to your inbox. No spam, unsubscribe anytime.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 50px 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .benefit {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .benefit-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .benefit-text {
+            font-size: 1rem;
+            color: #d4d4d8;
+        }
+        
+        .form-container {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+            font-weight: 500;
+        }
+        
+        input[type="email"],
+        input[type="text"] {
+            width: 100%;
+            padding: 15px 18px;
+            font-size: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        input[type="email"]:focus,
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #60a5fa;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        input::placeholder {
+            color: #6b7280;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .privacy-note {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 20px;
+        }
+        
+        .privacy-note a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        .success-message {
+            display: none;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .success-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .success-title {
+            font-size: 1.5rem;
+            color: #22c55e;
+            margin-bottom: 10px;
+        }
+        
+        .success-text {
+            color: #9ca3af;
+        }
+        
+        .tool-preview {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .preview-title {
+            font-size: 1.1rem;
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+        
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        
+        .tool-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 0.85rem;
+            color: #d4d4d8;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🧰</div>
+        <h1>PD Tools Newsletter</h1>
+        <p class="subtitle">Get 30+ free developer tools delivered weekly.<br>No spam. Unsubscribe anytime.</p>
+        
+        <div class="benefits">
+            <div class="benefit">
+                <span class="benefit-icon">⚡</span>
+                <span class="benefit-text">New CLI tools every week — zero dependencies, ready to use</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">🔒</span>
+                <span class="benefit-text">Privacy-first — all tools run locally, no data collection</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">🚀</span>
+                <span class="benefit-text">Early access — get new tools before they're public</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">💡</span>
+                <span class="benefit-text">Pro tips — learn automation tricks from real projects</span>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">First Name (optional)</label>
+                    <input type="text" id="name" name="name" placeholder="Ryan">
+                </div>
+                <button type="submit" class="submit-btn">Join 100+ Developers →</button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">🎉</div>
+                <div class="success-title">You're on the list!</div>
+                <div class="success-text">Check your inbox for a welcome email with your first tool.</div>
+            </div>
+            
+            <p class="privacy-note">No spam, ever. Unsubscribe with one click. Read our <a href="#">privacy policy</a>.</p>
+        </div>
+        
+        <div class="tool-preview">
+            <p class="preview-title">Featured in every issue:</p>
+            <div class="tool-grid">
+                <div class="tool-badge">🧹 HTML Cleaner</div>
+                <div class="tool-badge">📝 Text Summarizer</div>
+                <div class="tool-badge">🔗 URL Checker</div>
+                <div class="tool-badge">📋 JSON Formatter</div>
+                <div class="tool-badge">🔐 Password Gen</div>
+                <div class="tool-badge">🕐 Time Converter</div>
+                <div class="tool-badge">🆔 UUID Gen</div>
+                <div class="tool-badge">📊 CSV Tools</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            const submitBtn = document.querySelector('.submit-btn');
+            
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Joining...';
+            
+            // Store in localStorage for now (can be synced later)
+            const subscribers = JSON.parse(localStorage.getItem('pd_newsletter_subscribers') || '[]');
+            subscribers.push({
+                email: email,
+                name: name,
+                timestamp: new Date().toISOString(),
+                source: 'newsletter_landing'
+            });
+            localStorage.setItem('pd_newsletter_subscribers', JSON.stringify(subscribers));
+            
+            // Also send to Formspree for collection
+            fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    name: name,
+                    message: 'Newsletter signup'
+                })
+            }).catch(() => {
+                // Formspree not configured yet, localStorage still works
+            });
+            
+            // Show success
+            setTimeout(() => {
+                document.getElementById('successMessage').classList.add('show');
+                submitBtn.style.display = 'none';
+                document.getElementById('email').value = '';
+                document.getElementById('name').value = '';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

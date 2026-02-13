@@ -1,0 +1,16 @@
+digraph SandStreetOrg {
+    graph [label="Sand Street Holdings Org Chart", labelloc=top, fontsize=24, fontname="Helvetica"];
+    node [shape=box, style=filled, color="#0F172A", fontcolor=white, fontname="Helvetica", fontsize=14];
+    edge [color="#64748B", penwidth=2];
+
+    Ryan [label="Ryan Barrow\nChairman", color="#1D4ED8"];
+    PD [label="PD\nChief of Staff / COO", color="#9333EA"];
+    Vector [label="Vector\nCTO / Lead Engineer", color="#0EA5E9"];
+    Siren [label="Siren\nCMO / Growth", color="#F97316"];
+    Ledger [label="Ledger\nCFO / Data", color="#10B981"];
+
+    Ryan -> PD;
+    PD -> Vector;
+    PD -> Siren;
+    PD -> Ledger;
+}

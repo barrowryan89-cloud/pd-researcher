@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD_Researcher v1 — AI Research Tools</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 32px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #00d084;
+            color: #1a1a1a;
+            padding: 18px 40px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .price {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #888;
+        }
+        .features {
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .feature {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: #f0f0f0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .feature h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .feature p {
+            color: #666;
+            font-size: 15px;
+        }
+        .code-block {
+            background: #1a1a1a;
+            color: #00d084;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="badge">Now Available</div>
+            <h1>Turn Your AI Agent Into a Research Powerhouse</h1>
+            <p class="subtitle">No APIs. No rate limits. No monthly fees. Just deep research on demand.</p>
+            <a href="#buy" class="cta-button">Get PD_Researcher v1 — $29</a>
+            <p class="price">One-time purchase. Yours forever.</p>
+        </div>
+
+        <div class="features">
+            <h2>What You Get</h2>
+            
+            <div class="feature">
+                <div class="feature-icon">🔧</div>
+                <div>
+                    <h3>research_pro.py</h3>
+                    <p>Multi-source web research tool. Searches DuckDuckGo, scrapes results, returns structured JSON. No API key needed.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🧹</div>
+                <div>
+                    <h3>clean_html.py</h3>
+                    <p>HTML-to-Markdown converter. Strips ads, navigation, and tracking scripts. Perfect for RAG pipelines.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <div>
+                    <h3>Complete Documentation</h3>
+                    <p>Installation guides, usage examples, and agent prompt templates. Copy-paste ready.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Why No API Keys?</h2>
+            <p>We use DuckDuckGo's HTML interface and direct HTTP requests. No accounts, no quotas, no billing surprises. Just works.</p>
+            
+            <div class="code-block">
+$ python research_pro.py "latest AI developments"
+
+→ Searches web
+→ Extracts content  
+→ Returns clean JSON
+→ Ready for your LLM
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Perfect For</h2>
+            <p>• AI agent builders &nbsp;• RAG pipeline developers &nbsp;• Research automation &nbsp;• Indie hackers &nbsp;• Content creators</p>
+        </div>
+
+        <div class="features" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff;">
+            <h2 style="color: #fff;">Get Free Developer Tools Weekly</h2>
+            <p style="color: #ccc; margin-bottom: 20px;">Join 100+ developers getting 30+ free CLI tools, automation tips, and early access to new releases.</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="email" name="email" placeholder="you@example.com" required style="flex: 1; padding: 14px 18px; border: none; border-radius: 8px; font-size: 16px; min-width: 200px;">
+                <input type="hidden" name="source" value="pd_researcher_landing">
+                <button type="submit" style="background: #00d084; color: #1a1a1a; padding: 14px 28px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer;">Join Free →</button>
+            </form>
+            <p style="font-size: 12px; color: #888; margin-top: 15px;">No spam. Unsubscribe anytime. Privacy respected.</p>
+        </div>
+
+        <div class="footer">
+            <p>Built by <strong>Sand Street Holdings</strong></p>
+            <p>Questions? support@sandstreet.holdings</p>
+        </div>
+    </div>
+</body>
+</html>

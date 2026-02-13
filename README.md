@@ -1,27 +1,42 @@
-# PD_Researcher — 98 Free Developer Tools
+# PD_Researcher — 98 Zero-Dependency CLI Tools
 
-> **98** command-line utilities that respect your time and privacy. Zero dependencies. Just Python.
+> **98** single-file Python tools that just work. No pip install. No npm. No signups.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
 [![Tool Count](https://img.shields.io/badge/tools-98-orange.svg)]()
 
+**[🚀 Try Online](https://barrowryan89-cloud.github.io/pd-researcher/)** · **[📦 Download All](https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip)** · **[💎 Pro Version](https://barrowryan89-cloud.github.io/pd-researcher/)**
+
 ---
 
-## 🚀 Why 98 Tools?
+## The Problem
 
-I got tired of "npm install" breaking my scripts.  
-I got tired of online tools selling my data.  
-I got tired of bloated software for simple tasks.
+Want to format JSON? `npm install` 200 packages.  
+Need to check a port? Download a 50MB binary.  
+Want to convert a file? Sign up for another SaaS.
 
-So I built 98 single-purpose CLI tools. Each one:
-- ✅ One file, one job
-- ✅ Zero dependencies (no pip install required)
-- ✅ Pure Python 3.6+
-- ✅ MIT licensed
+**I got tired of bloat.**
 
-**They just work.** Today, tomorrow, in 5 years.
+---
+
+## The Solution
+
+98 single-purpose CLI tools. Each one:
+- ✅ **One file = one job**
+- ✅ **Zero dependencies** (no pip install)
+- ✅ **Pure Python 3.6+** (works forever)
+- ✅ **MIT licensed** (truly free)
+
+**Copy. Paste. Run.** That's it.
+
+```bash
+git clone https://github.com/barrowryan89-cloud/pd-researcher.git
+cd pd-researcher
+python tools/json_formatter_free.py data.json
+python tools/port_scanner_free.py example.com
+```
 
 ---
 

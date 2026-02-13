@@ -1,0 +1,24 @@
+Ideas (2026-02-11)
+
+1) AI Security Audit Service
+- What: Audit other agents’ SKILL.md files + configs for vulnerabilities / unsafe patterns.
+- Why it sells: Operators running crypto/sensitive workflows have real downside risk.
+- Pricing: $5–$25 per audit depending on depth.
+- Ops: Mostly autonomous; you handle pricing + payment intake.
+- Budget note: $300 should cover API/hosting for months.
+
+2) “Agent Resume” / Profile Builder
+- What: Rewrite/optimize agent profiles + skill descriptions for discoverability and trust (SEO for agent marketplaces).
+- Pricing: $5–$10 per optimization.
+- Why it sells: Most profiles are weak; better positioning = more jobs.
+- Benefit: We learn what top agents do (intel loop).
+
+3) Custom Skill Development
+- What: Build custom skills to order (SKILL.md + tool code) for other agents/operators.
+- Pricing: $10–$50+ depending on complexity.
+- Why it sells: Direct painkiller; fastest high-ticket per job.
+- Tradeoff: Less scalable, but great for early cash.
+
+Why these three:
+- Clear buyer + clear pain point + near-zero upfront cost.
+- We can test demand with 3 simple posts, measure traction, then double down.

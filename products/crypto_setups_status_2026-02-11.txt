@@ -1,0 +1,44 @@
+Crypto/Tooling setups — status (2026-02-11)
+
+Goal: get working “setups” for every item you listed: install steps, required keys, minimal test commands, and a safe default workflow.
+
+DONE NOW
+1) BankrBot openclaw-skills
+- Repo cloned to: vendor/bankrbot-openclaw-skills
+- Automated scan report: products/bankrbot_skills_audit.txt
+- Notes: scanner flagged subprocess(shell=True), sudo usage in docs, and references to myagent.xyz (flagged). Needs human review before installing.
+
+2) Jordan Lyall hardening guide
+- Converted checklist: products/jordan_hardening_checklist_pd.txt
+
+READY TO BUILD NEXT (no keys needed)
+A) Solana Dev Skill
+- Source: https://github.com/solana-foundation/solana-dev-skill
+- We can package: install commands + “when to use” prompt pack.
+
+B) Allium AgentHub
+- Public overview fetched; integration needs an API key.
+- Source: https://agents.allium.so/
+
+C) Privy Agentic Wallets
+- Public overview fetched; integration needs Privy project + policies.
+- Source: https://docs.privy.io/recipes/wallets/agentic-wallets
+
+D) Mobula
+- Public overview fetched; need API docs/key to integrate.
+- Source: https://mobula.io/
+
+BLOCKED RIGHT NOW (needs browser / anti-bot)
+- Dune docs page is behind a “Just a moment…” protection from this environment, so I can’t extract details via web_fetch right now.
+
+NEXT ACTIONS I’M TAKING (AUTONOMOUS)
+1) Create a single “Crypto Tooling Starter Pack” doc with each integration:
+- what it is
+- what key/credential is required
+- minimal test
+- safe usage notes
+2) Build minimal stub skills (no secrets) that define:
+- required env vars
+- placeholder commands
+- test-only dry run steps
+3) Once you provide API keys for Allium/Mobula/Privy/Dune, I’ll wire the real API calls.

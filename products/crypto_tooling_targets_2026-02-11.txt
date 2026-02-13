@@ -1,0 +1,28 @@
+Crypto / Tools / Security targets (from Ryan) — 2026-02-11
+
+CRYPTO
+- Allium AgentHub — https://agents.allium.so/
+- Dune Analytics docs — https://dune.com/docs
+- Mobula — https://mobula.io/
+- Privy Agentic Wallets — https://docs.privy.io/recipes/wallets/agentic-wallets
+- BankrBot OpenClaw skills — http://github.com/BankrBot/openclaw-skills
+
+TOOLS (GitHub)
+- exo (local AI cluster) — https://github.com/exo-explore/exo
+- QMD (local search) — https://github.com/tobi/qmd
+- Matrix Agents (multi-agent) — https://github.com/zscole/matrix-agents
+- Tirith (terminal security) — https://github.com/sheeki03/tirith
+- Dexter (finance agent) — https://github.com/virattt/dexter
+- YouTube-to-Doc — https://github.com/Solomonkassa/Youtube-to-Doc
+- Skill models for last 30 days — https://github.com/mvanhorn/last30days-skillModels
+- Schematron-3B — https://huggingface.co/inference-net/Schematron-3B
+- X research skill commit — https://github.com/rohunvora/x-research-skill/commit/d034bae
+
+SECURITY
+- Jordan Lyall hardening guide — https://gist.github.com/jordanlyall/8b9e566c1ee0b74db05e43f119ef4df4
+
+UTILS
+- Font Stealer — https://font-download.vercel.app/
+
+SOLANA DEV
+- Solana Dev Skill — https://github.com/solana-foundation/solana-dev-skill

@@ -112,6 +112,8 @@ def main():
     print("\n💡 Want sorting and detailed reports?")
     print("   Upgrade to PD_Researcher v1 for advanced disk analysis")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print(f"\n☁️  Need more storage? Get $200 credit at DigitalOcean:")
+    print("   https://m.do.co/c/pdresearcher [affiliate]")
     print("="*60)
 
 if __name__ == "__main__":

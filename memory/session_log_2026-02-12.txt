@@ -1,0 +1,15 @@
+1|US Strikes Iran by Feb 28|YES|0.35|20.0|NEWS_EDGE|2026-02-12 14:30:00|Pentagon orders second carrier strike group to prepare for Middle East deployment|OPEN||
+2|Starmer Out by Feb 28|YES|0.25|20.0|NEWS_EDGE|2026-02-12 14:30:00|Scottish Labour leader Anas Sarwar calls for Starmer resignation; top aides quit|OPEN||
+6|Shutdown by Feb 14|YES|0.28|20.0|NEWS_EDGE|2026-02-12 14:44:12|DHS funding deadline Friday - TIME/NBC|OPEN||
+7|Maxwell Pardon 2026|YES|0.08|20.0|NEWS_EDGE|2026-02-12 14:44:12|AG Bondi: hopefully she will die in prison - CBS News|OPEN||
+8|BTC Up/Down 9:50-9:55AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 14:51:06||CLOSED|1.0|20.0
+9|BTC Up/Down 9:50-9:55AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 14:51:17||CLOSED|1.0|20.0
+10|BTC Up/Down 9:55-10:00AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 14:57:09||CLOSED|1.0|20.0
+11|BTC Up/Down 10:00-10:05AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 15:00:55||OPEN||
+12|BTC Up/Down 10:10-10:15AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 15:12:09||OPEN||
+13|BTC Up/Down 10:15-10:20AM ET Feb 12|No|0.5|20.0|TAIL|2026-02-12 15:14:33||OPEN||
+14|US Strikes Iran by Feb 28, 2026|Yes|0.155|20.0|NEWS_EDGE|2026-02-12 15:21:56|Robust US Military Deployment To Gulf|OPEN||
+15|BTC Up/Down 10:35-10:40AM ET Feb 12|Yes|0.5|20.0|TAIL_REVERSAL|2026-02-12 15:36:14||OPEN||
+16|BTC Up/Down 10:40-10:45AM ET Feb 12|Yes|0.5|40.0|TAIL_CONTINUATION|2026-02-12 15:40:18||OPEN||
+17|BTC Up/Down 10:45-10:50AM ET Feb 12|Yes|0.5|20.0|TAIL_CONTINUATION|2026-02-12 15:49:18||OPEN||
+18|BTC Up/Down 10:50-10:55AM ET Feb 12|Yes|0.5|20.0|TAIL_CONTINUATION|2026-02-12 15:51:16||OPEN||

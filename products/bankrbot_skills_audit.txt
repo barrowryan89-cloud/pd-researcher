@@ -1,0 +1,31 @@
+==================================================
+ AI SECURITY AUDIT LITE - SCAN REPORT
+ Timestamp: 2026-02-11 04:22:12 UTC
+==================================================
+
+FILE: vendor/bankrbot-openclaw-skills/onchainkit/references/troubleshooting.md
+  [!] SUDO_USAGE at line 470
+      Code: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+  [!] SUDO_USAGE at line 471
+      Code: sudo sysctl -p
+
+FILE: vendor/bankrbot-openclaw-skills/onchainkit/scripts/create-onchain-app.py
+  [!] SUBPROCESS_SHELL at line 18
+      Code: result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+
+FILE: vendor/bankrbot-openclaw-skills/erc-8004/SKILL.md
+  [!] SUSPICIOUS_DOMAINS at line 74
+      Code: REGISTRATION_URL="https://myagent.xyz/agent.json" ./scripts/register-http.sh
+  [!] SUSPICIOUS_DOMAINS at line 101
+      Code: "endpoint": "https://myagent.xyz/"
+  [!] SUSPICIOUS_DOMAINS at line 105
+      Code: "endpoint": "https://myagent.xyz/.well-known/agent-card.json",
+
+FILE: vendor/bankrbot-openclaw-skills/erc-8004/scripts/register-onchain.sh
+  [!] RM_RF_ROOT at line 83
+      Code: rm -f /tmp/agent-reg-$$.json
+
+==================================================
+DISCLAIMER: This is an automated static analysis.
+It does not guarantee safety or catch logical flaws.
+Manual review is required for verification.

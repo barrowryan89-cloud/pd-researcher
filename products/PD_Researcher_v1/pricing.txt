@@ -1,0 +1,21 @@
+PD Researcher Agent Template
+Price: $29
+
+---
+A lightweight research agent that aggregates multiple sources and returns structured intelligence.
+
+Perfect for:
+- Market research
+- Competitor analysis
+- Content research
+- Due diligence
+
+What you get:
+✓ Pre-configured agent (drop-in install)
+✓ Multi-source aggregation
+✓ Structured JSON output
+✓ Error handling & retries
+✓ 2-minute setup
+✓ 30-day support
+
+No API keys. No subscriptions. One-time purchase.

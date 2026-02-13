@@ -278,6 +278,8 @@ def print_certificate_info(info, verbose=False):
     print("=" * 60)
     print(color('gray', "Part of PD's Free Developer Tools"))
     print(color('gray', "https://barrowryan89-cloud.github.io/pd-researcher/"))
+    print(f"\n🔒 Need SSL certificates? Get affordable domains + SSL at Namecheap:")
+    print("   https://namecheap.pxf.io/pdresearcher [affiliate]")
     print("=" * 60)
     print()
     

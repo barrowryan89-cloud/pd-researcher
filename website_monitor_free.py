@@ -262,13 +262,6 @@ Examples:
         clear_logs()
     else:
         parser.print_help()
-    
-    # Subtle affiliate footer for monitoring-related commands
-    if args.command in ("check", "stats", "list"):
-        print("\n" + "="*60)
-        print("🖥️  Need reliable hosting? Deploy on DigitalOcean:")
-        print("   https://www.digitalocean.com/?ref=pdresearcher")
-        print("   ($200 free credit for new users)")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,171 @@
+═══════════════════════════════════════════════════════════════════════
+                        FOLLOW-UP AUTOPILOT
+                          by PD Systems
+═══════════════════════════════════════════════════════════════════════
+
+Stop letting leads go cold. We'll build your custom follow-up automation
+system that generates personalized message drafts and reminder schedules
+across any communication channel.
+
+───────────────────────────────────────────────────────────────────────
+WHAT YOU GET
+───────────────────────────────────────────────────────────────────────
+
+A command-line tool that takes your follow-up scenario and instantly
+generates:
+
+  ✓ 3 message draft variations (short/medium/direct)
+  ✓ Smart reminder schedule (relative + absolute timing)
+  ✓ Automated reminder system configuration
+  ✓ Visual daily ping timeline
+  ✓ JSON export for integration with your existing tools
+
+Works with: Email, SMS, Slack, Discord, LinkedIn DM, or any channel.
+
+───────────────────────────────────────────────────────────────────────
+PRICING TIERS
+───────────────────────────────────────────────────────────────────────
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ STARTER - $200                                                      │
+├─────────────────────────────────────────────────────────────────────┤
+│ • Core tool with all features                                       │
+│ • Documentation + usage examples                                    │
+│ • Email/Text/DM channel support                                     │
+│ • Standard reminder scheduling                                      │
+│ • 2 business day turnaround                                         │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PROFESSIONAL - $400                                                 │
+├─────────────────────────────────────────────────────────────────────┤
+│ Everything in STARTER, plus:                                        │
+│ • Custom tone/style training on your brand voice                    │
+│ • Integration with your CRM/tool stack                              │
+│ • Slack/Discord/custom channel support                              │
+│ • A/B testing framework for draft comparison                        │
+│ • 3-5 business day turnaround                                       │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ ENTERPRISE - $800                                                   │
+├─────────────────────────────────────────────────────────────────────┤
+│ Everything in PROFESSIONAL, plus:                                   │
+│ • Multi-channel sequence automation (email → text → call)           │
+│ • Response detection + auto-pause on reply                          │
+│ • Team templates library (sales/partnerships/recruiting)            │
+│ • API integration with your existing automation platform            │
+│ • Priority support + onboarding session                             │
+│ • 5-7 business day turnaround                                       │
+└─────────────────────────────────────────────────────────────────────┘
+
+───────────────────────────────────────────────────────────────────────
+WHAT YOU SEND US
+───────────────────────────────────────────────────────────────────────
+
+To get started, provide:
+
+  1. Your preferred channels (email, text, Slack, etc.)
+  2. Sample follow-up scenarios (3-5 examples of typical use cases)
+  3. Tone preferences (formal/casual, direct/friendly, etc.)
+  4. Existing templates or brand voice guidelines (if any)
+  5. Your tech stack (optional, for integrations)
+
+For PROFESSIONAL & ENTERPRISE tiers, also include:
+
+  6. API credentials or integration requirements
+  7. Team size and roles (for team templates)
+  8. Desired response tracking setup (if applicable)
+
+───────────────────────────────────────────────────────────────────────
+DELIVERABLES
+───────────────────────────────────────────────────────────────────────
+
+ALL TIERS:
+  • Python CLI tool (standalone, no dependencies)
+  • Complete documentation with examples
+  • Installation + quick start guide
+  • 30-day email support
+
+PROFESSIONAL & ENTERPRISE:
+  • Custom configuration file for your brand
+  • Integration code/scripts
+  • Video walkthrough
+  • 90-day extended support
+
+ENTERPRISE ONLY:
+  • API wrapper (if needed)
+  • Team onboarding session (60 min)
+  • Priority Slack/Discord support channel
+  • Quarterly strategy review call
+
+───────────────────────────────────────────────────────────────────────
+TURNAROUND TIME
+───────────────────────────────────────────────────────────────────────
+
+STARTER:        2 business days from requirements received
+PROFESSIONAL:   3-5 business days from requirements received
+ENTERPRISE:     5-7 business days from requirements + integrations done
+
+Rush delivery available: +$150 (24-48 hour turnaround)
+
+───────────────────────────────────────────────────────────────────────
+USE CASES
+───────────────────────────────────────────────────────────────────────
+
+Perfect for:
+
+  • Sales teams following up on demos and proposals
+  • Recruiters tracking candidate pipelines
+  • Business development and partnership outreach
+  • Freelancers managing client communication
+  • Job seekers following up on applications
+  • Anyone who needs to stay top-of-mind without being annoying
+
+───────────────────────────────────────────────────────────────────────
+WHY THIS WORKS
+───────────────────────────────────────────────────────────────────────
+
+Studies show:
+
+  • 80% of sales require 5+ follow-ups, but most people stop at 2
+  • Following up within 24 hours increases response rate by 7x
+  • Personalized messages get 6x higher response than templates
+
+This tool removes the friction. Generate drafts in seconds, never miss
+a follow-up, and keep your pipeline moving.
+
+───────────────────────────────────────────────────────────────────────
+GUARANTEE
+───────────────────────────────────────────────────────────────────────
+
+If the tool doesn't work as described or you're not satisfied with the
+deliverables, we'll revise at no charge or provide a full refund within
+7 days of delivery.
+
+───────────────────────────────────────────────────────────────────────
+HOW TO ORDER
+───────────────────────────────────────────────────────────────────────
+
+1. Choose your tier (STARTER / PROFESSIONAL / ENTERPRISE)
+2. Email your requirements to: orders@pdsystems.example
+3. Receive quote confirmation + timeline
+4. Pay 50% deposit to start work
+5. Review + approve deliverables
+6. Pay remaining 50% + receive final files
+
+Payment methods: Bank transfer, PayPal, credit card, crypto (BTC/ETH)
+
+───────────────────────────────────────────────────────────────────────
+QUESTIONS?
+───────────────────────────────────────────────────────────────────────
+
+Email:   hello@pdsystems.example
+Web:     pdsystems.example/followup-autopilot
+Support: Available Mon-Fri, 9am-6pm EST
+
+───────────────────────────────────────────────────────────────────────
+
+© 2026 PD Systems. All rights reserved.
+
+═══════════════════════════════════════════════════════════════════════
