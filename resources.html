@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Developer Tools | PD_Researcher</title>
+    <meta name="description" content="Curated list of the best developer tools. VPS hosting, password managers, IDEs, and more. Tools we actually use and recommend.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barrowryan89-cloud.github.io/pd-researcher/resources.html">
+    <meta property="og:title" content="Recommended Developer Tools | PD_Researcher">
+    <meta property="og:description" content="Curated list of the best developer tools we use and recommend.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 36px; margin-bottom: 12px; }
+        .subtitle { font-size: 18px; opacity: 0.9; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .intro {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .intro p {
+            color: #666;
+            font-size: 16px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .tool-list {
+            display: grid;
+            gap: 16px;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-2px);
+        }
+        .tool-icon {
+            font-size: 40px;
+            flex-shrink: 0;
+        }
+        .tool-content {
+            flex: 1;
+        }
+        .tool-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .tool-content p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .affiliate-badge {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #888;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: #5a6fd6;
+        }
+        .disclaimer {
+            background: #fffbe6;
+            border: 1px solid #ffe58f;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛠️ Recommended Developer Tools</h1>
+        <p class="subtitle">Tools we use, love, and recommend</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>These are the tools we actually use to build and run PD_Researcher. 
+            When you purchase through these links, we may earn a commission — 
+            at no extra cost to you. We only recommend products we genuinely use.</p>
+        </div>
+
+        <div class="category">
+            <h2>☁️ Cloud Hosting</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <div class="tool-icon">🌊</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>DigitalOcean</h3>
+                        <p>Our go-to for VPS hosting. Simple, fast, and developer-friendly. 
+                        Perfect for running scripts 24/7, hosting APIs, or deploying web apps. 
+                        We use DigitalOcean to host our webhook listeners and monitoring tools.</p>
+                        <a href="https://www.digitalocean.com/?ref=YOURCODE&utm_source=pdresearcher&utm_medium=resources&utm_campaign=hosting" class="btn">Get $200 Free Credit →</a>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">⚡</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>Vultr</h3>
+                        <p>Great alternative to DigitalOcean with competitive pricing. 
+                        Offers high-frequency compute instances that are perfect for 
+                        CPU-intensive tasks like log analysis or batch processing.</p>
+                        <a href="https://www.vultr.com/?ref=YOURCODE" class="btn">Try Vultr →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🔐 Security</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <div class="tool-icon">🔑</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>1Password</h3>
+                        <p>The best password manager for developers. Securely store API keys, 
+                        database passwords, and SSH credentials. Works across all devices 
+                        and integrates with CLI workflows. We use it for all our project secrets.</p>
+                        <a href="https://1password.com/?ref=YOURCODE" class="btn">Start Free Trial →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>💻 Development</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <div class="tool-icon">🐍</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>PyCharm</h3>
+                        <p>The gold standard for Python development. Intelligent code completion, 
+                        built-in debugger, and excellent refactoring tools. We use PyCharm Pro 
+                        for all our Python tool development.</p>
+                        <a href="https://www.jetbrains.com/pycharm/?ref=YOURCODE" class="btn">Try PyCharm →</a>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🐙</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>GitKraken</h3>
+                        <p>Beautiful Git GUI that makes complex operations simple. 
+                        Great for visualizing branch history and resolving merge conflicts. 
+                        Cross-platform and integrates with GitHub, GitLab, and Bitbucket.</p>
+                        <a href="https://www.gitkraken.com/?ref=YOURCODE" class="btn">Download Free →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📊 Monitoring & Error Tracking</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <div class="tool-icon">🐛</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>Sentry</h3>
+                        <p>Real-time error tracking for production applications. 
+                        Catch exceptions before users report them. We use Sentry to monitor 
+                        our webhook endpoints and background jobs.</p>
+                        <a href="https://sentry.io/?ref=YOURCODE" class="btn">Start Free →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🗄️ Databases</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <div class="tool-icon">🐘</div>
+                    <div class="tool-content">
+                        <span class="affiliate-badge">Affiliate Link</span>
+                        <h3>TablePlus</h3>
+                        <p>Modern, native database GUI. Supports PostgreSQL, MySQL, SQLite, 
+                        MongoDB, and more. Clean interface and powerful features make 
+                        database management a breeze.</p>
+                        <a href="https://tableplus.com/?ref=YOURCODE" class="btn">Download →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclosure:</strong> Some links on this page are affiliate links. 
+            We may earn a commission if you purchase through these links — at no 
+            additional cost to you. We only recommend products we genuinely use and 
+            believe in. Our recommendations are never influenced by affiliate commissions.
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">← Back to PD_Researcher</a></p>
+        <p style="margin-top: 20px; font-size: 14px; color: #aaa;">
+            Built with ❤️ by Sand Street Holdings
+        </p>
+    </footer>
+</body>
+</html>
