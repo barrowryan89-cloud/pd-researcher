@@ -249,6 +249,9 @@ Examples:
         
         if not args.json:
             print()
+            print("🔒 Generated a strong password? Store it securely:")
+            print("   1Password — The password manager developers trust")
+            print("   → https://1password.com [affiliate link]")
     else:
         parser.print_help()
 

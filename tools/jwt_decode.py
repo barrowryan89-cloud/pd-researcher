@@ -176,6 +176,9 @@ def decode_jwt(token, verbose=False, no_color=False):
         print(f"   Signature: {signature_b64[:50]}..." if len(signature_b64) > 50 else f"   Signature: {signature_b64}")
     
     print()
+    print("🔐 Working with authentication? Secure your secrets:")
+    print("   → Store API keys with 1Password: https://1password.com [affiliate]")
+    print()
 
 def main():
     parser = argparse.ArgumentParser(

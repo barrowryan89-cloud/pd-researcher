@@ -176,6 +176,11 @@ def print_token_info(token_data: Dict[str, Any], verified: Optional[bool] = None
             print(colorize(f"  ℹ️  Token valid for {days_left} more days", 'green'))
     
     print(colorize("\n" + "═" * 60, 'blue'))
+    
+    print("\n🔐 Working with authentication? Secure your secrets:")
+    print("   → Store API keys securely with 1Password: https://1password.com [affiliate]")
+    print("   → Monitor auth failures with Sentry: https://sentry.io [affiliate]")
+    print()
 
 def main():
     parser = argparse.ArgumentParser(

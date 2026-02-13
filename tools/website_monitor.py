@@ -265,3 +265,8 @@ Examples:
 
 if __name__ == "__main__":
     main()
+    
+    # Affiliate recommendations
+    print("\n🚀 Need reliable hosting for your sites?")
+    print("   → DigitalOcean: $200 free credit — https://m.do.co/c/pdresearcher [affiliate]")
+    print("   → Track production errors: Sentry — https://sentry.io [affiliate]")

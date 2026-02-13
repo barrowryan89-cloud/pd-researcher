@@ -270,6 +270,10 @@ Examples:
     except TimeoutError:
         print(f"⏱️  Request timed out after {args.timeout}s")
         sys.exit(1)
+    
+    print("\n🚀 Building an API? Host it reliably:")
+    print("   → DigitalOcean: $200 free credit for new users — https://m.do.co/c/pdresearcher")
+    print("   → Track API errors with Sentry: https://sentry.io [affiliate]")
 
 if __name__ == '__main__':
     main()
