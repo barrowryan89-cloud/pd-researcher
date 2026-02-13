@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PD_Researcher — Free Developer Tools</title>
-    <meta name="description" content="53 free command-line tools for developers: Dupesweeper, HTML cleaner, JSON formatter, JWT decoder, URL parser, CSV converter, password generator, and more. Zero dependencies.">
+    <title>98 Free CLI Tools for Developers — Zero Dependencies | PD_Researcher</title>
+    <meta name="description" content="98 free command-line tools for developers. Zero dependencies. Pure Python. HTML cleaner, JSON formatter, password generator, port scanner, JWT decoder, and 92 more.">
+    <meta name="keywords" content="CLI tools, developer tools, Python scripts, free tools, command line, automation, zero dependencies">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barrowryan89-cloud.github.io/pd-researcher/">
+    <meta property="og:title" content="98 Free CLI Tools for Developers — Zero Dependencies">
+    <meta property="og:description" content="98 single-purpose Python tools that just work. No pip install. No dependencies. No signup.">
+    <meta property="og:image" content="https://barrowryan89-cloud.github.io/pd-researcher/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://barrowryan89-cloud.github.io/pd-researcher/">
+    <meta property="twitter:title" content="98 Free CLI Tools — Zero Dependencies">
+    <meta property="twitter:description" content="98 single-purpose Python tools that just work. No pip install required.">
+    <meta property="twitter:image" content="https://barrowryan89-cloud.github.io/pd-researcher/og-image.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://barrowryan89-cloud.github.io/pd-researcher/">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PD_Researcher CLI Tools",
+        "description": "98 free command-line tools for developers with zero dependencies",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS, Windows",
+        "programmingLanguage": "Python",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Sand Street Holdings"
+        },
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/barrowryan89-cloud/pd-researcher"
+    }
+    </script>
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -21,6 +64,7 @@
         }
         h1 { font-size: 48px; margin-bottom: 16px; }
         .subtitle { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .highlight { background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; font-weight: 700; }
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -101,9 +145,18 @@
             text-decoration: none;
             font-weight: 600;
             margin: 8px;
+            transition: transform 0.2s;
         }
         .btn:hover {
             background: #333;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
         }
         footer {
             text-align: center;
@@ -124,13 +177,55 @@
             font-size: 32px;
             margin-bottom: 8px;
         }
+        .stats-bar {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-number { font-size: 36px; font-weight: 800; color: #00d084; }
+        .stat-label { font-size: 14px; opacity: 0.8; }
+        .github-stars {
+            margin-top: 24px;
+        }
+        .github-stars iframe {
+            margin: 0 8px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>🛠️ PD_Researcher</h1>
-        <p class="subtitle"><strong>53</strong> free command-line tools for developers. Zero dependencies. Just Python.</p>
+        <p class="subtitle"><span class="highlight">98</span> free command-line tools for developers. Zero dependencies. Just Python.</p>
+        <div class="github-stars">
+            <iframe src="https://ghbtns.com/github-btn.html?user=barrowryan89-cloud&repo=pd-researcher&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160" height="30" title="GitHub"></iframe>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="btn btn-secondary">⭐ Star on GitHub</a>
+        </div>
     </header>
+
+    <div class="stats-bar">
+        <div class="stat">
+            <div class="stat-number">98</div>
+            <div class="stat-label">CLI Tools</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Dependencies</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">1</div>
+            <div class="stat-label">File Each</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Possibilities</div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="features">
@@ -169,7 +264,7 @@
             </div>
         </div>
 
-        <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">🎉 62 Free CLI Tools</h2>
+        <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">🎉 98 Free CLI Tools</h2>
         <p style="text-align: center; color: #666; margin-bottom: 40px;">Zero dependencies. Single-file Python scripts. Copy, paste, run.</p>
 
         <div class="tools-grid">
@@ -211,14 +306,14 @@
             <div class="tool-card">
                 <div class="tool-icon">🔑</div>
                 <h3>Password Generator</h3>
-                <p>Generate secure passwords with entropy analysis. Generate passphrases, check strength, estimate crack time.</p>
-                <div class="code-block">python3 password_generator_free.py generate -l 20</div>
+                <p>Generate secure passwords with entropy analysis. Check strength, estimate crack time.</p>
+                <div class="code-block">python3 password_gen_free.py --length 32</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🕐</div>
                 <h3>Timestamp Converter</h3>
-                <p>Convert between Unix timestamps and human-readable dates. Supports multiple formats.</p>
+                <p>Convert between Unix timestamps and human-readable dates. Multiple formats.</p>
                 <div class="code-block">python3 timestamp_converter_free.py 1707772800</div>
             </div>
 
@@ -232,14 +327,14 @@
             <div class="tool-card">
                 <div class="tool-icon">📊</div>
                 <h3>CSV Processor</h3>
-                <p>Process CSV files: preview, filter, convert to JSON. No spreadsheet software needed.</p>
+                <p>Process CSV files: preview, filter, convert to JSON. No spreadsheet needed.</p>
                 <div class="code-block">python3 csv_processor_free.py data.csv</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">#️⃣</div>
                 <h3>Hash Generator</h3>
-                <p>Generate MD5, SHA1, SHA256 hashes for files and strings. Verify file integrity.</p>
+                <p>Generate MD5, SHA1, SHA256 hashes for files and strings. Verify integrity.</p>
                 <div class="code-block">python3 hash_generator_free.py file.txt</div>
             </div>
 
@@ -253,14 +348,14 @@
             <div class="tool-card">
                 <div class="tool-icon">📁</div>
                 <h3>Duplicate Finder</h3>
-                <p>Find duplicate files by hash. Calculate wasted disk space from duplicates.</p>
+                <p>Find duplicate files by hash. Calculate wasted disk space.</p>
                 <div class="code-block">python3 duplicate_finder_free.py /path/to/scan</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🧹</div>
-                <h3>Dupesweeper ⭐ NEW</h3>
-                <p>Advanced duplicate file manager with delete script generation. Multiple hash algorithms, size filtering.</p>
+                <h3>Dupesweeper ⭐ POPULAR</h3>
+                <p>Advanced duplicate file manager with delete script generation.</p>
                 <div class="code-block">python3 dupesweeper_free.py ~/Downloads --script</div>
             </div>
 
@@ -274,7 +369,7 @@
             <div class="tool-card">
                 <div class="tool-icon">🌐</div>
                 <h3>IP Info</h3>
-                <p>Get IP address information. Public IP, local IP, geolocation hints.</p>
+                <p>Get IP address information. Public IP, local IP, geolocation.</p>
                 <div class="code-block">python3 ip_info_free.py</div>
             </div>
 
@@ -295,42 +390,42 @@
             <div class="tool-card">
                 <div class="tool-icon">📄</div>
                 <h3>Log Analyzer</h3>
-                <p>Analyze log files. Count errors, extract IPs, status codes, URLs.</p>
+                <p>Analyze log files. Count errors, extract IPs, status codes.</p>
                 <div class="code-block">python3 log_analyzer_free.py access.log</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🌐</div>
                 <h3>HTTP Request</h3>
-                <p>Make HTTP requests from CLI. GET, POST with headers and data.</p>
+                <p>Make HTTP requests from CLI. GET, POST with headers.</p>
                 <div class="code-block">python3 http_request_free.py https://api.com/data</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🧪</div>
                 <h3>API Tester</h3>
-                <p>Developer-friendly HTTP client with saved requests, history, and response analysis.</p>
+                <p>Developer-friendly HTTP client with saved requests, history.</p>
                 <div class="code-block">python3 api_tester_free.py GET https://api.github.com</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🪝</div>
                 <h3>Webhook Tester</h3>
-                <p>Local webhook receiver for testing callbacks. Stripe, GitHub, Zapier compatible.</p>
+                <p>Local webhook receiver. Stripe, GitHub, Zapier compatible.</p>
                 <div class="code-block">python3 webhook_tester_free.py -p 8080</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🎨</div>
                 <h3>Color Converter</h3>
-                <p>Convert between HEX, RGB, HSL. Terminal color preview included.</p>
+                <p>Convert between HEX, RGB, HSL. Terminal color preview.</p>
                 <div class="code-block">python3 color_converter_free.py "#FF5733"</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📏</div>
                 <h3>Unit Converter</h3>
-                <p>Convert length, weight, temperature, data, time units.</p>
+                <p>Convert length, weight, temperature, data, time.</p>
                 <div class="code-block">python3 unit_converter_free.py 100 cm m</div>
             </div>
 
@@ -351,124 +446,137 @@
             <div class="tool-card">
                 <div class="tool-icon">🔍</div>
                 <h3>Regex Tester</h3>
-                <p>Test regular expressions with match highlighting and groups.</p>
+                <p>Test regular expressions with match highlighting.</p>
                 <div class="code-block">python3 regex_tester_free.py "[a-z]+" "test"</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">⏰</div>
                 <h3>Cron Parser</h3>
-                <p>Parse cron expressions and explain them in plain English.</p>
+                <p>Parse cron expressions and explain in plain English.</p>
                 <div class="code-block">python3 cron_parser_free.py "*/5 * * * *"</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🎲</div>
                 <h3>Random Generator</h3>
-                <p>Generate passwords, strings, numbers, UUIDs, hex values.</p>
+                <p>Generate passwords, strings, numbers, UUIDs, hex.</p>
                 <div class="code-block">python3 random_gen_free.py password 20</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📊</div>
                 <h3>Line Counter</h3>
-                <p>Count lines, words, characters in files or entire projects.</p>
+                <p>Count lines, words, characters in files or projects.</p>
                 <div class="code-block">python3 line_counter_free.py file.txt</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📡</div>
                 <h3>Website Monitor</h3>
-                <p>Monitor website uptime and response times. Logs to CSV, alerts on downtime.</p>
+                <p>Monitor website uptime and response times. CSV logs.</p>
                 <div class="code-block">python3 website_monitor_free.py check</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">✂️</div>
                 <h3>URL Shortener</h3>
-                <p>Shorten long URLs using is.gd API. Quick, free, no signup required.</p>
+                <p>Shorten long URLs using is.gd API. No signup.</p>
                 <div class="code-block">python3 url_shortener_free.py https://example.com</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📝</div>
                 <h3>Markdown → HTML</h3>
-                <p>Convert Markdown files to styled HTML. Headers, lists, code blocks, links.</p>
+                <p>Convert Markdown to styled HTML. Headers, lists, code.</p>
                 <div class="code-block">python3 markdown_to_html_free.py README.md</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📊</div>
                 <h3>HTML Table Generator</h3>
-                <p>Convert CSV data to styled HTML tables. Striped rows, borders, responsive.</p>
+                <p>Convert CSV to styled HTML tables. Responsive.</p>
                 <div class="code-block">python3 html_table_generator_free.py data.csv</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🖥️</div>
                 <h3>System Info</h3>
-                <p>Display system information: OS, CPU, memory, disk usage. Quick diagnostics.</p>
+                <p>Display system info: OS, CPU, memory, disk.</p>
                 <div class="code-block">python3 system_info_free.py</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🔗</div>
                 <h3>URL Parser</h3>
-                <p>Parse, analyze, encode, and build URLs. Query string manipulation included.</p>
-                <div class="code-block">python3 url_parser_free.py parse "https://example.com?key=value"</div>
+                <p>Parse, analyze, encode URLs. Query string manipulation.</p>
+                <div class="code-block">python3 url_parser_free.py parse "https://..."</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🔐</div>
                 <h3>JWT Decoder</h3>
-                <p>Decode and validate JWT tokens. Inspect claims, check signatures, detect expiration.</p>
-                <div class="code-block">python3 jwt_decoder_free.py "eyJhbGciOiJIUzI1NiJ9..."</div>
+                <p>Decode and validate JWT tokens. Inspect claims.</p>
+                <div class="code-block">python3 jwt_decoder_free.py "eyJhbGci..."</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📊</div>
                 <h3>CSV Converter</h3>
-                <p>Convert CSV ↔ JSON with smart type inference. Auto-detect delimiters, flatten nested data.</p>
+                <p>Convert CSV ↔ JSON. Auto-detect delimiters.</p>
                 <div class="code-block">python3 csv_converter_free.py data.csv --pretty</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📈</div>
                 <h3>Repo Health ⭐ NEW</h3>
-                <p>GitHub repository health analyzer. 0-100 score, activity metrics, risk indicators.</p>
+                <p>GitHub repo health analyzer. 0-100 score.</p>
                 <div class="code-block">python3 repo_health.py vercel/next.js</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">📧</div>
                 <h3>SMTP Verify ⭐ NEW</h3>
-                <p>Test SMTP servers. Check connectivity, TLS support, capabilities without sending email.</p>
+                <p>Test SMTP servers. Check TLS, capabilities.</p>
                 <div class="code-block">python3 smtp_verify.py smtp.gmail.com 587</div>
             </div>
 
             <div class="tool-card">
                 <div class="tool-icon">🔒</div>
                 <h3>SSL Cert ⭐ NEW</h3>
-                <p>SSL certificate inspector. Expiry, issuer, cipher strength, SANs, vulnerabilities.</p>
+                <p>SSL certificate inspector. Expiry, issuer, SANs.</p>
                 <div class="code-block">python3 ssl_cert.py google.com</div>
             </div>
         </div>
 
         <div style="text-align: center; margin: 40px 0;">
-            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="btn">View on GitHub</a>
-            <a href="https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip" class="btn">Download All</a>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="btn">View All 98 on GitHub →</a>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip" class="btn" style="background: #667eea;">Download All</a>
+        </div>
+
+        <div style="background: #fff; border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center; border: 2px solid #e0e0e0;">
+            <h3 style="margin-bottom: 16px;">📋 Categories</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">Data Processing (12)</span>
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">Security (8)</span>
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">Network (12)</span>
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">System (8)</span>
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">Dev Tools (15)</span>
+                <span style="background: #f0f0f0; padding: 8px 16px; border-radius: 20px; font-size: 14px;">Utilities (43)</span>
+            </div>
+            <p style="margin-top: 20px; color: #666;">Plus 50+ more single-purpose utilities</p>
         </div>
 
         <div class="cta-box">
             <h2>💎 Need More Power?</h2>
-            <p>Upgrade to <strong>PD_Researcher v1</strong> for professional features:</p>
+            <p>Upgrade to <strong>PD_Researcher Pro</strong> for professional features:</p>
             <ul style="text-align: left; max-width: 400px; margin: 24px auto; list-style: none;">
-                <li>✅ Batch processing</li>
-                <li>✅ API access</li>
-                <li>✅ Research automation</li>
+                <li>✅ Batch processing (1000+ files)</li>
+                <li>✅ API integrations (OpenAI, Stripe)</li>
+                <li>✅ Research automation pipelines</li>
                 <li>✅ Structured JSON output</li>
                 <li>✅ Custom rules & configs</li>
-                <li>✅ Lifetime updates</li>
+                <li>✅ Priority support</li>
             </ul>
             <div class="price">$29</div>
             <p>One-time payment. Yours forever.</p>
@@ -481,7 +589,7 @@
     <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 60px 20px; text-align: center;">
         <div class="container" style="max-width: 600px;">
             <h2 style="color: #fff; margin-bottom: 16px;">📧 Get Free Tools Weekly</h2>
-            <p style="color: #aaa; margin-bottom: 28px; font-size: 18px;">Join 100+ developers. New CLI tools, automation tips, and early access delivered to your inbox.</p>
+            <p style="color: #aaa; margin-bottom: 28px; font-size: 18px;">Join 100+ developers. New CLI tools, automation tips, early access.</p>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px;">
                 <input type="email" name="email" placeholder="you@example.com" required style="padding: 16px 20px; border: none; border-radius: 8px; font-size: 16px; min-width: 280px; max-width: 100%;">
                 <input type="hidden" name="source" value="github_landing">
@@ -493,7 +601,8 @@
 
     <footer>
         <p>Built with ❤️ by <strong>Sand Street Holdings</strong></p>
-        <p>Questions? <a href="mailto:support@sandstreet.holdings">support@sandstreet.holdings</a></p>
+        <p><a href="https://github.com/barrowryan89-cloud/pd-researcher">GitHub</a> · <a href="mailto:support@sandstreet.holdings">Support</a> · <a href="https://twitter.com/barrowryan89">Twitter</a></p>
+        <p style="margin-top: 20px; font-size: 14px; color: #aaa;">98 free CLI tools. Zero dependencies. MIT licensed.</p>
     </footer>
 </body>
 </html>
