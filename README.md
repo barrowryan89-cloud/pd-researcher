@@ -1,6 +1,6 @@
 # PD Researcher — Free Developer Tools
 
-> 52 command-line utilities that respect your time and privacy.
+> 55 command-line utilities that respect your time and privacy.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
@@ -66,6 +66,11 @@ python tools/qr_generator_free.py "https://yoursite.com"
 | `base64_tool.py` | Base64 encode/decode | `python base64_tool.py encode "text"` |
 | `timestamp_tool.py` | Unix timestamp converter | `python timestamp_tool.py now` |
 | `html_extractor.py` | HTML text/data extractor | `python html_extractor.py --file page.html --all` |
+| `repo_health.py` | GitHub repo health analyzer | `python repo_health.py vercel/next.js --details` |
+| `smtp_verify.py` | SMTP server validator | `python smtp_verify.py smtp.gmail.com 587` |
+| `ssl_cert.py` | SSL certificate inspector | `python ssl_cert.py google.com --verbose` |
+| `dns_probe.py` | DNS record checker | `python dns_probe.py example.com --all` |
+| `port_scan.py` | Fast TCP port scanner | `python port_scan.py scanme.nmap.org --top` |
 
 ---
 
