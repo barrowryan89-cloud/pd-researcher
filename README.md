@@ -6,8 +6,23 @@
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
 [![Tool Count](https://img.shields.io/badge/tools-98-orange.svg)]()
+[![GitHub Stars](https://img.shields.io/github/stars/barrowryan89-cloud/pd-researcher?style=social)]()
 
-**[🚀 Try Online](https://barrowryan89-cloud.github.io/pd-researcher/)** · **[📦 Download All](https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip)** · **[💎 Pro Version](https://barrowryan89-cloud.github.io/pd-researcher/)**
+**[🚀 Try Online](https://barrowryan89-cloud.github.io/pd-researcher/)** · **[📦 Download All](https://github.com/barrowryan89-cloud/pd-researcher/archive/refs/heads/main.zip)** · **[⭐ Star on GitHub](https://github.com/barrowryan89-cloud/pd-researcher)**
+
+![Social Preview](https://barrowryan89-cloud.github.io/pd-researcher/og-image.png)
+
+---
+
+---
+
+## ⚡ Try It Now (30 Seconds)
+
+```bash
+# No clone, no install — just run
+curl -sO https://raw.githubusercontent.com/barrowryan89-cloud/pd-researcher/main/tools/json_formatter_free.py
+python3 json_formatter_free.py data.json
+```
 
 ---
 
@@ -37,6 +52,20 @@ cd pd-researcher
 python tools/json_formatter_free.py data.json
 python tools/port_scanner_free.py example.com
 ```
+
+---
+
+## 🔥 Most Popular Tools
+
+| Tool | What It Does | One-Liner |
+|------|--------------|-----------|
+| `html_cleaner_free.py` | Web → Clean Markdown | `python html_cleaner_free.py https://example.com` |
+| `port_scanner_free.py` | Check open ports | `python port_scanner_free.py example.com` |
+| `password_gen_free.py` | Secure passwords | `python password_gen_free.py --length 32` |
+| `json_formatter_free.py` | Format & validate JSON | `python json_formatter_free.py data.json` |
+| `duplicate_finder_free.py` | Find file duplicates | `python duplicate_finder_free.py ~/Downloads` |
+
+**[See All 98 Tools →](https://barrowryan89-cloud.github.io/pd-researcher/)**
 
 ---
 
@@ -208,7 +237,29 @@ MIT License — use freely, modify freely, ship freely.
 
 ---
 
+## 🌟 Support the Project
+
+If these tools save you time, please consider:
+
+- ⭐ **Star this repo** — helps others discover it
+- 🐦 **Share on Twitter** — spread the word
+- 📝 **Blog about it** — write about your favorite tools
+- 💝 **Sponsor** — help keep tools free and updated
+
+---
+
+## 📱 Connect
+
+- **Landing Page:** https://barrowryan89-cloud.github.io/pd-researcher/
+- **GitHub:** https://github.com/barrowryan89-cloud/pd-researcher
+- **Issues:** Found a bug? [Open an issue](https://github.com/barrowryan89-cloud/pd-researcher/issues)
+
+---
+
 <p align="center">
   <i>Built by developers, for developers.</i><br>
-  <i>98 tools. Zero dependencies. Infinite possibilities.</i>
+  <i>98 tools. Zero dependencies. Infinite possibilities.</i><br><br>
+  <a href="https://github.com/barrowryan89-cloud/pd-researcher">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/barrowryan89-cloud/pd-researcher?style=social">
+  </a>
 </p>
