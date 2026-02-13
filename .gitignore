@@ -1,0 +1,5 @@
+client_secret.json
+*.db
+tools/puppeteer/node_modules/
+
+.env
