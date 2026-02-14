@@ -1,6 +1,6 @@
-# Social Media Content Drafts — 54 Tools
+# Social Media Content Drafts — 59 Tools
 
-**Updated:** 2026-02-14 (Fixed tool count from 98 → 54)
+**Updated:** 2026-02-14 (Fixed tool count from 98 → 59)
 
 ---
 
@@ -50,7 +50,7 @@ It saves me ~5 minutes daily.
 I'm giving away all 59 tools for free.
 No email. No signup. Open source.
 
-Grab them here: https://barrowryan89-cloud.github.io/pd-researcher
+Grab them here: https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 ⭐️ Star the repo if they save you time!
 
@@ -93,7 +93,7 @@ Estimate crack time. No subscription.
 Subscription fatigue is real.
 Own your tools. Keep your data private.
 
-Download the pack: https://barrowryan89-cloud.github.io/pd-researcher
+Download the pack: https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 59 tools. Zero dependencies. MIT licensed.
 
@@ -139,7 +139,7 @@ All zero dependencies. All MIT licensed. All free.
 curl -fsSL https://barrowryan89-cloud.github.io/pd-researcher/install.sh | bash
 ```
 
-**Full list:** https://barrowryan89-cloud.github.io/pd-researcher
+**Full list:** https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 It's not "enterprise grade" (yet), but it works.
 
@@ -201,7 +201,7 @@ No requirements.txt headaches.
 
 Built for developers who value simplicity.
 
-→ https://barrowryan89-cloud.github.io/pd-researcher
+→ https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 ---
 
@@ -236,7 +236,7 @@ The result? I stay in my terminal. I stay in flow state.
 
 All free. All open source.
 
-📦 Download: https://barrowryan89-cloud.github.io/pd-researcher
+📦 Download: https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 #DeveloperProductivity #OpenSource #CLITools #DevOps
 
@@ -269,7 +269,7 @@ Perfect for indie hackers who value:
 ✅ Speed (no context switching)
 ✅ Simplicity (no config files)
 
-Check them out: https://barrowryan89-cloud.github.io/pd-researcher
+Check them out: https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 #IndieHacker #Bootstrapped #DevTools #OpenSource
 
@@ -282,7 +282,7 @@ Stop paying $9/mo for JSON formatters.
 
 I built 54 free CLI tools that run offline with zero dependencies.
 
-→ https://barrowryan89-cloud.github.io/pd-researcher
+→ https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app
 
 **Tweet 2:**
 59 single-file CLI tools.

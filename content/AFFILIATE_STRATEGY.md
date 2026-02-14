@@ -1,4 +1,4 @@
-# Affiliate Strategy — 54 CLI Tools
+# Affiliate Strategy — 59 CLI Tools
 
 **Mission:** Generate $150-750/month in affiliate revenue by integrating targeted CTAs into high-traffic tools.
 

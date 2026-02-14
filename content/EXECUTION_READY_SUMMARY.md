@@ -36,9 +36,11 @@
 | Blocker | Impact | Action Required |
 |---------|--------|-----------------|
 | **GitHub Suspended** | HIGH | Appeal pending — use Vercel fallback |
-| **Vercel 401 Error** | HIGH | Deployment protected — need to configure public access |
+| **Vercel 401 Error** | 🟡 ALMOST FIXED | Deployed, but **Deployment Protection ON** — Ryan must disable in dashboard (2 min) |
 | **No Affiliate Accounts** | MEDIUM | Apply to DigitalOcean, 1Password, Sentry, JetBrains |
 | **Show HN Not Posted** | MEDIUM | Optimal: Tuesday Feb 17, 8-10 AM PST |
+
+**NEW LIVE URL:** `https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app`
 
 ---
 
@@ -46,14 +48,12 @@
 
 ### TODAY (Saturday, Feb 14) — 15 Minutes
 
-1. **Fix Vercel Access** (5 min)
-   ```bash
-   cd /home/barrowryan89/.openclaw/workspace
-   npx vercel --prod
-   ```
-   When prompted, ensure deployment is **public** (not password protected)
+1. **Fix Vercel Access** (2 min)
+   Site is deployed but **Deployment Protection is ON**.
    
-   Alternative: Go to https://vercel.com/dashboard → Project Settings → Deployment Protection → OFF
+   Go to https://vercel.com/dashboard → "workspace" project → Settings → Deployment Protection → **OFF**
+   
+   New URL: `https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app`
 
 2. **Apply to 4 Affiliate Programs** (10 min)
    Open these 4 tabs, apply with the Vercel URL:

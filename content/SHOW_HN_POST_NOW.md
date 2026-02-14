@@ -14,7 +14,7 @@ Show HN: 59 Free CLI Tools – Zero Dependencies, MIT Licensed
 
 **URL:** 
 ```
-https://pd-researcher.vercel.app (after deploy)
+https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app (LIVE)
 OR
 https://github.com/barrowryan89-cloud/pd-researcher (if restored)
 ```
