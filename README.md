@@ -1,4 +1,4 @@
-# ⚡️ 160 Free CLI Tools — Zero Dependencies, MIT Licensed
+# ⚡️ 54 Free CLI Tools — Zero Dependencies, MIT Licensed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
@@ -6,7 +6,7 @@
 
 **Stop writing "quick scripts" that take 2 hours. Start shipping in 10 seconds.**
 
-This repository contains **160 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
+This repository contains **54 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
 
 ## 🚀 What Makes This Different
 
