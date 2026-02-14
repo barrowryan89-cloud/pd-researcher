@@ -1,12 +1,13 @@
-# ⚡️ 54 Free CLI Tools — Zero Dependencies, MIT Licensed
+# 117 Free CLI Tools — Zero Dependencies, MIT Licensed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![Tools](https://img.shields.io/badge/tools-117-green.svg)
+![Python](https://img.shields.io/badge/python-3.7+-brightgreen.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 **Stop writing "quick scripts" that take 2 hours. Start shipping in 10 seconds.**
 
-This repository contains **54 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
+This repository contains **117 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
 
 ## 🚀 What Makes This Different
 
@@ -21,19 +22,42 @@ This repository contains **54 battle-tested, single-file CLI tools**. **Zero dep
 
 ## 🚀 Quick Start
 
-Get the entire suite in seconds:
+Get any tool instantly:
 
 ```bash
-# Install via curl (Recommended)
-curl -fsSL https://barrowryan89-cloud.github.io/pd-researcher/install.sh | bash
+# Download single tool
+curl -fsSL https://raw.githubusercontent.com/barrowryan89-cloud/pd-researcher/main/tools/json_formatter_free.py -o json_formatter.py && python json_formatter.py
 
-# Or clone and install manually
+# Or clone the full suite
 git clone https://github.com/barrowryan89-cloud/pd-researcher.git
-cd pd-researcher
-./install.sh
 ```
 
-## ✨ Why this toolkit?
+## 📊 The Numbers
+
+| Category | Count |
+|----------|-------|
+| **Total Tools** | 117 |
+| **Cloud/DevOps** | 12 |
+| **Security** | 8 |
+| **Data Processing** | 18 |
+| **Productivity** | 15 |
+| **Development** | 35 |
+| **Utilities** | 29 |
+
+## 🛠️ Popular Tools
+
+| Tool | What It Does |
+|------|--------------|
+| `json_formatter_free.py` | Pretty-print JSON with syntax highlighting |
+| `port_scanner_free.py` | Fast TCP port scanning |
+| `git_analyzer_free.py` | Repository statistics and insights |
+| `password_gen_free.py` | Secure password generation |
+| `website_monitor_free.py` | Uptime monitoring with alerts |
+| `csv_converter_free.py` | CSV ↔ JSON, CSV ↔ SQL |
+| `log_analyzer_free.py` | Apache/nginx log analysis |
+| `ssl_cert_free.py` | Certificate expiry monitoring |
+
+## ✨ Why This Toolkit?
 
 I built these tools because I was tired of:
 - ❌ Manually clicking through AWS/GCP consoles
@@ -42,46 +66,33 @@ I built these tools because I was tired of:
 
 **This toolkit solves that.**
 
-## 🛠️ The Tools (Highlights)
+## 🎯 Perfect For
 
-| Category | Tools | Description |
-|----------|-------|-------------|
-| **Cloud** | `aws-nuke-lite`, `s3-sync-fast` | Manage cloud resources without the lag. |
-| **DevOps** | `docker-cleanup`, `k8s-pod-spy` | Keep your environments clean and visible. |
-| **Productivity** | `todo-cli`, `pomodoro-term` | Stay focused without leaving the command line. |
-| **Network** | `port-killer`, `wifi-boost` | Debug network issues instantly. |
-| **Data** | `json-prettify`, `csv-to-sql` | Data transformation one-liners. |
-
-*(Full list available in [docs/TOOLS.md](docs/TOOLS.md))*
-
-## 📸 Usage Examples
-
-**1. Clean up stale Docker containers:**
-```bash
-$ dev-tools docker-clean --force
-> Removing 12 stopped containers...
-> Reclaiming 2.4GB space... Done.
-```
-
-**2. Quick S3 Backup:**
-```bash
-$ dev-tools s3-sync ./local-project s3://my-bucket/backup
-> Syncing 450 files... [====================] 100%
-```
+- **DevOps engineers** who need quick diagnostic scripts
+- **Developers** who want utilities without npm/pip bloat
+- **SREs** who need reliable tooling in restricted environments
+- **Students** learning Python through practical examples
+- **Anyone** who values single-file, readable code
 
 ## 🤝 Contributing
 
-We love community tools!
+Found a bug? Want to add tool #118?
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/amazing-tool`)
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+3. Keep it zero-dependency
+4. Submit a PR
+
+## ☕ Support
+
+If these tools save you time, consider:
+- ⭐ Starring the repo
+- 🐦 Sharing on Twitter/X
+- 📝 Writing about your favorite tool
+- 💰 Supporting via GitHub Sponsors
 
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Built by Developers, for Developers.*
-
+*Built with ❤️ by developers, for developers.*
