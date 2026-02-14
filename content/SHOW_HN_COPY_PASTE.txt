@@ -1,0 +1,22 @@
+# Show HN: 54 free CLI tools, zero dependencies, single-file Python
+
+https://github.com/barrowryan89-cloud/pd-researcher
+
+I was tired of paying for SaaS tools that should have been simple scripts.
+
+So I built 54 CLI utilities — all open source, all single-file Python, zero dependencies. Just copy, paste, and run.
+
+The collection covers:
+• Git workflows (analyzer, stats, cleanup)
+• DevOps (port scanner, website monitor, log analyzer)
+• Security (password generator, file encrypt, cert checker)
+• Data (JSON formatter, CSV converter, timestamp tool)
+• Productivity (pomodoro, todo, text summarizer)
+
+Each tool is intentionally minimal. No pip install. No config files. No signup.
+
+I use these daily in my own workflow. The "boring" ones get the most use — a simple port killer saves me 5 minutes of frustration every time.
+
+Happy to answer questions or take suggestions for tool #55.
+
+Repo: https://github.com/barrowryan89-cloud/pd-researcher
