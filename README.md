@@ -1,12 +1,13 @@
-# ⚡️ 54 Free CLI Tools — Zero Dependencies, MIT Licensed
+# ⚡️ 59 Free CLI Tools — Zero Dependencies, MIT Licensed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![Tools](https://img.shields.io/badge/tools-59-green.svg)
+![Python](https://img.shields.io/badge/python-3.6+-yellow.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 **Stop writing "quick scripts" that take 2 hours. Start shipping in 10 seconds.**
 
-This repository contains **54 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
+This repository contains **59 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
 
 ## 🚀 What Makes This Different
 
@@ -21,52 +22,71 @@ This repository contains **54 battle-tested, single-file CLI tools**. **Zero dep
 
 ## 🚀 Quick Start
 
-Get the entire suite in seconds:
+Get any tool instantly:
 
 ```bash
-# Install via curl (Recommended)
-curl -fsSL https://barrowryan89-cloud.github.io/pd-researcher/install.sh | bash
+# Download and run any tool directly
+curl -O https://raw.githubusercontent.com/barrowryan89-cloud/pd-researcher/main/tools/json_formatter_free.py
+python3 json_formatter_free.py
 
-# Or clone and install manually
+# Or clone the full suite
 git clone https://github.com/barrowryan89-cloud/pd-researcher.git
-cd pd-researcher
-./install.sh
+cd pd-researcher/tools
+python3 password_gen_free.py
 ```
 
-## ✨ Why this toolkit?
+## ✨ The Tools (59 Total)
 
-I built these tools because I was tired of:
-- ❌ Manually clicking through AWS/GCP consoles
-- ❌ Writing "quick" python scripts that took 2 hours
-- ❌ Losing context switching between browser and terminal
+| Category | Count | Tools |
+|----------|-------|-------|
+| **Security** | 6 | password-gen, jwt-decoder, hash-generator, passgen, pwgen, hashgen |
+| **Network** | 8 | port-scanner, ip-info, url-checker, dns-tool, http-request, webhook-tester, portprobe, portscan |
+| **Data/Conversion** | 18 | json-formatter, csv-formatter, html-cleaner, base64-tool, markdown-to-html, color-converter, uuid-generator, timestamp-converter, unit-converter, sql-formatter, csv-processor, csv-tool, html-formatter, html-table-generator, html-entity, base64tool, qr-generator, qrgen |
+| **Development** | 9 | git-analyzer, diff-tool, regex-tester, find-replace, line-counter, difftext, duplicate-finder, text-summarizer, regextest |
+| **System** | 8 | system-info, process-monitor, memory-monitor, directory-size, file-splitter, backup-tool, dupesweeper, envvault |
+| **Monitoring** | 6 | log-analyzer, cron-parser, cron-explainer, crontool, wallet-monitor, loglens |
+| **Web/Utilities** | 4 | url-shortener, random-gen, css-formatter, word-freq |
 
-**This toolkit solves that.**
+### 🔥 Popular Tools
 
-## 🛠️ The Tools (Highlights)
-
-| Category | Tools | Description |
-|----------|-------|-------------|
-| **Cloud** | `aws-nuke-lite`, `s3-sync-fast` | Manage cloud resources without the lag. |
-| **DevOps** | `docker-cleanup`, `k8s-pod-spy` | Keep your environments clean and visible. |
-| **Productivity** | `todo-cli`, `pomodoro-term` | Stay focused without leaving the command line. |
-| **Network** | `port-killer`, `wifi-boost` | Debug network issues instantly. |
-| **Data** | `json-prettify`, `csv-to-sql` | Data transformation one-liners. |
-
-*(Full list available in [docs/TOOLS.md](docs/TOOLS.md))*
-
-## 📸 Usage Examples
-
-**1. Clean up stale Docker containers:**
+**Password Generator** — Secure passwords with entropy analysis
 ```bash
-$ dev-tools docker-clean --force
-> Removing 12 stopped containers...
-> Reclaiming 2.4GB space... Done.
+python3 tools/password_gen_free.py --length 32 --symbols
 ```
 
-**2. Quick S3 Backup:**
+**JSON Formatter** — Pretty-print and validate JSON
 ```bash
-$ dev-tools s3-sync ./local-project s3://my-bucket/backup
-> Syncing 450 files... [====================] 100%
+cat data.json | python3 tools/json_formatter_free.py
+```
+
+**Port Scanner** — Check open ports with banner grabbing
+```bash
+python3 tools/port_scanner_free.py --host example.com --ports 80,443,8080
+```
+
+**Git Analyzer** — Repository health and contributor stats
+```bash
+python3 tools/git_analyzer_free.py /path/to/repo
+```
+
+**HTML Cleaner** — Extract article content from HTML
+```bash
+python3 tools/html_cleaner_free.py --url https://example.com/article
+```
+
+## 📁 Repository Structure
+
+```
+pd-researcher/
+├── tools/              # 59 single-file CLI tools
+│   ├── password_gen_free.py
+│   ├── json_formatter_free.py
+│   ├── port_scanner_free.py
+│   └── ... (56 more)
+├── docs/               # Documentation
+│   └── TOOLS.md       # Full tool reference
+├── index.html         # Landing page
+└── README.md          # This file
 ```
 
 ## 🤝 Contributing
@@ -74,14 +94,25 @@ $ dev-tools s3-sync ./local-project s3://my-bucket/backup
 We love community tools!
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/amazing-tool`)
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+3. Follow the conventions:
+   - Single Python file
+   - Standard library only (no pip installs)
+   - Include `--help` flag
+   - MIT license header
+4. Commit your changes
+5. Push to the branch
+6. Open a Pull Request
 
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
-*Built by Developers, for Developers.*
+## 🔗 Links
 
+- **Landing Page**: https://workspace-mv9axwdi5-ryan-barrows-projects.vercel.app
+- **Repository**: https://github.com/barrowryan89-cloud/pd-researcher
+- **Issues**: https://github.com/barrowryan89-cloud/pd-researcher/issues
+
+---
+*Built by developers, for developers.*
+*Part of [Sand Street Holdings](https://github.com/barrowryan89-cloud)*

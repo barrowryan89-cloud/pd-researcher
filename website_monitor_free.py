@@ -262,6 +262,11 @@ Examples:
         clear_logs()
     else:
         parser.print_help()
+    
+    print("\n" + "="*60)
+    print("🚀 Need reliable hosting for your sites?")
+    print("   Get $200 free credit at DigitalOcean: https://m.do.co/c/[REF]")
+    print("="*60)
 
 if __name__ == "__main__":
     main()

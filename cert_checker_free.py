@@ -89,6 +89,11 @@ def main():
     port = int(sys.argv[2]) if len(sys.argv) > 2 else 443
     
     check_cert(hostname, port)
+    
+    print("\n" + "="*50)
+    print("🔐 Need SSL certificates? Get them cheap at Namecheap")
+    print("   SSL certs from $8/year: https://namecheap.com [affiliate]")
+    print("="*50)
 
 if __name__ == "__main__":
     main()

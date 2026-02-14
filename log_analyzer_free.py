@@ -145,6 +145,8 @@ def main():
     print("\n💡 Want real-time tailing and custom alerting?")
     print("   Upgrade to PD_Researcher v1 for advanced log analysis")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
+    print("\n📊 Local logs are step 1. Get production error tracking with Sentry")
+    print("   Free tier available: https://sentry.io/signup/ [affiliate]")
     print("="*60)
 
 if __name__ == "__main__":

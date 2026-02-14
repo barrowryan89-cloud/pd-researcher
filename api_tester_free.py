@@ -321,6 +321,11 @@ Examples:
     # Exit with error code if request failed
     if not response["success"]:
         sys.exit(1)
+    
+    print("\n" + "="*60)
+    print("📊 Testing APIs locally? Get production monitoring with Sentry")
+    print("   Free tier available: https://sentry.io/signup/ [affiliate]")
+    print("="*60)
 
 if __name__ == "__main__":
     main()

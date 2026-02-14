@@ -194,6 +194,9 @@ def analyze_password(password: str):
         print("  • Great password! Keep it safe in a password manager")
     
     print("\n" + "=" * 60)
+    print("🔐 Store your strong passwords securely with 1Password")
+    print("   Get 25% off your first year: https://1password.com [affiliate]")
+    print("=" * 60)
 
 def main():
     if len(sys.argv) < 2:
