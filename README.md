@@ -1,12 +1,23 @@
-# ⚡️ 100 Free CLI Tools — Zero Dependencies, MIT Licensed
+# ⚡️ 160 Free CLI Tools — Zero Dependencies, MIT Licensed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-**Stop writing the same scripts over and over. Start shipping.**
+**Stop writing "quick scripts" that take 2 hours. Start shipping in 10 seconds.**
 
-This repository contains **100 battle-tested, single-file CLI tools**. Zero dependencies. Just copy, paste, and run. Built to automate your workflow and save you hours every week. From cloud management to local productivity, we've got a tool for that.
+This repository contains **160 battle-tested, single-file CLI tools**. **Zero dependencies.** Just copy, paste, and run. Save hours every week.
+
+## 🚀 What Makes This Different
+
+| Other Toolkits | This Repo |
+|---------------|-----------|
+| `pip install` + 50 dependencies | Zero dependencies, standard library only |
+| Complex config files | Single file, read the code in 30 seconds |
+| Framework lock-in | Drop into any project, any stack |
+| Corporate licensing | MIT licensed, truly free |
+
+**The rule:** If it needs `pip install`, it doesn't belong here.
 
 ## 🚀 Quick Start
 
