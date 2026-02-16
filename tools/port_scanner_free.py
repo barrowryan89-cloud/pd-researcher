@@ -120,8 +120,8 @@ def main():
     print("\n💡 Want full port range and SYN stealth scanning?")
     print("   Upgrade to PD_Researcher v1 for advanced scanning")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
-    print(f"\n🚀 Need a server to scan? Get $200 free credit at DigitalOcean:")
-    print("   https://m.do.co/c/pdresearcher [affiliate]")
+    print("\n🚀 Need a server to scan? Get $200 free credit at DigitalOcean")
+    print("   Perfect for pentesting labs: https://m.do.co/c/[REF_CODE]")
     print("="*60)
 
 if __name__ == "__main__":

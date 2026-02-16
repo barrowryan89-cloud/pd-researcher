@@ -117,10 +117,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    # Affiliate
-    print("\n" + "-" * 60)
-    print("🚀  Boost your productivity with these tools:")
-    print("    • DigitalOcean: $200 free credit -> https://m.do.co/c/pdresearcher")
-    print("    • JetBrains IDEs: The best Python tools -> https://www.jetbrains.com/?utm_source=pdresearcher")
-    print("-" * 60)

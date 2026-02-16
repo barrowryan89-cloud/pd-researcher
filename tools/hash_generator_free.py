@@ -93,8 +93,6 @@ def main():
     print("\n💡 Want file integrity checking and duplicate detection?")
     print("   Upgrade to PD_Researcher v1 for advanced hash tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
-    print("\n🔐 Security tip: Store sensitive files securely with 1Password")
-    print("   → https://1password.com [affiliate link]")
     print("="*60)
 
 if __name__ == "__main__":

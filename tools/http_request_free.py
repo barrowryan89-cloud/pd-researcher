@@ -107,21 +107,7 @@ def main():
     print("\n💡 Want authentication and scripting support?")
     print("   Upgrade to PD_Researcher v1 for advanced HTTP tools")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
-    print("\n🚀 Hosting Recommendation:")
-    print("   Need a server to host your APIs?")
-    print("   DigitalOcean: $200 free credit for new users")
-    print("   https://www.digitalocean.com/")
-    print("\n📊 Monitoring Tip:")
-    print("   Track API errors in production with Sentry")
-    print("   https://sentry.io/")
     print("="*60)
 
 if __name__ == "__main__":
     main()
-
-    # Affiliate
-    print("\n" + "-" * 60)
-    print("🚀  Boost your productivity with these tools:")
-    print("    • DigitalOcean: $200 free credit -> https://m.do.co/c/pdresearcher")
-    print("    • JetBrains IDEs: The best Python tools -> https://www.jetbrains.com/?utm_source=pdresearcher")
-    print("-" * 60)

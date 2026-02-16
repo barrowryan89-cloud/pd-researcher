@@ -128,17 +128,7 @@ def main():
     print("\n💡 Want adjustable summary length or different algorithms?")
     print("   Upgrade to PD_Researcher v1 for advanced summarization")
     print("   Pay with crypto: FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ")
-    print("\n🎓 Learning Recommendation:")
-    print("   Master NLP and text processing with DataCamp")
-    print("   https://www.datacamp.com/")
     print("="*60)
 
 if __name__ == "__main__":
     main()
-
-    # Affiliate
-    print("\n" + "-" * 60)
-    print("🚀  Boost your productivity with these tools:")
-    print("    • DigitalOcean: $200 free credit -> https://m.do.co/c/pdresearcher")
-    print("    • JetBrains IDEs: The best Python tools -> https://www.jetbrains.com/?utm_source=pdresearcher")
-    print("-" * 60)

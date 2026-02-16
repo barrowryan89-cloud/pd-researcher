@@ -176,11 +176,6 @@ def print_token_info(token_data: Dict[str, Any], verified: Optional[bool] = None
             print(colorize(f"  ℹ️  Token valid for {days_left} more days", 'green'))
     
     print(colorize("\n" + "═" * 60, 'blue'))
-    
-    print("\n🔐 Working with authentication? Secure your secrets:")
-    print("   → Store API keys securely with 1Password: https://1password.com [affiliate]")
-    print("   → Monitor auth failures with Sentry: https://sentry.io [affiliate]")
-    print()
 
 def main():
     parser = argparse.ArgumentParser(
@@ -264,6 +259,11 @@ Part of PD_Researcher Free Tools: https://barrowryan89-cloud.github.io/pd-resear
     # Exit with error code if signature verification failed
     if verified is False:
         sys.exit(2)
+    
+    print("\n" + "="*60)
+    print("🔐 Managing secrets? Use 1Password for secure team sharing")
+    print("   Developer-friendly, CLI available: https://1password.com [affiliate]")
+    print("="*60)
 
 if __name__ == '__main__':
     main()
