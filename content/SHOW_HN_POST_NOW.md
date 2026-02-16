@@ -14,7 +14,7 @@ Show HN: 59 Free CLI Tools – Zero Dependencies, MIT Licensed
 
 **URL:** 
 ```
-https://workspace-qmt19boo7-ryan-barrows-projects.vercel.app (LIVE)
+https://workspace-ivory-one.vercel.app (LIVE)
 OR
 https://github.com/barrowryan89-cloud/pd-researcher (if restored)
 ```
@@ -40,7 +40,7 @@ Highlights:
 
 All MIT licensed. No signup. No dependencies.
 
-Live: https://pd-researcher.vercel.app
+Live: https://workspace-ivory-one.vercel.app
 Repo: https://github.com/barrowryan89-cloud/pd-researcher
 
 Would love feedback on which tools you'd actually use.
@@ -65,8 +65,8 @@ Would love feedback on which tools you'd actually use.
 ## Backup Posting Plan (If Main Post Fails)
 
 ### Alternative Title Options:
-1. "I made 98 CLI tools to avoid pip install hell"
-2. "Zero-dependency Python CLI toolkit (98 tools)"
+1. "I made 59 CLI tools to avoid pip install hell"
+2. "Zero-dependency Python CLI toolkit (59 tools)"
 3. "Show HN: Single-file CLI utilities – no install needed"
 
 ### If Flagged/Removed:

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://barrowryan89-cloud.github.io/pd-researcher/sitemap.xml
+Sitemap: https://workspace-ivory-one.vercel.app/sitemap.xml

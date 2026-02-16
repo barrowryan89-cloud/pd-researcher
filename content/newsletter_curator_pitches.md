@@ -1,6 +1,12 @@
 # 📧 NEWSLETTER CURATOR OUTREACH PACK
 **Pre-Written Pitches — Ready to Send**
 
+**Quick Links:**
+- Landing Page + Mirror: https://workspace-ivory-one.vercel.app
+- Direct ZIP Download: https://workspace-ivory-one.vercel.app/pd-researcher.zip
+- GitHub Landing Page: https://workspace-ivory-one.vercel.app
+GitHub Repo: https://github.com/barrowryan89-cloud/pd-researcher
+
 Copy-paste these into emails. Customize the [bracketed] sections.
 
 ---
@@ -11,7 +17,7 @@ Copy-paste these into emails. Customize the [bracketed] sections.
 **Contact:** hello@console.dev
 
 ### Subject Line Options
-1. "Tool submission: 54 free CLI utilities (zero deps)"
+1. "Tool submission: 59 free CLI utilities (zero deps)"
 2. "Open source CLI suite — fits Console's vibe"
 3. "Dev tool: Single-file Python CLI collection"
 
@@ -21,7 +27,7 @@ Hi Console team,
 
 I'm a long-time reader and wanted to submit a tool for consideration:
 
-PD Researcher — A collection of 54 free CLI tools for developers.
+PD Researcher — A collection of 59 free CLI tools for developers.
 
 What makes it different:
 • Zero dependencies (stdlib only)
@@ -33,7 +39,8 @@ I built these because I was tired of "quick scripts" taking 2 hours.
 Each tool solves one specific pain point (AWS cleanup, port killing, 
 JSON formatting, etc.).
 
-Repo: https://github.com/barrowryan89-cloud/pd-researcher
+Landing Page: https://workspace-ivory-one.vercel.app
+GitHub Repo: https://github.com/barrowryan89-cloud/pd-researcher
 
 Would love to see it featured if it fits your criteria.
 
@@ -50,7 +57,7 @@ Best,
 **Contact:** jobs@tldr.tech or editor@tldr.tech
 
 ### Subject Line
-"Tool for TLDR: 54 CLI utilities, zero dependencies"
+"Tool for TLDR: 59 CLI utilities, zero dependencies"
 
 ### Email Template
 ```
@@ -60,7 +67,7 @@ Love the newsletter — been reading for [X months/years].
 
 Quick tool submission:
 
-PD Researcher: 54 free CLI tools
+PD Researcher: 59 free CLI tools
 → Zero dependencies (Python stdlib only)
 → Single-file scripts (just copy and run)
 → AWS, Docker, productivity, security tools
@@ -69,7 +76,8 @@ PD Researcher: 54 free CLI tools
 Perfect TLDR-style pitch: "Stop writing 'quick scripts' that take 2 hours. 
 Start shipping in 10 seconds."
 
-Repo: https://github.com/barrowryan89-cloud/pd-researcher
+Landing Page: https://workspace-ivory-one.vercel.app
+GitHub Repo: https://github.com/barrowryan89-cloud/pd-researcher
 
 Keep up the great work!
 
@@ -92,7 +100,7 @@ Hi Pointer team,
 
 I'd like to submit a resource for Pointer:
 
-PD Researcher — 54 CLI tools built for engineers who value simplicity.
+PD Researcher — 59 CLI tools built for engineers who value simplicity.
 
 Why it matters:
 - Each tool is a single Python file (auditable)
@@ -128,13 +136,13 @@ Hey Changelog team,
 
 Big fan of the show. Submitting a project for consideration:
 
-PD Researcher — 54 free CLI tools, MIT licensed.
+PD Researcher — 59 free CLI tools, MIT licensed.
 
 Key details:
 • Started as personal utilities, now open sourced
 • Strict philosophy: zero dependencies, stdlib only
 • Each tool is a single file (learn from source in 5 min)
-• 54 tools: cloud, DevOps, productivity, security, data
+• 59 tools: cloud, DevOps, productivity, security, data
 
 GitHub: https://github.com/barrowryan89-cloud/pd-researcher
 
@@ -158,7 +166,7 @@ Thanks!
 **Contact:** Founders are active on Twitter: @terminaltrove
 
 ### Subject Line
-"Perfect fit: 54 CLI tools for Terminal Trove"
+"Perfect fit: 59 CLI tools for Terminal Trove"
 
 ### Email Template
 ```
@@ -168,7 +176,7 @@ Your curation is excellent — discovered several tools I now use daily.
 
 I'd love to submit my project:
 
-PD Researcher — 54 free CLI tools for terminal lovers.
+PD Researcher — 59 free CLI tools for terminal lovers.
 
 Why it fits Terminal Trove:
 ✓ Pure CLI (no GUIs, no TUI dependencies)
@@ -211,10 +219,10 @@ Hi Product Hunt team,
 
 Launching on PH soon. Would love consideration for the newsletter:
 
-PD Researcher — 54 free CLI tools for developers.
+PD Researcher — 59 free CLI tools for developers.
 
 PH-ready angle:
-"I built 54 CLI tools to replace my $500/year SaaS subscriptions. 
+"I built 59 CLI tools to replace my $500/year SaaS subscriptions. 
 Zero dependencies. Single-file Python. MIT licensed."
 
 The suite includes tools for AWS, Docker, productivity, security — 
@@ -244,10 +252,10 @@ Hi,
 
 Submitting a project for the Hacker Newsletter:
 
-PD Researcher — 54 free CLI tools.
+PD Researcher — 59 free CLI tools.
 
 HN-style description:
-"Show HN: I built 54 CLI tools because I was tired of 'quick scripts' 
+"Show HN: I built 59 CLI tools because I was tired of 'quick scripts' 
 taking 2 hours. Zero dependencies. Single-file Python. MIT licensed."
 
 Would fit well in the "Tools" or "Code" section.
@@ -269,7 +277,7 @@ Thanks!
 **Contact:** Submit via pythonweekly.com (contact form)
 
 ### Subject Line
-"Python resource: 54 CLI tools (stdlib only)"
+"Python resource: 59 CLI tools (stdlib only)"
 
 ### Email Template
 ```
@@ -277,7 +285,7 @@ Hi Python Weekly team,
 
 Submitting a resource for your newsletter:
 
-PD Researcher — 54 CLI tools, 100% Python standard library.
+PD Researcher — 59 CLI tools, 100% Python standard library.
 
 Python angle:
 - Demonstrates the power of the stdlib
@@ -344,7 +352,7 @@ Write a "Building in Public" style post rather than email.
 
 ### Post Template
 ```
-I built 54 CLI tools as a marketing funnel. Here's the playbook.
+I built 59 CLI tools as a marketing funnel. Here's the playbook.
 
 TL;DR: Free tools → GitHub stars → Credibility → Paid products
 
@@ -356,7 +364,7 @@ The strategy:
 5. Eventually launch paid templates ($19-59)
 
 Current status:
-• 54 tools built
+• 59 tools built
 • GitHub repo live
 • Launching this week
 • Goal: 1000 GitHub stars → 100 newsletter subs → 10 paid customers
@@ -373,7 +381,8 @@ Why this works:
 
 Anyone else using open source as a funnel?
 
-Repo: https://github.com/barrowryan89-cloud/pd-researcher
+Landing Page: https://workspace-ivory-one.vercel.app
+GitHub Repo: https://github.com/barrowryan89-cloud/pd-researcher
 ```
 
 ---

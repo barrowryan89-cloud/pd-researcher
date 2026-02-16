@@ -2,10 +2,13 @@
   "version": 2,
   "name": "pd-researcher",
   "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.zip", "use": "@vercel/static" },
+    { "src": "robots.txt", "use": "@vercel/static" },
+    { "src": "sitemap.xml", "use": "@vercel/static" },
+    { "src": "assets/**/*", "use": "@vercel/static" },
+    { "src": "public/**/*", "use": "@vercel/static" },
+    { "src": "tools/**/*.py", "use": "@vercel/static" }
   ],
   "routes": [
     {

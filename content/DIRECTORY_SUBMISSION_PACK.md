@@ -1,6 +1,9 @@
-# Directory Submission Pack — 54 CLI Tools
+# Directory Submission Pack — 59 CLI Tools
 
 **Mission:** Submit to high-traffic developer directories for backlinks and traffic.
+
+**⚠️ NOTE:** GitHub repo is currently suspended. Use the Vercel URL for submissions where possible, or wait for repo restoration.
+**Vercel URL:** https://workspace-ivory-one.vercel.app
 
 ---
 
@@ -11,8 +14,8 @@
 |-----------|-----|-------------|-------|
 | **Dev.to** | dev.to | 10 min | Post as article with tool list |
 | **Product Hunt** | producthunt.com | 30 min | Requires scheduling, maker comment ready |
-| **Hacker News** | news.ycombinator.com | 5 min | Use SHOW_HN_54_TOOLS_FINAL.md |
-| **GitHub Awesome Lists** | github.com | 15 min | PR to relevant lists |
+| **Hacker News** | news.ycombinator.com | 5 min | Use SHOW_HN_POST_NOW.md |
+| **GitHub Awesome Lists** | github.com | 15 min | BLOCKED until repo restored |
 | **Reddit** | reddit.com | 10 min | r/commandline, r/webdev, r/programming |
 
 ### Tier 2: SEO Value
@@ -36,7 +39,7 @@
 
 ## 📋 Dev.to Article Template
 
-**Title:** 54 Free Python CLI Tools That Saved Me 100+ Hours
+**Title:** 59 Free Python CLI Tools That Saved Me 100+ Hours
 
 **Tags:** python, cli, developer-tools, productivity, open-source
 
@@ -44,7 +47,7 @@
 
 I was tired of context switching. Every time I needed to validate JSON, convert a timestamp, or check a website's status, I left my terminal. Five minutes later, I'd forgotten what I was working on.
 
-So I built 54 single-purpose CLI tools. Zero dependencies. Single files. MIT licensed.
+So I built 59 single-purpose CLI tools. Zero dependencies. Single files. MIT licensed.
 
 ## The Philosophy
 
@@ -95,12 +98,11 @@ Each tool is:
 ## Quick Start
 
 ```bash
-# Get all 54 tools
-curl -fsSL https://barrowryan89-cloud.github.io/pd-researcher/install.sh | bash
-
-# Or grab just what you need
-curl -O https://raw.githubusercontent.com/barrowryan89-cloud/pd-researcher/main/json_formatter_free.py
-python3 json_formatter_free.py data.json
+# Get the tools (zip download)
+curl -O https://workspace-ivory-one.vercel.app/pd-researcher.zip
+unzip pd-researcher.zip
+cd tools
+python3 json_formatter_free.py --help
 ```
 
 ## Why This Matters
@@ -113,20 +115,20 @@ Most "free" tools become subscription traps. These are actually free:
 
 ## Try Them
 
-📦 GitHub: https://github.com/barrowryan89-cloud/pd-researcher
-🌐 Landing: https://barrowryan89-cloud.github.io/pd-researcher/
+🌐 Landing: https://workspace-ivory-one.vercel.app
+📦 Download: https://workspace-ivory-one.vercel.app/pd-researcher.zip
 
 ---
 
 ## 📋 Product Hunt Launch Kit
 
-**Title:** 54 Free CLI Tools for Developers
+**Title:** 59 Free CLI Tools for Developers
 
 **Tagline:** Zero dependencies. Single files. MIT licensed.
 
 **Description:**
 
-I built 54 single-purpose CLI tools because I was tired of context switching. Every time I left my terminal to validate JSON or check a website, I lost 5 minutes of flow state.
+I built 59 single-purpose CLI tools because I was tired of context switching. Every time I left my terminal to validate JSON or check a website, I lost 5 minutes of flow state.
 
 Each tool is:
 ✅ One Python file (zero dependencies)
@@ -140,7 +142,10 @@ From JSON formatting to port scanning to log analysis — these tools cover the 
 
 **Makers:** Ryan Barrow (@barrowryan89)
 
-**Screenshots:** Use terminal screenshots of tools in action
+**Screenshots:**
+- Hero: `assets/product-hunt-hero.png` (Brand new 59-tool graphic)
+- Landing: `assets/landing-page-hero.png` (Full site preview)
+- Tools: `assets/tool_shots/` (Terminal screenshots of port_scanner, etc.)
 
 **Launch Time:** Tuesday 12:01 AM PT (optimal for Product Hunt)
 
@@ -152,11 +157,11 @@ From JSON formatting to port scanning to log analysis — these tools cover the 
 ## 📋 Reddit Posts
 
 ### r/commandline
-**Title:** [Showcase] 54 single-file CLI tools, zero dependencies
+**Title:** [Showcase] 59 single-file CLI tools, zero dependencies
 
 **Body:**
 
-I built a collection of 54 Python CLI tools that follow one rule: zero dependencies.
+I built a collection of 59 Python CLI tools that follow one rule: zero dependencies.
 
 Each tool is a single file using only stdlib. No pip install. No requirements.txt. Just copy, paste, run.
 
@@ -167,9 +172,10 @@ Tools include:
 - Password generator with entropy analysis
 - Webhook tester (local receiver)
 - SSL cert inspector
-- And 48 more...
+- And 53 more...
 
-GitHub: https://github.com/barrowryan89-cloud/pd-researcher
+Download: https://workspace-ivory-one.vercel.app/pd-researcher.zip
+Landing: https://workspace-ivory-one.vercel.app
 
 I use these daily to avoid context switching. The philosophy: if I have to leave my terminal, I've already lost.
 
@@ -178,13 +184,13 @@ Feedback welcome!
 ---
 
 ### r/webdev
-**Title:** I built 54 free tools to stop leaving my terminal
+**Title:** I built 59 free tools to stop leaving my terminal
 
 **Body:**
 
 Every context switch costs me 5 minutes of focus. Validating JSON on a website, checking if a server is up, converting timestamps — it all adds up.
 
-So I built 54 single-purpose CLI tools:
+So I built 59 single-purpose CLI tools:
 - Zero dependencies (stdlib only)
 - Single files (read in 30 seconds)
 - MIT licensed (actually free)
@@ -198,21 +204,22 @@ Highlights for web devs:
 
 Quick start:
 ```bash
-curl -fsSL https://barrowryan89-cloud.github.io/pd-researcher/install.sh | bash
+# Download zip
+curl -O https://workspace-ivory-one.vercel.app/pd-researcher.zip
 ```
 
-Full list: https://github.com/barrowryan89-cloud/pd-researcher
+Full list: https://workspace-ivory-one.vercel.app
 
 Would you use these? What other tools would you want?
 
 ---
 
 ### r/programming
-**Title:** 54 Python CLI tools, zero dependencies, MIT licensed
+**Title:** 59 Python CLI tools, zero dependencies, MIT licensed
 
 **Body:**
 
-I was spending 2 hours on "quick scripts" that should take 10 seconds. So I built 54 single-purpose CLI tools.
+I was spending 2 hours on "quick scripts" that should take 10 seconds. So I built 59 single-purpose CLI tools.
 
 **The rules:**
 1. One file per tool
@@ -227,9 +234,9 @@ I was spending 2 hours on "quick scripts" that should take 10 seconds. So I buil
 - System: Log analyze, memory monitor, process list
 - Productivity: Diff, regex test, cron parse, timestamps
 
-GitHub: https://github.com/barrowryan89-cloud/pd-researcher
+Link: https://workspace-ivory-one.vercel.app
 
-All 54 tools are production-tested. I use them daily.
+All 59 tools are production-tested. I use them daily.
 
 ---
 
@@ -243,13 +250,13 @@ All 54 tools are production-tested. I use them daily.
 
 ### PR Template:
 ```
-Add PD_Researcher — 54 single-file CLI tools
+Add PD_Researcher — 59 single-file CLI tools
 
-54 Python CLI tools with zero dependencies. MIT licensed.
+59 Python CLI tools with zero dependencies. MIT licensed.
 
 Categories: Data processing, security, networking, system tools, productivity.
 
-Repo: https://github.com/barrowryan89-cloud/pd-researcher
+Repo: https://github.com/barrowryan89-cloud/pd-researcher (Check if accessible)
 ```
 
 ---
@@ -286,5 +293,5 @@ Repo: https://github.com/barrowryan89-cloud/pd-researcher
 Use `utm_source=directory_name` for each submission to track traffic sources.
 
 Example:
-- Dev.to: `?utm_source=devto&utm_medium=article&utm_campaign=54tools`
-- Product Hunt: `?utm_source=producthunt&utm_medium=launch&utm_campaign=54tools`
+- Dev.to: `?utm_source=devto&utm_medium=article&utm_campaign=59tools`
+- Product Hunt: `?utm_source=producthunt&utm_medium=launch&utm_campaign=59tools`

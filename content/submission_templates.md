@@ -7,17 +7,17 @@ Pre-formatted submission copy for rapid deployment to 25+ directories.
 ## Product Hunt Launch Pack
 
 ### Tagline (60 chars max)
-98 free CLI tools. Zero dependencies. Just works.
+59 free CLI tools. Zero dependencies. Just works.
 
 ### Description (260 chars max)
-98 single-file Python CLI tools that solve everyday developer tasks. No npm install. No pip. No signups. Just copy, paste, and run. From JSON formatting to port scanning to password generation — all zero-dependency, MIT licensed, and completely free.
+59 single-file Python CLI tools that solve everyday developer tasks. No npm install. No pip. No signups. Just copy, paste, and run. From JSON formatting to port scanning to password generation — all zero-dependency, MIT licensed, and completely free.
 
 ### Maker Comment (First Comment)
 Hey Product Hunt! 👋
 
 I built this because I was tired of "npm install" pulling 500 packages just to format JSON. Or downloading 50MB binaries for simple tasks.
 
-**98 single-file Python tools.** Each does one job. Zero dependencies. No pip install required.
+**59 single-file Python tools.** Each does one job. Zero dependencies. No pip install required.
 
 **Popular tools:**
 • json_formatter — Pretty print JSON
@@ -34,7 +34,7 @@ I built this because I was tired of "npm install" pulling 500 packages just to f
 
 I use these daily in my own workflow. Hoping they save you time too.
 
-The paid PD_Researcher suite adds batch processing, API integrations, and research automation — but these 98 tools are free forever.
+The paid PD_Researcher suite adds batch processing, API integrations, and research automation — but these 59 tools are free forever.
 
 What tool would you add? 🛠️
 
@@ -48,12 +48,12 @@ What tool would you add? 🛠️
 ## Hacker News (Show HN)
 
 ### Title Options
-1. Show HN: 98 single-file CLI tools, zero dependencies
-2. Show HN: I built 98 Python CLI tools because npm bloat annoyed me
-3. Show HN: 98 zero-dependency CLI tools for developers
+1. Show HN: 59 single-file CLI tools, zero dependencies
+2. Show HN: I built 59 Python CLI tools because npm bloat annoyed me
+3. Show HN: 59 zero-dependency CLI tools for developers
 
 ### Body Text
-98 single-file Python CLI tools that just work. No pip install. No npm. No dependencies.
+59 single-file Python CLI tools that just work. No pip install. No npm. No dependencies.
 
 **Why:** I got tired of installing 200 npm packages just to format JSON. Or downloading 50MB binaries for simple tasks like checking if a port is open.
 
@@ -79,14 +79,14 @@ Would love feedback on what other tools would be useful.
 ## Reddit r/webdev
 
 ### Title
-I built 98 free CLI tools because I was tired of npm bloat
+I built 59 free CLI tools because I was tired of npm bloat
 
 ### Post Body
 Hey r/webdev,
 
 I'm a developer who got fed up with "npm install" pulling 500 dependencies just to format JSON. Or needing to sign up for yet another SaaS to check if a port is open.
 
-So I built **98 single-file Python CLI tools**. Zero dependencies. No installation. Just copy and run.
+So I built **59 single-file Python CLI tools**. Zero dependencies. No installation. Just copy and run.
 
 **Popular ones:**
 - `html_cleaner_free.py` — Convert any webpage to clean Markdown
@@ -104,7 +104,7 @@ So I built **98 single-file Python CLI tools**. Zero dependencies. No installati
 
 **GitHub:** https://github.com/barrowryan89-cloud/pd-researcher
 
-**Try online:** https://barrowryan89-cloud.github.io/pd-researcher/
+**Try online:** https://workspace-ivory-one.vercel.app/
 
 Would love to know: what repetitive task eats up your time that I could automate?
 
@@ -113,12 +113,12 @@ Would love to know: what repetitive task eats up your time that I could automate
 ## Reddit r/python
 
 ### Title
-98 single-file CLI tools — pure Python, zero dependencies
+59 single-file CLI tools — pure Python, zero dependencies
 
 ### Post Body
 Hey r/python,
 
-I built a collection of **98 single-file CLI tools** in pure Python. No external dependencies. No pip install required. Just standard library.
+I built a collection of **59 single-file CLI tools** in pure Python. No external dependencies. No pip install required. Just standard library.
 
 Each tool is self-contained. Copy one file and it works.
 
@@ -155,7 +155,7 @@ Feedback welcome! What would you add or change?
 ## Reddit r/selfhosted
 
 ### Title
-98 offline CLI tools for privacy-conscious developers
+59 offline CLI tools for privacy-conscious developers
 
 ### Post Body
 Hey r/selfhosted,
@@ -165,7 +165,7 @@ If you're like me, you're tired of:
 - SaaS products requiring accounts
 - Apps that won't work without internet
 
-I built **98 single-file Python CLI tools** that run entirely offline. No network calls (unless you explicitly fetch a URL). No telemetry. No data collection.
+I built **59 single-file Python CLI tools** that run entirely offline. No network calls (unless you explicitly fetch a URL). No telemetry. No data collection.
 
 **Privacy-focused tools:**
 - `password_gen_free.py` — Local password generation
@@ -185,7 +185,7 @@ What offline-first tools do you use daily?
 ## Dev.to Article
 
 ### Title
-I Built 98 CLI Tools in Pure Python (Zero Dependencies)
+I Built 59 CLI Tools in Pure Python (Zero Dependencies)
 
 ### Tags
 #python #cli #opensource #productivity #developer-tools
@@ -204,19 +204,19 @@ I Built 98 CLI Tools in Pure Python (Zero Dependencies)
 ## Indie Hackers
 
 ### Title
-98 free tools → paid product pipeline
+59 free tools → paid product pipeline
 
 ### Post Body
-I shipped 98 free CLI tools as a marketing funnel for my paid product.
+I shipped 59 free CLI tools as a marketing funnel for my paid product.
 
 **The Strategy:**
-1. Build genuinely useful free tools (98 of them)
+1. Build genuinely useful free tools (59 of them)
 2. Get distribution via GitHub, HN, Reddit
 3. Build trust and audience
 4. Offer paid upgrades for power users
 
 **The Numbers (so far):**
-- 98 free tools, 6 with affiliate integrations
+- 59 free tools, 6 with affiliate integrations
 - $135-570/mo projected affiliate revenue
 - $19-59 paid templates for advanced features
 
@@ -235,10 +235,10 @@ Anyone else using free tools as a funnel? What's working?
 PD_Researcher CLI Tools
 
 ### Short Description
-98 single-file Python CLI tools with zero dependencies
+59 single-file Python CLI tools with zero dependencies
 
 ### Full Description
-A collection of 98 single-file Python CLI tools for developers. No installation required — just copy and run. Categories include data processing, security, networking, system utilities, and development tools. All tools use only Python standard library, ensuring they work forever without dependency issues.
+A collection of 59 single-file Python CLI tools for developers. No installation required — just copy and run. Categories include data processing, security, networking, system utilities, and development tools. All tools use only Python standard library, ensuring they work forever without dependency issues.
 
 ### Alternatives To
 - jq (JSON processing)
@@ -246,7 +246,7 @@ A collection of 98 single-file Python CLI tools for developers. No installation 
 - various SaaS converters
 
 ### Website
-https://barrowryan89-cloud.github.io/pd-researcher/
+https://workspace-ivory-one.vercel.app/
 
 ---
 
@@ -256,7 +256,7 @@ https://barrowryan89-cloud.github.io/pd-researcher/
 PD_Researcher
 
 ### Description
-Free CLI toolkit for developers — 98 zero-dependency Python tools
+Free CLI toolkit for developers — 59 zero-dependency Python tools
 
 ### Category
 Developer Tools, Command Line Utilities
@@ -279,7 +279,7 @@ Python 3.6+
 PD_Researcher
 
 ### Description
-98 single-file Python CLI tools. Zero dependencies. MIT licensed.
+59 single-file Python CLI tools. Zero dependencies. MIT licensed.
 
 ### Category
 Python / CLI / Developer Tools
@@ -295,23 +295,23 @@ https://github.com/barrowryan89-cloud/pd-researcher
 PD_Researcher CLI Tools
 
 ### Tagline
-98 free CLI tools for developers
+59 free CLI tools for developers
 
 ### Description
-A collection of 98 single-file Python CLI tools that require zero dependencies. From JSON formatting to password generation to port scanning — all tools run with just Python 3.6+.
+A collection of 59 single-file Python CLI tools that require zero dependencies. From JSON formatting to password generation to port scanning — all tools run with just Python 3.6+.
 
 ### Category
 Developer Tools, Open Source
 
 ### Website
-https://barrowryan89-cloud.github.io/pd-researcher/
+https://workspace-ivory-one.vercel.app/
 
 ---
 
 ## TLDR Newsletter
 
 ### Pitch
-98 zero-dependency CLI tools that just work. No npm install. No pip. No signups.
+59 zero-dependency CLI tools that just work. No npm install. No pip. No signups.
 
 A developer built these to solve the "install 500 packages to format JSON" problem. Each tool is one file, pure Python, MIT licensed.
 
@@ -332,13 +332,13 @@ GitHub: https://github.com/barrowryan89-cloud/pd-researcher
 PD_Researcher CLI Collection
 
 ### One-liner
-98 single-file Python tools for daily dev tasks
+59 single-file Python tools for daily dev tasks
 
 ### Why It Matters
 Developers waste hours installing bloated tools for simple tasks. This collection proves you can do 90% of common workflows with pure Python — no dependencies, no package rot, just copy and run.
 
 ### Try It
-https://barrowryan89-cloud.github.io/pd-researcher/
+https://workspace-ivory-one.vercel.app/
 
 ---
 
@@ -348,7 +348,7 @@ https://barrowryan89-cloud.github.io/pd-researcher/
 PD_Researcher
 
 ### Description
-98 free CLI tools built as a single-file Python collection. Zero dependencies. The creator's strategy: ship free tools, build trust, monetize advanced features.
+59 free CLI tools built as a single-file Python collection. Zero dependencies. The creator's strategy: ship free tools, build trust, monetize advanced features.
 
 ### Link
 https://github.com/barrowryan89-cloud/pd-researcher
@@ -358,10 +358,10 @@ https://github.com/barrowryan89-cloud/pd-researcher
 ## Newsletter Placements (Generic Template)
 
 ### Subject
-98 CLI tools that work without npm or pip
+59 CLI tools that work without npm or pip
 
 ### Body
-Quick one: Found this GitHub repo with 98 single-file Python CLI tools.
+Quick one: Found this GitHub repo with 59 single-file Python CLI tools.
 
 No dependencies. No installation. Just copy and run.
 
@@ -403,7 +403,7 @@ https://github.com/barrowryan89-cloud/pd-researcher
 ## Twitter/X Thread (Standalone)
 
 ### Tweet 1/6 🧵
-I built 98 CLI tools because npm install made me want to throw my laptop.
+I built 59 CLI tools because npm install made me want to throw my laptop.
 
 Here's the story + the tools (all free, zero dependencies):
 
@@ -417,7 +417,7 @@ I got tired of bloat.
 
 ### Tweet 3/6
 The solution:
-98 single-file Python tools.
+59 single-file Python tools.
 
 Each one:
 ✅ One file = one job
@@ -444,7 +444,7 @@ python tools/port_scanner_free.py example.com
 ```
 
 Or use the web UI:
-https://barrowryan89-cloud.github.io/pd-researcher/
+https://workspace-ivory-one.vercel.app/
 
 ### Tweet 6/6
 Why this matters:
@@ -465,7 +465,7 @@ https://github.com/barrowryan89-cloud/pd-researcher
 ### Text
 Developers: tired of "npm install" pulling 500 packages just to format JSON?
 
-I built 98 single-file Python CLI tools. Zero dependencies. No pip install. Just copy and run.
+I built 59 single-file Python CLI tools. Zero dependencies. No pip install. Just copy and run.
 
 **Categories:**
 📊 Data processing (JSON, CSV, Markdown)
@@ -483,7 +483,7 @@ I built 98 single-file Python CLI tools. Zero dependencies. No pip install. Just
 
 GitHub: https://github.com/barrowryan89-cloud/pd-researcher
 
-Web UI: https://barrowryan89-cloud.github.io/pd-researcher/
+Web UI: https://workspace-ivory-one.vercel.app/
 
 Which repetitive task would you automate? Drop a comment.
 

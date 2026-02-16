@@ -1,4 +1,4 @@
-# Reddit r/Python Post — 98 Free CLI Tools
+# Reddit r/Python Post — 59 Free CLI Tools
 
 **Ready to Submit**
 
@@ -7,7 +7,7 @@
 ## Title
 
 ```
-[OC] I built 98 free CLI tools in Python with zero dependencies
+[OC] I built 59 free CLI tools in Python with zero dependencies
 ```
 
 ---
@@ -39,7 +39,6 @@ no "works on my machine." Just copy and run.
 
 **Quick examples:**
 
-```bash
 # Clean HTML to Markdown
 python html_cleaner_free.py https://example.com/article
 
@@ -51,7 +50,6 @@ python port_scanner_free.py scanme.nmap.org --top-ports
 
 # Check SSL certificate
 python ssl_cert.py google.com --days-warning 30
-```
 
 All tools are:
 • Single-file scripts
@@ -60,7 +58,8 @@ All tools are:
 • MIT licensed
 • Pipe-friendly (Unix philosophy)
 
-**GitHub:** https://github.com/barrowryan89-cloud/pd-researcher
+**Live Demo / Download:** https://workspace-ivory-one.vercel.app
+**GitHub:** https://github.com/barrowryan89-cloud/pd-researcher (Repo currently verifying, use Vercel mirror above)
 
 Happy to take feature requests or contributions!
 ```

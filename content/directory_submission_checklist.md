@@ -1,177 +1,112 @@
-# Directory Submission Checklist
+# Directory Submission Checklist — PD_Researcher
 
-**Project:** PD_Researcher 98 CLI Tools  
-**URL:** https://barrowryan89-cloud.github.io/pd-researcher/  
-**Repo:** https://github.com/barrowryan89-cloud/pd-researcher  
+**Project:** 59 Free CLI Tools (Zero Dependencies)
+**Landing URL:** https://workspace-ivory-one.vercel.app  
+**Zip Download:** https://workspace-ivory-one.vercel.app/pd-researcher.zip  
+**Repo:** https://github.com/barrowryan89-cloud/pd-researcher (mirror only until GitHub reinstates the public pages)
+
+> ✅ Use the Vercel URL for every submission form. GitHub Pages remains suspended, so the Vercel mirror is the canonical source.
 
 ---
 
 ## Tier 1: High-Traffic Platforms
 
-| Platform | URL | Status | Date | Notes |
-|----------|-----|--------|------|-------|
-| **Show HN** | news.ycombinator.com/submit | ⏳ Ready | - | Use show_hn_98_tools.md |
-| **Product Hunt** | producthunt.com | ⏳ Pending | - | Need account + gallery images |
-| **Dev.to** | dev.to/new | ⏳ Ready | - | Use devto_article.md |
-| **Indie Hackers** | indiehackers.com/products/new | ⏳ Ready | - | Product page + discussion |
-| **GitHub Topics** | github.com/barrowryan89-cloud/pd-researcher | ✅ Done | - | Add: cli, python, tools, devtools |
+| Platform | URL | Status | Notes / Assets |
+|----------|-----|--------|----------------|
+| **Show HN** | https://news.ycombinator.com/submit | ⏳ Ready | Use `content/SHOW_HN_POST_NOW.md` (updated Feb 14, 2026). Target slot: Tue Feb 17, 8–10 AM PST. |
+| **Product Hunt** | https://www.producthunt.com | ⏳ Prep | Requires thumbnail + gallery. Copy lives in `content/product_hunt_launch_kit.md`. Schedule after affiliate approvals. |
+| **Dev.to** | https://dev.to/ | ⏳ Ready | Article draft: `content/devto_article.md`. Publish same day as Show HN for cross-linking. |
+| **Indie Hackers** | https://www.indiehackers.com/products/new | ⏳ Ready | Reuse Dev.to content; emphasize zero-dependency philosophy. |
+| **GitHub Topics** | https://github.com/barrowryan89-cloud/pd-researcher | ❌ Blocked | Repo visibility throttled; defer until account restriction lifted. |
 
 ---
 
 ## Tier 2: Reddit Communities
 
-| Subreddit | URL | Status | Date | Notes |
-|-----------|-----|--------|------|-------|
-| **r/webdev** | reddit.com/r/webdev | ⏳ Ready | - | "I made 98 free CLI tools" |
-| **r/programming** | reddit.com/r/programming | ⏳ Ready | - | "Stop paying for dev tools" |
-| **r/python** | reddit.com/r/python | ⏳ Ready | - | Python philosophy angle |
-| **r/commandline** | reddit.com/r/commandline | ⏳ Ready | - | Unix tools angle |
-| **r/sysadmin** | reddit.com/r/sysadmin | ⏳ Ready | - | DevOps automation angle |
-| **r/selfhosted** | reddit.com/r/selfhosted | ⏳ Ready | - | Privacy/offline angle |
-| **r/coolgithubprojects** | reddit.com/r/coolgithubprojects | ⏳ Ready | - | GitHub showcase |
+| Subreddit | Status | Notes |
+|-----------|--------|-------|
+| **r/python** | ⏳ Ready | `content/reddit_python_post.md` (59-tool version). Post Tue afternoon to piggyback HN traffic. |
+| **r/programming** | ⏳ Ready | `content/reddit_strategy.md` contains version stressing SaaS-cost savings. |
+| **r/webdev** | ⏳ Ready | Highlight HTML/URL tools. |
+| **r/commandline** | ⏳ Ready | Emphasize single-file CLI ethos. |
+| **r/sysadmin** | ⏳ Ready | Lead with monitoring + security scripts. |
+| **r/selfhosted** | ⏳ Ready | Privacy/offline angle. |
+| **r/coolgithubprojects** | ⏳ Ready | Short showcase w/ Vercel mirror since GitHub pages are down. |
 
 ---
 
 ## Tier 3: Developer Directories
 
-| Directory | URL | Status | Date | Notes |
-|-----------|-----|--------|------|-------|
-| **AlternativeTo** | alternativeto.net | ⏳ Pending | - | List as alternative to paid tools |
-| **StackShare** | stackshare.io | ⏳ Pending | - | Add to developer stacks |
-| **LibHunt** | libhunt.com | ⏳ Pending | - | Open source discovery |
-| **SaaSHub** | saashub.com | ⏳ Pending | - | Software alternatives |
-| **Capterra** | capterra.com | ⏳ Pending | - | Business software category |
-| **G2** | g2.com | ⏳ Pending | - | Software reviews |
-| **Slant** | slant.co | ⏳ Pending | - | Recommendation engine |
-| **Toolify.ai** | toolify.ai | ⏳ Pending | - | AI tool directory |
-| **Futurepedia** | futurepedia.io | ⏳ Pending | - | Tool directory |
-| **TheresAnAIForThat** | theresanaiforthat.com | ⏳ Pending | - | AI tool discovery |
+| Directory | Status | Prep Needed |
+|-----------|--------|-------------|
+| **AlternativeTo** | ⏳ Pending | Need 140-char one-liner + screenshots. Use Pack assets + `content/directory_submission_pack.md`. |
+| **StackShare** | ⏳ Pending | Populate "Tech I Use" with core tools; include link to Vercel landing. |
+| **LibHunt** | ⏳ Pending | Submit via https://www.libhunt.com/projects/new (requires GitHub repo; include Vercel mirror). |
+| **SaaSHub** | ⏳ Pending | 5 feature bullets + pricing ("Free"). |
+| **Toolify.ai** | ⏳ Pending | Position as "Developer Utility" (non-AI but accepted). |
+| **Futurepedia** | ⏳ Pending | Use "Automation / Dev Tools" category, highlight offline usage. |
+| **TheresAnAIForThat** | 🟡 Needs angle | Frame as "AI-optional" developer toolkit (include summarizer demo). |
+| **Terminal Trove** | ⏳ Pending | CLI showcase; attach screenshot of terminal usage. |
 
 ---
 
 ## Tier 4: Awesome Lists (GitHub)
 
-| List | URL | Status | Date | Notes |
-|------|-----|--------|------|-------|
-| **awesome-cli-apps** | sindresorhus/awesome-cli-apps | ⏳ Pending | - | Submit PR |
-| **awesome-python** | vinta/awesome-python | ⏳ Pending | - | CLI section |
-| **awesome-devtools** | moimikey/awesome-devtools | ⏳ Pending | - | Dev tools list |
-| **awesome-open-source** | 24pullrequests/awesome | ⏳ Pending | - | Open source |
-| **awesome-hacker-tools** | ... | ⏳ Pending | - | Security focus |
+| List | Status | Notes |
+|------|--------|-------|
+| **sindresorhus/awesome-cli-apps** | 🟡 Draft required | Prep short description + star count once repo visibility returns. |
+| **vinta/awesome-python** | 🟡 Draft required | Submit to "Command-line Interface Development" section. |
+| **moimikey/awesome-devtools** | 🟡 Draft required | Focus on zero-dependency positioning. |
+| **paralax/awesome-honeypots** | ⏳ Idea | For security tools (port scanner, log analyzer). |
 
 ---
 
 ## Tier 5: Newsletter & Media
 
-| Newsletter | Submit To | Status | Date | Notes |
-|------------|-----------|--------|------|-------|
-| **Console.dev** | console.dev/review | ⏳ Pending | - | Dev tool review request |
-| **TLDR Newsletter** | tldr.tech/submit | ⏳ Pending | - | "98 tools" story |
-| **Pointer.io** | pointer.io/submit | ⏳ Pending | - | GitHub project highlight |
-| **Changelog** | changelog.com/submit | ⏳ Pending | - | Podcast/newsletter |
-| **Hacker Newsletter** | hackernewsletter.com | ⏳ Pending | - | If featured on HN |
-| **Python Weekly** | pythonweekly.com | ⏳ Pending | - | Python newsletter |
-| **PyCoder's Weekly** | pycoders.com | ⏳ Pending | - | Python newsletter |
-| **Boring Cash Cow** | boringcashcow.com | ⏳ Pending | - | Business model angle |
-| **Dense Discovery** | densediscovery.com | ⏳ Pending | - | Indie maker angle |
+| Outlet | Status | Assets |
+|--------|--------|--------|
+| **Console.dev** | ⏳ Ready | Use `content/newsletter_pitches.md` template #1. |
+| **TLDR** | ⏳ Ready | Template #2 in same file. |
+| **Pointer.io** | ⏳ Ready | Short blurb + Vercel link. |
+| **Changelog** | 🟡 Needs story | Pitch "59 tools in 60 days" angle once traction proof available. |
+| **Python Weekly** | ⏳ Ready | Provide 2-sentence summary + GitHub + Vercel link. |
+| **PyCoder's Weekly** | ⏳ Ready | Same as above. |
+| **Dense Discovery** | 🟡 Tailor | Emphasize privacy/offline usage. |
 
 ---
 
-## Tier 6: Python-Specific
+## Tier 6: Python Ecosystem
 
-| Platform | URL | Status | Date | Notes |
-|----------|-----|--------|------|-------|
-| **PyPI** | pypi.org | ⏳ Pending | - | Package as `pd-tools` |
-| **Python Weekly** | pythonweekly.com | ⏳ Pending | - | Newsletter submission |
-| **PyCoder's** | pycoders.com | ⏳ Pending | - | Newsletter submission |
-| **Real Python** | realpython.com | ⏳ Pending | - | Tutorial opportunity |
-| **Talk Python** | talkpython.fm | ⏳ Pending | - | Podcast pitch |
+| Platform | Status | Notes |
+|----------|--------|-------|
+| **PyPI Meta-Package** | 🟥 On hold | Violates "no packaging" philosophy; revisit only if demand spikes. |
+| **Talk Python Podcast** | 🟡 Prep | Need traction metrics (downloads, stars). |
+| **Real Python Feature** | 🟡 Prep | Requires long-form tutorial (draft skeleton in `content/blog-35-free-cli-tools.md`). |
 
 ---
 
-## Tier 7: Hacker/Security Communities
+## Submission Asset Inventory (59-Tool Edition)
 
-| Platform | URL | Status | Date | Notes |
-|----------|-----|--------|------|-------|
-| **Lobsters** | lobste.rs | ⏳ Pending | - | Invite needed |
-| **Hacker News** | news.ycombinator.com | ⏳ Ready | - | Show HN post ready |
-| **Hashnode** | hashnode.com | ⏳ Ready | - | Cross-post dev.to |
-
----
-
-## Submission Assets Checklist
-
-### Visual Assets
-- [x] OG Image (1200x630) — `og-image.png`
-- [ ] Product Hunt Thumbnail (1024x1024)
-- [ ] Gallery Screenshots (3-5 images)
-- [ ] Demo GIFs (optional but recommended)
-
-### Text Assets
-- [x] One-liner description: "98 single-file Python CLI tools with zero dependencies"
-- [x] Short description (under 140 chars)
-- [x] Long description (under 500 chars)
-- [x] Key features list (5-7 items)
-- [x] Show HN post — `show_hn_98_tools.md`
-- [x] Reddit posts — `reddit_python_post.md`
-- [x] Dev.to article — `devto_article.md`
-- [x] Product Hunt copy — `producthunt_launch.md`
-
-### Technical Requirements
-- [x] Landing page live (GitHub Pages)
-- [x] GitHub repo public
-- [x] README optimized
-- [x] License file (MIT)
+- **One-liner (140 chars):** "59 single-file Python CLI tools that run offline with zero dependencies."
+- **Short Description (≤280 chars):** "Stop paying for basic developer utilities. PD_Researcher ships 59 single-purpose CLI tools that run offline, use only the standard library, and are MIT licensed."
+- **Long Description (≤500 chars):** See `content/DIRECTORY_SUBMISSION_PACK.md` (Section: "Why This Matters").
+- **Feature Bullets:**
+  1. 59 single-purpose Python CLI tools (data, security, network, system)
+  2. Zero dependencies — pure stdlib, works on any machine
+  3. Copy/paste ready, readable in under a minute
+  4. MIT licensed & privacy-first (runs entirely offline)
+  5. Includes HTML converter + summarizer demo pages for instant try-out
+- **Screenshots:** `assets/tool_shots/*.png` (terminal shots) + `og-image.png`
+- **Press Quote:** "If it needs `pip install`, it doesn’t belong here." — Ryan Barrow
 
 ---
 
-## Priority Order (Recommended)
+## Runbook
 
-### Week 1: High Impact
-1. Show HN (Friday morning)
-2. Reddit r/webdev (Monday)
-3. Reddit r/programming (Tuesday)
-4. Twitter thread (simultaneous with Show HN)
-5. Dev.to article (Weekend)
+1. Batch submissions by day (e.g., 3 directories per day).
+2. Track completions + backlinks in `content/directory_submissions.md`.
+3. After each submission, paste confirmation links/screenshots into `memory/2026-02-14.md` (or current date).
+4. Monitor referral traffic via Plausible once DNS hooked (todo after affiliate apps).
 
-### Week 2: Community Engagement
-6. Reddit r/python
-7. Reddit r/commandline
-8. Indie Hackers
-9. LinkedIn
-
-### Week 3: Directories
-10. AlternativeTo
-11. StackShare
-12. LibHunt
-13. SaaSHub
-
-### Week 4: Long Tail
-14. Awesome Lists (GitHub PRs)
-15. Newsletter submissions
-16. Product Hunt (prepare for next month)
-
----
-
-## Status Legend
-
-| Symbol | Meaning |
-|--------|---------|
-| ✅ | Done |
-| ⏳ | Ready/Pending |
-| 🔄 | In Progress |
-| ❌ | Blocked/Issue |
-| ⏸️ | On Hold |
-
----
-
-## Tracking Notes
-
-**Last Updated:** 2026-02-13  
-**Next Review:** 2026-02-20  
-**Target:** 15 submissions by end of Week 2  
-
----
-
-*Created by: Autonomous Promotion Engine*  
-*Purpose: Drive traffic, users, and revenue to 98 CLI tools*
+**Last Updated:** 2026-02-14 21:45 UTC  
+**Next Review Target:** 2026-02-16 (post-Show HN prep)

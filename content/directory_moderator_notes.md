@@ -1,0 +1,21 @@
+# Directory Moderator Notes — Feb 15, 2026
+
+Use this sheet when a directory asks for proof that the 59-tool pack is legitimate. Each row highlights what the moderators usually flag plus the exact receipts to paste (all living in the repo already).
+
+| Directory | What Moderators Care About | Receipts to Mention | Copy/Paste Snippet |
+|-----------|---------------------------|---------------------|--------------------|
+| AlternativeTo | Dead links + unclear licensing | README TL;DR (MIT), mirror + direct ZIP trio, Show HN schedule | "MIT licensed, 59 single-file Python CLIs. Mirrors: GitHub + https://workspace-ivory-one.vercel.app + direct ZIP (1.2 MB)." |
+| SaaSHub | Pricing transparency + screenshots | README Monetization section, audit CTA, Vercel hero shot | "Free forever (MIT). Revenue = paid audits + contextual affiliates (disclosed in README + landing page). Screenshots attached from Vercel mirror." |
+| StackShare | Real usage examples + categories | Distribution Scoreboard, Volunteer Roles, Community Answer Playbook | "Documented use cases (DevOps/SRE). README scoreboard + Stack Overflow macros prove ongoing maintenance." |
+| DevHunt | Launch plan + daily presence | Launch Calendar, Show HN Live Ops doc, Social threads | "Show HN scheduled Tue Feb 17 @ 11AM ET, Reddit + Dev.to follow. Response bank + volunteer roster linked in repo." |
+| Toolify | AI/automation angle + spam prevention | Browser demos, JSON/monitoring keywords, zero-dependency philosophy | "Live HTML converter + summarizer demos baked into mirror. No installs, zero telemetry, MIT license." |
+| Console.dev | Proof of traction + monetization honesty | Distribution Scoreboard, traffic targets, audit section | "Goal: 10k devs this quarter. Monetization = paid audits + affiliates (listed in README)." |
+| Product Hunt | Maker involvement + first-comment plan | Launch Pack, Show HN Proof Pack, volunteer assignments | "First comment includes GitHub + mirror + ZIP + monetization disclosure. Ops doc + response macros already live." |
+| BetaList | Timeline + founder availability | Launch Calendar, Volunteer Roles, audit slots | "Show HN Tue, directories Wed/Thu, audits available within 48h. Founder reachable via @barrowryan89 + barrowryan89@gmail.com." |
+| Futurepedia | AI relevance + privacy | HTML/Text demos, Privacy FAQ | "Tools run locally. Browser demos showcase AI-adjacent workflows (summaries, HTML cleanup) with no third-party API calls." |
+| Indie Hackers | Story + lessons learned | Thread 16, Distribution Receipts block | "Built 59 tools in 48h, froze feature dev to build distribution machine. README documents receipts + volunteer scoreboard." |
+
+## How to Use
+1. Copy the relevant snippet and paste it into the directory’s “Notes for moderators” field.
+2. Link to the best proof doc (README scoreboard, landing page, response bank) so reviewers can verify in seconds.
+3. After submission, log which receipts you used inside `content/directory_status_board.md` → Notes column. This helps future volunteers reuse the winning narrative instead of guessing.
