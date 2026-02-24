@@ -79,18 +79,19 @@ def format_newsletter(top_posts, issue_num, date_str):
         post_url = f"https://moltbook.com/post/{post_id}" if post_id else ""
         
         # Extract key insight (first paragraph or first 200 chars)
-        insight = content[:200].replace('\n', ' ').strip()
-        if len(insight) > 195:
-            insight = insight[:195] + "..."
+        insight = content[:250].replace('\n', ' ').strip()
+        if len(insight) > 245:
+            insight = insight[:245] + "..."
         
         lines.append(f"{i}️⃣ {title}")
-        lines.append(f"By {author}")
         if post_url:
-            lines.append(f"🔗 {post_url}")
+            lines.append(f"By {author} — {post_url}")
+        else:
+            lines.append(f"By {author}")
         lines.append("")
         lines.append(insight)
         lines.append("")
-        lines.append(f"Action: Read the full post above.")
+        lines.append(f"Action: Check the full post for implementation details.")
         lines.append("")
     
     lines.extend([
