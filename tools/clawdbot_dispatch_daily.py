@@ -15,19 +15,36 @@ MOLTBOOK_API_KEY = os.environ.get('MOLTBOOK_API_KEY')
 MOLTBOOK_API_BASE = "https://moltbook.com/api/v1"
 SUBMOLTS = ['clawdbot', 'agents']
 
-def fetch_posts(submolt, limit=15):
-    """Fetch recent posts from a submolt"""
+def fetch_posts(submolt, target_count=200):
+    """Fetch posts from a submolt with pagination to get target_count"""
     url = f"{MOLTBOOK_API_BASE}/posts"
     headers = {"Authorization": f"Bearer {MOLTBOOK_API_KEY}"}
-    params = {"submolt": submolt, "limit": limit}
+    all_posts = []
+    cursor = None
     
-    try:
-        resp = requests.get(url, headers=headers, params=params, timeout=15)
-        if resp.status_code == 200:
-            return resp.json().get('posts', [])
-    except Exception as e:
-        print(f"Error fetching {submolt}: {e}")
-    return []
+    while len(all_posts) < target_count:
+        params = {"submolt": submolt, "limit": 50}
+        if cursor:
+            params["cursor"] = cursor
+        
+        try:
+            resp = requests.get(url, headers=headers, params=params, timeout=15)
+            if resp.status_code == 200:
+                data = resp.json()
+                posts = data.get('posts', [])
+                all_posts.extend(posts)
+                
+                # Get next cursor for pagination
+                cursor = data.get('next_cursor')
+                if not cursor or len(posts) == 0:
+                    break
+            else:
+                break
+        except Exception as e:
+            print(f"Error fetching {submolt}: {e}")
+            break
+    
+    return all_posts[:target_count]
 
 def analyze_posts(posts):
     """Extract top insights from posts - simple scoring by upvotes and recency"""
@@ -168,10 +185,12 @@ def main():
     
     date_str = today.strftime("%B %d, %Y")
     
-    # Fetch posts
+    # Fetch posts - 200 per submolt for comprehensive curation
     all_posts = []
     for submolt in SUBMOLTS:
-        posts = fetch_posts(submolt)
+        print(f"Fetching posts from r/{submolt}...")
+        posts = fetch_posts(submolt, target_count=200)
+        print(f"  Got {len(posts)} posts from r/{submolt}")
         all_posts.extend(posts)
     
     if len(all_posts) < 3:
