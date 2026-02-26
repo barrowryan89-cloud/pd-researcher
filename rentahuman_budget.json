@@ -1,33 +1,37 @@
 {
-  "total": 40.0,
+  "total": 100.0,
   "spent": 0,
-  "remaining": 40.0,
-  "plan": "hybrid_cheap",
-  "tasks": [
+  "remaining": 100.0,
+  "plan": "2_week_sprint",
+  "account_status": "pending_user_setup",
+  "week_1_budget": 40,
+  "week_2_budget": 60,
+  "tasks_queued": [
     {
       "id": 1,
       "title": "Design 3 tool icons",
       "budget": 15,
-      "status": "queued"
+      "status": "ready_to_post",
+      "platform": "rentahuman"
     },
     {
       "id": 2,
-      "title": "Create 5 social media graphics",
+      "title": "Create 5 social media graphics", 
       "budget": 15,
-      "status": "queued"
+      "status": "ready_to_post",
+      "platform": "rentahuman"
     },
     {
       "id": 3,
       "title": "Video script review/feedback",
       "budget": 10,
-      "status": "queued"
+      "status": "ready_to_post",
+      "platform": "rentahuman"
     }
   ],
-  "i_will_do_free": [
-    "Affiliate program research",
-    "Landing page copywriting",
-    "Project management"
+  "free_work_completed": [
+    "Affiliate research - 5 programs",
+    "Landing page copy - 500 words"
   ],
-  "saved": 60,
-  "roi_estimate": "20-30x"
+  "notes": "Account setup in progress by user. Ready to execute hires once credentials provided."
 }
