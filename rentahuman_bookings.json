@@ -1,0 +1,73 @@
+{
+  "total_budget": 100,
+  "spent": 85,
+  "remaining": 15,
+  "account_status": "ACTIVE",
+  "platform": "rentahuman.ai",
+  "bookings": [
+    {
+      "id": "hsxvEioOEiRDrx2P2AjM",
+      "task": "DigitalOcean Affiliate Application",
+      "human": "Michael Corrales",
+      "cost": 12,
+      "status": "confirmed"
+    },
+    {
+      "id": "cxlwMXejyn0A3wDBMm59",
+      "task": "Design 3 Tool Icons",
+      "human": "John Siesta",
+      "cost": 15,
+      "status": "confirmed"
+    },
+    {
+      "id": "SVkixkeBrl5xMzFh8q3y",
+      "task": "1Password Affiliate Application",
+      "human": "Michael Corrales",
+      "cost": 12,
+      "status": "confirmed"
+    },
+    {
+      "id": "DNTPvZ9b3td4vRigiFM4",
+      "task": "JetBrains Affiliate Application",
+      "human": "Michael Corrales",
+      "cost": 12,
+      "status": "confirmed"
+    },
+    {
+      "id": "ab5cWsFSXrgVns9WVSIt",
+      "task": "Create 5 Social Media Graphics",
+      "human": "vsevolod eremkin",
+      "cost": 22,
+      "status": "confirmed"
+    },
+    {
+      "id": "2GaD0YHSgaojA3c8OTwi",
+      "task": "Review Demo Video Script",
+      "human": "Jillian Shugrue",
+      "cost": 0,
+      "status": "confirmed",
+      "note": "FREE - volunteered"
+    },
+    {
+      "id": "SkSFwL045AwKYTfpXcIq",
+      "task": "Research 10 Affiliate Programs",
+      "human": "Michael Corrales",
+      "cost": 12,
+      "status": "confirmed"
+    }
+  ],
+  "summary": {
+    "total_bookings": 7,
+    "total_cost": 85,
+    "budget_remaining": 15,
+    "avg_cost_per_task": 12.14,
+    "humans_hired": 4
+  },
+  "timeline": "All tasks scheduled for 2026-02-27",
+  "next_steps": [
+    "Send payments to humans",
+    "Monitor task completion",
+    "Collect deliverables",
+    "Deploy assets and activate affiliate links"
+  ]
+}
