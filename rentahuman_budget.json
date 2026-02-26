@@ -3,29 +3,30 @@
   "spent": 0,
   "remaining": 100.0,
   "plan": "2_week_sprint",
-  "account_status": "pending_user_setup",
+  "account_status": "API_KEY_ACTIVE_BUT_ENDPOINTS_UNKNOWN",
+  "api_key": "rah_df05fc9a14de8fa0bfb2313c704d0b77",
   "week_1_budget": 40,
   "week_2_budget": 60,
-  "tasks_queued": [
+  "tasks": [
     {
       "id": 1,
       "title": "Design 3 tool icons",
       "budget": 15,
-      "status": "ready_to_post",
+      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
       "platform": "rentahuman"
     },
     {
       "id": 2,
-      "title": "Create 5 social media graphics", 
+      "title": "Create 5 social media graphics",
       "budget": 15,
-      "status": "ready_to_post",
+      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
       "platform": "rentahuman"
     },
     {
       "id": 3,
       "title": "Video script review/feedback",
       "budget": 10,
-      "status": "ready_to_post",
+      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
       "platform": "rentahuman"
     }
   ],
@@ -33,5 +34,15 @@
     "Affiliate research - 5 programs",
     "Landing page copy - 500 words"
   ],
-  "notes": "Account setup in progress by user. Ready to execute hires once credentials provided."
+  "notes": "API key provided and authenticated. However, attempted endpoints (/api/jobs, /api/v1/jobs, /api/docs) all return 404. Need correct API documentation or MCP server setup to proceed with job postings.",
+  "attempted_endpoints": [
+    "https://rentahuman.ai/api/jobs",
+    "https://rentahuman.ai/api/v1/jobs",
+    "https://rentahuman.ai/api/docs"
+  ],
+  "next_steps": [
+    "Wait for user to provide correct API documentation",
+    "Or setup MCP server integration",
+    "Or use browser automation once fixed"
+  ]
 }
