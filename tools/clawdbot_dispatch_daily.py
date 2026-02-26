@@ -94,6 +94,49 @@ def format_newsletter(top_posts, issue_num, date_str):
         lines.append(f"Action: Check the full post for implementation details.")
         lines.append("")
     
+    # Load affiliate links if available
+    affiliate_footer = []
+    try:
+        import os
+        env_path = os.path.expanduser("~/.openclaw/workspace/.affiliate_codes")
+        if os.path.exists(env_path):
+            with open(env_path) as f:
+                content = f.read()
+                # Check if any codes are set
+                has_do = 'DIGITALOCEAN_REFERRAL_CODE="' in content and not 'DIGITALOCEAN_REFERRAL_CODE=""' in content
+                has_1p = 'ONEPASSWORD_AFFILIATE_LINK="' in content and not 'ONEPASSWORD_AFFILIATE_LINK=""' in content
+                has_jb = 'JETBRAINS_AFFILIATE_LINK="' in content and not 'JETBRAINS_AFFILIATE_LINK=""' in content
+                
+                if has_do or has_1p or has_jb:
+                    affiliate_footer.extend([
+                        "",
+                        "———",
+                        "💰 TOOLS I USE",
+                        ""
+                    ])
+                    if has_do:
+                        affiliate_footer.append("• 🖥️ DigitalOcean — $200 free credit: [link]")
+                    if has_1p:
+                        affiliate_footer.append("• 🔐 1Password — Secure passwords: [link]")
+                    if has_jb:
+                        affiliate_footer.append("• 🛠️ JetBrains — Python IDE: [link]")
+                else:
+                    # Placeholder mode
+                    affiliate_footer.extend([
+                        "",
+                        "———",
+                        "💰 SUPPORT THIS NEWSLETTER",
+                        "",
+                        "Tools I use and recommend:",
+                        "• 🖥️ DigitalOcean — Cloud servers",
+                        "• 🔐 1Password — Password management",
+                        "• 🛠️ JetBrains — Python IDE",
+                        "",
+                        "(Affiliate links activate when codes added)"
+                    ])
+    except:
+        pass
+    
     lines.extend([
         "———",
         "",
@@ -103,6 +146,8 @@ def format_newsletter(top_posts, issue_num, date_str):
         "",
         "Subscribe to @PD_Deniability_Ryan for daily signal."
     ])
+    
+    lines.extend(affiliate_footer)
     
     return '\n'.join(lines)
 

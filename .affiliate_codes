@@ -1,0 +1,36 @@
+# Affiliate Link Tracker
+# Add your codes below to activate affiliate revenue
+
+# DIGITALOCEAN - $25/sale + 25% recurring
+# Signup: https://www.digitalocean.com/referral-program
+# Status: Pending application
+DIGITALOCEAN_REFERRAL_CODE=""
+
+# 1PASSWORD - 25% of first year ($9-15/sale)
+# Signup: https://1password.com/affiliates (via Impact)
+# Status: Pending application
+ONEPASSWORD_AFFILIATE_LINK=""
+
+# JETBRAINS - 30% of sale ($70-200/sale)
+# Signup: https://www.jetbrains.com/community/affiliate/
+# Status: Pending application
+JETBRAINS_AFFILIATE_LINK=""
+
+# SENTRY - $50-100/signup
+# Signup: https://sentry.io/for/good/
+# Status: Pending application
+SENTRY_AFFILIATE_LINK=""
+
+# TAILSCALE - $10-50/sale
+# Signup: https://tailscale.com/affiliates
+# Status: Not applied
+TAILSCALE_AFFILIATE_LINK=""
+
+# Instructions:
+# 1. Apply to programs above
+# 2. Paste your referral codes/links here
+# 3. Newsletter will automatically include them
+# 4. Revenue starts flowing
+
+# Current status: PLACEHOLDER MODE
+# Affiliate footer shows "[affiliate link coming]" until codes added
