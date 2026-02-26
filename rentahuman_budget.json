@@ -1,47 +1,33 @@
 {
-  "total": 100.0,
+  "total": 40.0,
   "spent": 0,
-  "remaining": 0.0,
+  "remaining": 40.0,
+  "plan": "hybrid_cheap",
   "tasks": [
     {
       "id": 1,
-      "title": "Design 5 tool icons for CLI tools",
-      "description": "Create simple, modern icons for: password generator, port scanner, JSON formatter, website monitor, file encryptor. Format: PNG, 512x512, transparent background.",
-      "budget": 25,
-      "status": "queued",
-      "roi_estimate": "3-5x (use in marketing, GitHub, tools)"
+      "title": "Design 3 tool icons",
+      "budget": 15,
+      "status": "queued"
     },
     {
       "id": 2,
-      "title": "Write landing page copy",
-      "description": "Write compelling sales copy for PD Researcher tools landing page. Focus on: zero dependencies, developer productivity, 54 free tools. 500 words.",
-      "budget": 20,
-      "status": "queued",
-      "roi_estimate": "2-3x (conversion improvement)"
+      "title": "Create 5 social media graphics",
+      "budget": 15,
+      "status": "queued"
     },
     {
       "id": 3,
-      "title": "Create social media assets",
-      "description": "Design 10 Twitter/LinkedIn graphics showcasing tool features. Modern, developer-focused aesthetic. Include tool screenshots.",
-      "budget": 30,
-      "status": "queued",
-      "roi_estimate": "4-6x (traffic increase)"
-    },
-    {
-      "id": 4,
-      "title": "Write demo video script",
-      "description": "60-second script for tool demo video. Show password generator, port scanner, JSON formatter in action. Voiceover friendly.",
-      "budget": 15,
-      "status": "queued",
-      "roi_estimate": "2-4x (YouTube/TikTok content)"
-    },
-    {
-      "id": 5,
-      "title": "Research affiliate programs",
-      "description": "Find 10 high-paying affiliate programs for developer tools. Include: commission rates, cookie duration, approval requirements. Format: spreadsheet.",
+      "title": "Video script review/feedback",
       "budget": 10,
-      "status": "queued",
-      "roi_estimate": "10-20x (revenue stream)"
+      "status": "queued"
     }
-  ]
+  ],
+  "i_will_do_free": [
+    "Affiliate program research",
+    "Landing page copywriting",
+    "Project management"
+  ],
+  "saved": 60,
+  "roi_estimate": "20-30x"
 }
