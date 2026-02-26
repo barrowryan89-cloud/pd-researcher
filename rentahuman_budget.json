@@ -1,48 +1,38 @@
 {
   "total": 100.0,
+  "allocated": 40.0,
   "spent": 0,
   "remaining": 100.0,
   "plan": "2_week_sprint",
-  "account_status": "API_KEY_ACTIVE_BUT_ENDPOINTS_UNKNOWN",
-  "api_key": "rah_df05fc9a14de8fa0bfb2313c704d0b77",
-  "week_1_budget": 40,
-  "week_2_budget": 60,
-  "tasks": [
+  "account_status": "APPROVAL_GATED",
+  "approval_workflow": {
+    "description": "I identify need for human, present case, you approve, I execute hire",
+    "status": "3 requests pending approval"
+  },
+  "pending_requests": [
     {
-      "id": 1,
-      "title": "Design 3 tool icons",
+      "id": "HHR_20260226_201132",
+      "task": "Icon Design",
       "budget": 15,
-      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
-      "platform": "rentahuman"
+      "status": "pending_your_approval"
     },
     {
-      "id": 2,
-      "title": "Create 5 social media graphics",
+      "id": "HHR_20260226_201132",
+      "task": "Social Media Graphics",
       "budget": 15,
-      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
-      "platform": "rentahuman"
+      "status": "pending_your_approval"
     },
     {
-      "id": 3,
-      "title": "Video script review/feedback",
+      "id": "HHR_20260226_201132",
+      "task": "Script Review",
       "budget": 10,
-      "status": "BLOCKED_API_ENDPOINT_UNKNOWN",
-      "platform": "rentahuman"
+      "status": "pending_your_approval"
     }
   ],
   "free_work_completed": [
     "Affiliate research - 5 programs",
     "Landing page copy - 500 words"
   ],
-  "notes": "API key provided and authenticated. However, attempted endpoints (/api/jobs, /api/v1/jobs, /api/docs) all return 404. Need correct API documentation or MCP server setup to proceed with job postings.",
-  "attempted_endpoints": [
-    "https://rentahuman.ai/api/jobs",
-    "https://rentahuman.ai/api/v1/jobs",
-    "https://rentahuman.ai/api/docs"
-  ],
-  "next_steps": [
-    "Wait for user to provide correct API documentation",
-    "Or setup MCP server integration",
-    "Or use browser automation once fixed"
-  ]
+  "notes": "Approval-gated workflow active. I identify needs, present case, you approve. Then I execute on RentAHuman.",
+  "how_to_approve": "Reply with 'approve HHR_ID' or review memory/2026-02-26-human-requests.md"
 }

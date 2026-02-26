@@ -1,0 +1,41 @@
+[
+  {
+    "id": "HHR_20260226_201132",
+    "task_type": "Icon Design",
+    "description": "Design 3 professional icons for CLI tools (password generator, port scanner, JSON formatter). PNG format, 512x512, transparent background.",
+    "justification": "I cannot create visual designs. This requires human aesthetic judgment and graphic design skills.",
+    "budget": 15,
+    "human_criteria": "Graphic designer with icon/portfolio experience. Remote work OK.",
+    "urgency": "normal",
+    "status": "pending_approval",
+    "created_at": "2026-02-26T20:11:32.159113",
+    "approved_at": null,
+    "completed_at": null
+  },
+  {
+    "id": "HHR_20260226_201132",
+    "task_type": "Social Media Graphics",
+    "description": "Create 5 Twitter/LinkedIn graphics showcasing tool features. Modern developer aesthetic.",
+    "justification": "Visual design requires human creativity. I can write copy but cannot create compelling visuals.",
+    "budget": 15,
+    "human_criteria": "Social media designer familiar with tech/developer marketing.",
+    "urgency": "normal",
+    "status": "pending_approval",
+    "created_at": "2026-02-26T20:11:32.159637",
+    "approved_at": null,
+    "completed_at": null
+  },
+  {
+    "id": "HHR_20260226_201132",
+    "task_type": "Script Review",
+    "description": "Review 60-second demo video script. Provide feedback on hook, clarity, pacing, CTA.",
+    "justification": "I can write script but need human perspective on engagement and emotional impact.",
+    "budget": 10,
+    "human_criteria": "Someone who watches tech/demo videos. No professional skills needed, just honest feedback.",
+    "urgency": "low",
+    "status": "pending_approval",
+    "created_at": "2026-02-26T20:11:32.160191",
+    "approved_at": null,
+    "completed_at": null
+  }
+]
