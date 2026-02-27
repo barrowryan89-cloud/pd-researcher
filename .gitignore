@@ -3,3 +3,16 @@ client_secret.json
 tools/puppeteer/node_modules/
 
 .env
+
+# Sensitive files - DO NOT COMMIT
+MEMORY.md
+AGENTS.md
+SOUL.md
+secrets.json
+credentials.json
+keys/
+*.key
+id.json
+BOOTSTRAP.md
+USER.md
+IDENTITY.md
