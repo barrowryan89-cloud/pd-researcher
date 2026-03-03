@@ -137,65 +137,7 @@ def scan_for_tasks():
     """Continuously scan for tasks that need human delegation"""
     tasks = []
     
-    # Task 1: Affiliate Program Applications
-    tasks.append({
-        "task_type": "admin",
-        "task_name": "Apply to DigitalOcean Affiliate Program",
-        "description": "Complete DigitalOcean referral program application. Fill forms, provide website URL, describe audience.",
-        "budget": 10,
-        "success_criteria": "Application submitted, approval received, referral code/link obtained"
-    })
-    
-    tasks.append({
-        "task_type": "admin", 
-        "task_name": "Apply to 1Password Affiliate Program",
-        "description": "Apply via Impact.com for 1Password affiliate program. Complete verification steps.",
-        "budget": 10,
-        "success_criteria": "Application submitted, affiliate link received"
-    })
-    
-    tasks.append({
-        "task_type": "admin",
-        "task_name": "Apply to JetBrains Affiliate Program", 
-        "description": "Complete JetBrains affiliate application. Provide website and audience info.",
-        "budget": 10,
-        "success_criteria": "Affiliate account created, tracking links received"
-    })
-    
-    # Task 2: Design Work
-    tasks.append({
-        "task_type": "creative",
-        "task_name": "Design 3 Tool Icons",
-        "description": "Create professional icons for password generator, port scanner, JSON formatter. PNG, 512x512.",
-        "budget": 15,
-        "success_criteria": "3 PNG files delivered, look professional, consistent style"
-    })
-    
-    tasks.append({
-        "task_type": "creative",
-        "task_name": "Create Social Media Graphics",
-        "description": "Design 5 Twitter/LinkedIn graphics for tool marketing. Modern developer aesthetic.",
-        "budget": 15,
-        "success_criteria": "5 graphics delivered, on-brand, ready to post"
-    })
-    
-    # Task 3: Research
-    tasks.append({
-        "task_type": "research",
-        "task_name": "Find 10 More Affiliate Programs",
-        "description": "Research developer/SaaS affiliate programs. Document commission rates, cookie duration, requirements.",
-        "budget": 10,
-        "success_criteria": "Spreadsheet with 10 programs, all details included"
-    })
-    
-    # Task 4: Admin - Stripe
-    tasks.append({
-        "task_type": "admin",
-        "task_name": "Complete Stripe Account Setup",
-        "description": "Finish Stripe onboarding: verify identity, connect bank, set up webhook, create products.",
-        "budget": 20,
-        "success_criteria": "Stripe dashboard active, payment processing live, webhooks configured"
-    })
+    # Tasks removed per user request.
     
     # Submit all
     for task_data in tasks:

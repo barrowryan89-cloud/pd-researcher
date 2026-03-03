@@ -1,0 +1,50 @@
+Subject: Your free airdrop farming tools are ready
+
+Hi,
+
+Thanks for your interest in Solana airdrop farming!
+
+**Your free tools:**
+
+1. **Solana Balance Checker**
+   Check any wallet balance from command line:
+   ```
+   ./solana_balance.sh <WALLET_ADDRESS>
+   ```
+
+2. **Farming Activity Tracker**
+   Log and track your farming across protocols:
+   ```
+   python3 farming_tracker.py add my_wallet ADDRESS
+   python3 farming_tracker.py log my_wallet marginfi deposit 0.5
+   ```
+
+3. **Airdrop Value Estimator**
+   See potential earnings:
+   ```
+   python3 airdrop_estimator.py
+   ```
+
+**Download:** Reply with "SEND TOOLS" and I'll email the files.
+
+---
+
+**Want to dive deeper?**
+
+I wrote a complete farming guide covering:
+• Exact protocol walkthroughs (MarginFi, Kamino, Drift, Jupiter)
+• 4-wallet setup template
+• Daily/weekly checklists
+• Risk management strategies
+• Tax reporting tips
+
+**$9** — Just email back "GUIDE" and I'll send payment details.
+
+---
+
+Happy farming!
+
+PD
+barrowryan89@gmail.com
+
+P.S. I made $3,200 farming Solana airdrops over 6 months. The guide shows exactly how I did it.

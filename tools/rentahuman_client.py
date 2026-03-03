@@ -37,20 +37,28 @@ TASKS = [
         "roi_estimate": "4-6x (traffic increase)"
     },
     {
-        "id": 4,
-        "title": "Write demo video script",
-        "description": "60-second script for tool demo video. Show password generator, port scanner, JSON formatter in action. Voiceover friendly.",
-        "budget": 15,
-        "status": "queued",
-        "roi_estimate": "2-4x (YouTube/TikTok content)"
-    },
-    {
         "id": 5,
-        "title": "Research affiliate programs",
-        "description": "Find 10 high-paying affiliate programs for developer tools. Include: commission rates, cookie duration, approval requirements. Format: spreadsheet.",
+        "title": "Post Show HN Launch",
+        "description": "Log into your Hacker News account (min 500 karma preferred). Submit: Title: Show HN: 59 Free CLI Tools – Zero Dependencies, MIT Licensed. URL: https://workspace-ivory-one.vercel.app?ref=f6764ea9. Text: I built 59 single-file CLI tools because I was tired of pip install hell. Everything is zero-dependency Python. Copy, paste, run. Live: https://workspace-ivory-one.vercel.app Repo: https://github.com/barrowryan89-cloud/pd-researcher (currently mirroring to Vercel). Would love feedback on which tools you'd actually use.",
         "budget": 10,
         "status": "queued",
-        "roi_estimate": "10-20x (revenue stream)"
+        "roi_estimate": "10-20x (launch traffic)"
+    },
+    {
+        "id": 6,
+        "title": "Post Launch to Reddit (r/python, r/commandline)",
+        "description": "Post the launch to r/python and r/commandline using the templates provided in content/reddit_posting_schedule.md. Use the tracked link: https://workspace-ivory-one.vercel.app?ref=reddit_launch",
+        "budget": 10,
+        "status": "queued",
+        "roi_estimate": "5-10x (traffic)"
+    },
+    {
+        "id": 7,
+        "title": "Submit Audit Service to ClawHub",
+        "description": "Find out how to submit a tool to ClawHub (Marketplace). Submit 'AI Agent Security Audit'. Use the JSON manifest provided: https://workspace-ivory-one.vercel.app/clawhub_manifest.json (I will upload this). If manual form, fill it out. Price: $49.",
+        "budget": 5,
+        "status": "queued",
+        "roi_estimate": "Direct Sales Channel"
     }
 ]
 
@@ -110,9 +118,17 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1 and sys.argv[1] == "init":
         # Initialize budget and queue all tasks
-        budget = get_budget()
+        # Reset budget file first
+        if os.path.exists(BUDGET_FILE):
+            os.remove(BUDGET_FILE)
+            
+        # Create fresh budget
+        save_budget({"total": BUDGET, "spent": 0, "remaining": BUDGET, "tasks": []})
+        
+        # Queue tasks
         for task in TASKS:
             queue_task(task)
+            
         print(f"\n✅ Initialized with ${BUDGET} budget")
         print(f"📋 Queued {len(TASKS)} tasks")
         

@@ -1,0 +1,66 @@
+# Frequently Asked Questions
+
+## Airdrop Farming Guide ($9)
+
+**Q: What is airdrop farming?**
+A: Using DeFi protocols before they launch a token, in hopes of receiving a retroactive airdrop.
+
+**Q: How much can I make?**
+A: Past Solana airdrops paid $500-50,000 per wallet. Conservative estimate: $500-2000.
+
+**Q: How much do I need to start?**
+A: 1 SOL (~$150) for gas fees across 4 wallets.
+
+**Q: How much time does it take?**
+A: 15 minutes daily for maintenance.
+
+**Q: Is this guaranteed?**
+A: No. Protocols may never launch tokens. You could lose gas fees.
+
+**Q: What protocols are covered?**
+A: MarginFi, Kamino, Drift, Jupiter, Jito.
+
+**Q: Do I need to be technical?**
+A: Basic crypto knowledge helps. The guide walks through everything step-by-step.
+
+## AI Agent Security Audit ($49)
+
+**Q: What do you check?**
+A: Remote execution risks, hardcoded secrets, destructive commands, unsafe Python patterns.
+
+**Q: How long does it take?**
+A: Report delivered within 24 hours of payment.
+
+**Q: What do I get?**
+A: Detailed report with findings and recommendations.
+
+**Q: Is this a full security audit?**
+A: No. This is a static analysis scan. For production systems, get a professional audit.
+
+**Q: What format is the code review?**
+A: Email your code/repo link. I review and send findings via email.
+
+## Complete Bundle ($29)
+
+**Q: What's included?**
+A: Everything — farming guide, security audit, CLI tools, templates, research agent.
+
+**Q: Is this worth it?**
+A: Total value $121. You save $92 (76% off).
+
+**Q: Can I buy individual items?**
+A: Yes — farming guide ($9), security audit ($49).
+
+## Payment
+
+**Q: What payment methods?**
+A: BTC or SOL only.
+
+**Q: How do I pay?**
+A: Send crypto to the address on the product page, then email barrowryan89@gmail.com with the tx hash.
+
+**Q: How long until delivery?**
+A: Within 2 hours of payment confirmation.
+
+**Q: What if I have issues?**
+A: Email barrowryan89@gmail.com. I respond within 24 hours.

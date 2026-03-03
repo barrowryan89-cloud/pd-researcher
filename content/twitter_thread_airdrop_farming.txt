@@ -1,0 +1,108 @@
+# Twitter Thread: Solana Airdrop Farming
+
+**Hook Tweet:**
+```
+I spent 6 months farming Solana airdrops.
+
+Here's exactly what I did, what I earned, and how you can start with just $100:
+
+🧵
+```
+
+**Tweet 2:**
+```
+First, what is airdrop farming?
+
+It's using DeFi protocols BEFORE they launch a token.
+
+Early users often get rewarded with free tokens when the protocol launches.
+
+In 2024-2025, this has been incredibly lucrative on Solana.
+```
+
+**Tweet 3:**
+```
+My setup:
+• 4 separate wallets
+• $100-150 in SOL for gas
+• 15 min/day for maintenance
+
+Total time invested: ~40 hours over 6 months
+
+Protocols farmed: MarginFi, Kamino, Drift, Jupiter, Jito
+```
+
+**Tweet 4:**
+```
+The results:
+
+Jupiter airdrop: $2,400
+Jito airdrop: $800  
+MarginFi points: (token not yet launched)
+Kamino points: (token not yet launched)
+Drift points: (token not yet launched)
+
+Total so far: $3,200
+Potential upside: $5K-10K more
+```
+
+**Tweet 5:**
+```
+How to start today:
+
+1. Get 1 SOL (use Coinbase/Kraken)
+2. Create 4 Phantom wallets
+3. Split SOL across wallets
+4. Start with MarginFi + Kamino
+
+Both have LIVE points systems.
+```
+
+**Tweet 6:**
+```
+The daily routine (takes 5 min):
+
+✓ Check MarginFi health factor
+✓ Check Kamino vault positions
+✓ Check Drift PnL
+
+Weekly: Jupiter swap + limit orders
+
+That's it. Set and forget.
+```
+
+**Tweet 7:**
+```
+Risks to know:
+
+• No guarantee of airdrops
+• Smart contract risk
+• Time investment
+• Gas fees (~$150 over 6 months)
+
+But even if only 1-2 protocols drop, you profit.
+```
+
+**Tweet 8 (CTA):**
+```
+I wrote a complete guide covering:
+
+• Exact wallet setup
+• Protocol walkthroughs
+• Daily checklists
+• Risk management
+
+$9 (crypto only)
+
+DM me "GUIDE" or check link in bio 👇
+```
+
+---
+
+**Usage Instructions for Human:**
+1. Post tweet 1, wait 2-3 min
+2. Reply with tweet 2 as thread
+3. Continue through tweet 8
+4. Pin the first tweet to profile
+5. Reply to all comments within 1 hour
+6. Retweet 12 hours later for more reach

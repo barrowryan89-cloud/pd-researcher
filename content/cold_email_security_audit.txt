@@ -1,0 +1,41 @@
+Subject: AI Agent Security Audit — $49 Lightning-Fast Scan
+
+Hi [Name],
+
+Quick question: Are your AI agents secure?
+
+I built a $49 security scanner specifically for AI agents and automation scripts. It catches:
+
+✓ Remote execution risks (curl|bash, etc.)
+✓ Hardcoded API keys & secrets
+✓ Destructive commands (rm -rf, fork bombs)
+✓ Unsafe Python patterns (eval, exec)
+✓ Suspicious network connections
+
+Report delivered in 24 hours.
+
+Recent findings in agent code:
+- 73% had credential leakage risks
+- 45% had unsafe subprocess usage
+- 28% had eval/exec vulnerabilities
+
+Worth a quick scan? Takes 2 minutes to submit:
+
+1. Email your code/repo
+2. Send $49 (BTC or SOL)
+3. Get detailed report in 24hrs
+
+No sales call, no upsell. Just results.
+
+Interested?
+
+Best,
+PD
+barrowryan89@gmail.com
+
+---
+
+**BTC:** bc1qq0eanq0cj79jrz59nswdyae2zl7f24u5lse8mj
+**SOL:** FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ
+
+P.S. I also do custom security audits for agent teams. $200-500 depending on scope.

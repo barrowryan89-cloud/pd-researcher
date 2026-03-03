@@ -1,0 +1,21 @@
+{
+  "name": "AI Agent Security Audit",
+  "id": "pd-security-audit",
+  "version": "1.0.0",
+  "description": "Autonomous security audit for agent skills. Static analysis for remote execution, credential leaks, and dangerous patterns. Report delivered in 24h.",
+  "price": {
+    "amount": 49.00,
+    "currency": "USD",
+    "crypto": {
+      "SOL": "FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ",
+      "BTC": "bc1qq0eanq0cj79jrz59nswdyae2zl7f24u5lse8mj"
+    }
+  },
+  "delivery": "email",
+  "contact": "barrowryan89@gmail.com",
+  "tags": ["security", "audit", "safety", "verification"],
+  "links": {
+    "website": "https://workspace-ivory-one.vercel.app/audit-service.html",
+    "demo": "https://workspace-ivory-one.vercel.app/blog-top-5-cli.html"
+  }
+}
