@@ -1,40 +1,18 @@
-# Internal Agent Files
-MEMORY.md
-SOUL.md
-USER.md
-AGENTS.md
-HEARTBEAT.md
-IDENTITY.md
-TOOLS.md
-BOOTSTRAP.md
-
-# Memory & Logs
-memory/
-*.log
-logs/
-
-# Secrets & Keys
 client_secret.json
-secrets.json
-keys/
+*.db
+tools/puppeteer/node_modules/
+
 .env
 
-# Dependencies
-node_modules/
-tools/puppeteer/node_modules/
-venv/
-__pycache__/
-
-# Temporary & Build Files
-*.zip
-*.tar.gz
-tmp/
-temp_*
-dist/
-build/
-.vercel/
-.next/
-
-# OS Files
-.DS_Store
-Thumbs.db
+# Sensitive files - DO NOT COMMIT
+MEMORY.md
+AGENTS.md
+SOUL.md
+secrets.json
+credentials.json
+keys/
+*.key
+id.json
+BOOTSTRAP.md
+USER.md
+IDENTITY.md
