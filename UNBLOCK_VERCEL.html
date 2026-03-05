@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><title>UNBLOCK_VERCEL</title></head><body>
+<article>
+<h1>HOW TO FIX VERCEL 401 (Deployment Protection)</h1>
+</p><p>
+<h2>🚨 CRITICAL: The landing page is blocked.</h2>
+Visitors see a password prompt. This MUST be fixed before posting to HN.
+</p><p>
+<h3>Step-by-Step Fix (5 Minutes)</h3>
+</p><p>
+1. <strong>Go to Vercel Dashboard:</strong>
+   - https://vercel.com/dashboard
+</p><p>
+2. <strong>Select Project:</strong>
+   - Find `pd-researcher` in your list.
+</p><p>
+3. <strong>Go to Settings:</strong>
+   - Click the "Settings" tab at the top.
+</p><p>
+4. <strong>Deployment Protection:</strong>
+   - Find "Deployment Protection" in the sidebar.
+   - Look for <strong>"Vercel Authentication"<em>* or *</em>"Password Protection"</strong>.
+   - <strong>TURN IT OFF.</strong> (Toggle to Disabled).
+   - Click "Save".
+</p><p>
+5. <strong>Verify:</strong>
+   - Open your project URL in Incognito Mode.
+   - It should load instantly without a password.
+</p><p>
+---
+</p><p>
+<h3>If You Can't Find It:</h3>
+<li>Sometimes it's under "Security" tab.
+<li>Or check if you are on a Pro trial that enforces it (unlikely for Personal).
+<li>Or delete the project and re-deploy using CLI:
+  ```bash
+  vercel --prod --public
+  ```
+</p><p>
+<h3>Verify Correct URL</h3>
+<li>Once fixed, copy the <em>cleanest</em> URL (e.g., `pd-researcher.vercel.app` if available).
+<li>Update `content/SHOW_HN_POST_NOW.md` with this URL.
+</p><p>
+<strong>Done.</strong>
+</article>
+</body></html>

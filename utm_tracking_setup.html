@@ -1,0 +1,213 @@
+<!DOCTYPE html><html><head><title>utm_tracking_setup</title></head><body>
+<article>
+<h1>UTM Tracking & Analytics Setup</h1>
+</p><p>
+<h2>Why UTM Matters</h2>
+</p><p>
+Without UTM parameters, all traffic looks the same. We need to know:
+<li>Which channel drives the most GitHub stars
+<li>Which content converts to email subscribers
+<li>Where to double down our efforts
+</p><p>
+<h2>UTM Structure</h2>
+</p><p>
+<strong>Base URL:</strong> `https://barrowryan89-cloud.github.io/pd-researcher/`
+<strong>GitHub URL:</strong> `https://github.com/barrowryan89-cloud/pd-researcher`
+</p><p>
+<h3>URL Builder Template</h3>
+</p><p>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source={source}&utm_medium={medium}&utm_campaign={campaign}&utm_content={content}
+```
+</p><p>
+<h2>Pre-Built UTM Links</h2>
+</p><p>
+<h3>Social Media</h3>
+</p><p>
+<strong>Twitter/X (Organic)</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=twitter&utm_medium=social&utm_campaign=tool_launch&utm_content=organic
+```
+</p><p>
+<strong>Twitter/X (Thread)</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=twitter&utm_medium=social&utm_campaign=tool_launch&utm_content=thread
+```
+</p><p>
+<strong>LinkedIn</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=linkedin&utm_medium=social&utm_campaign=tool_launch&utm_content=post
+```
+</p><p>
+<strong>Reddit r/webdev</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=reddit&utm_medium=social&utm_campaign=tool_launch&utm_content=webdev
+```
+</p><p>
+<strong>Reddit r/programming</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=reddit&utm_medium=social&utm_campaign=tool_launch&utm_content=programming
+```
+</p><p>
+<strong>Reddit r/commandline</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=reddit&utm_medium=social&utm_campaign=tool_launch&utm_content=commandline
+```
+</p><p>
+<h3>Content Platforms</h3>
+</p><p>
+<strong>Dev.to Article</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=devto&utm_medium=content&utm_campaign=tool_launch&utm_content=article
+```
+</p><p>
+<strong>Hacker News (Show HN)</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=hackernews&utm_medium=social&utm_campaign=tool_launch&utm_content=show_hn
+```
+</p><p>
+<strong>Product Hunt</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=producthunt&utm_medium=social&utm_campaign=tool_launch&utm_content=launch
+```
+</p><p>
+<h3>Directories & Communities</h3>
+</p><p>
+<strong>GitHub Explore</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=github&utm_medium=referral&utm_campaign=tool_launch&utm_content=explore
+```
+</p><p>
+<strong>Awesome Lists (if featured)</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=awesome_lists&utm_medium=referral&utm_campaign=tool_launch&utm_content=featured
+```
+</p><p>
+<strong>Newsletter (Console, TLDR, etc.)</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source={newsletter_name}&utm_medium=email&utm_campaign=tool_launch&utm_content=feature
+```
+</p><p>
+<h3>Email Newsletter</h3>
+</p><p>
+<strong>Welcome Email</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=email&utm_medium=email&utm_campaign=newsletter&utm_content=welcome
+```
+</p><p>
+<strong>Weekly Digest</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=email&utm_medium=email&utm_campaign=newsletter&utm_content=digest
+```
+</p><p>
+<strong>New Tool Announcement</strong>
+```
+https://github.com/barrowryan89-cloud/pd-researcher?utm_source=email&utm_medium=email&utm_campaign=newsletter&utm_content=new_tool
+```
+</p><p>
+<h2>Campaign Tracking</h2>
+</p><p>
+<h3>Primary Campaign: `tool_launch`</h3>
+Duration: Ongoing
+Goal: Drive initial traffic and GitHub stars
+</p><p>
+<h3>Future Campaigns</h3>
+</p><p>
+<strong>`affiliate_promo`</strong> — When affiliate links are live
+<strong>`paid_ads`</strong> — If we test Twitter/Reddit ads
+<strong>`feature_update`</strong> — New tools added
+<strong>`case_study`</strong> — Success stories/testimonials
+</p><p>
+<h2>Short Link Strategy</h2>
+</p><p>
+For platforms with character limits (Twitter), use:
+<li>`git.new/pd-tools` → GitHub (if available)
+<li>`pd.researcher/tools` → Landing page (custom domain)
+<li>Or: Bitly/Short.io for trackable short links
+</p><p>
+<h2>GitHub Traffic Insights</h2>
+</p><p>
+GitHub provides basic analytics at:
+`https://github.com/barrowryan89-cloud/pd-researcher/graphs/traffic`
+</p><p>
+Shows:
+<li>Referring sites
+<li>Popular content
+<li>Visitor trends
+</p><p>
+<strong>Check weekly</strong> to identify top traffic sources.
+</p><p>
+<h2>Landing Page Analytics</h2>
+</p><p>
+Once GitHub Pages is fixed, add:
+</p><p>
+<h3>Google Analytics 4 (Free)</h3>
+Add to landing page `<head>`:
+```html
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+```
+</p><p>
+<h3>Plausible (Privacy-Friendly Alternative)</h3>
+```html
+<script defer data-domain="barrowryan89-cloud.github.io" src="https://plausible.io/js/script.js"></script>
+```
+</p><p>
+<h3>Key Events to Track</h3>
+</p><p>
+| Event | Trigger | Why |
+|-------|---------|-----|
+| `view_landing` | Page load | Baseline traffic |
+| `click_github` | CTA button click | Conversion to GitHub |
+| `click_tool` | Tool link click | Popular tools |
+| `email_subscribe` | Form submit | Lead generation |
+| `scroll_depth` | 50%, 90% scroll | Content engagement |
+</p><p>
+<h2>Expected Metrics by Channel (First 30 Days)</h2>
+</p><p>
+| Channel | Traffic | Star Conversion | Email Conversion |
+|---------|---------|-----------------|------------------|
+| Hacker News | 1,000 | 3-5% (30-50 stars) | 1% (10 subs) |
+| Reddit | 800 | 4-6% (32-48 stars) | 1.5% (12 subs) |
+| Twitter | 500 | 2-3% (10-15 stars) | 0.5% (3 subs) |
+| Product Hunt | 2,000 | 5-8% (100-160 stars) | 2% (40 subs) |
+| Dev.to | 1,500 | 3-4% (45-60 stars) | 1% (15 subs) |
+| Direct/Other | 500 | 2% (10 stars) | 0.5% (3 subs) |
+</p><p>
+<strong>Total Estimates:</strong>
+<li>Traffic: 6,300 visitors
+<li>GitHub Stars: 227-343
+<li>Email Subscribers: 83
+</p><p>
+<h2>Reporting Dashboard</h2>
+</p><p>
+Create a simple tracking spreadsheet with:
+</p><p>
+| Date | Source | Medium | Visitors | Stars | Emails | Notes |
+|------|--------|--------|----------|-------|--------|-------|
+| 2026-02-14 | twitter | social | 150 | 5 | 2 | Thread posted 9am |
+| 2026-02-14 | hackernews | social | 800 | 35 | 8 | Show HN front page 2hrs |
+</p><p>
+<strong>Review weekly</strong> to identify winning channels.
+</p><p>
+<h2>Action Items</h2>
+</p><p>
+<li>[ ] Set up Google Analytics 4 (free)
+<li>[ ] Add UTM links to all social drafts
+<li>[ ] Create tracking spreadsheet
+<li>[ ] Schedule weekly analytics review
+<li>[ ] Set up GitHub traffic monitoring
+</p><p>
+---
+</p><p>
+<strong>Status:</strong> Ready to implement
+<strong>Blocker:</strong> GitHub Pages 404 must be fixed first
+<strong>Next:</strong> Add GA4 tag to landing page once live
+</article>
+</body></html>

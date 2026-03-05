@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head><title>BACKUP_HOSTING_STRATEGY</title></head><body>
+<article>
+<h1>🌐 Backup Hosting Strategy — GitHub Pages Down</h1>
+</p><p>
+<strong>Status:</strong> GitHub account suspended → Pages 404  
+<strong>Impact:</strong> Landing page inaccessible, affiliate applications blocked  
+<strong>Solution:</strong> Deploy to Vercel/Netlify as backup  
+<strong>Time to deploy:</strong> 15 minutes  
+<strong>Cost:</strong> $0
+</p><p>
+---
+</p><p>
+<h2>🚀 RECOMMENDED: Vercel Deployment</h2>
+</p><p>
+<h3>Why Vercel</h3>
+<li>Zero config for static sites
+<li>GitHub integration (but can deploy without)
+<li>Custom domains free
+<li>Fastest global CDN
+<li>Serverless functions if needed later
+</p><p>
+<h3>Step-by-Step Deployment</h3>
+</p><p>
+<strong>Option A: CLI Deploy (Fastest — No GitHub needed)</strong>
+</p><p>
+```bash
+<h1>1. Install Vercel CLI</h1>
+npm i -g vercel
+</p><p>
+<h1>2. Login (creates account if needed)</h1>
+vercel login
+</p><p>
+<h1>3. Deploy current directory</h1>
+cd /home/barrowryan89/.openclaw/workspace
+vercel --prod
+</p><p>
+<h1>4. Get URL (e.g., pd-researcher.vercel.app)</h1>
+<h1>5. Add custom domain later (free on Vercel)</h1>
+```
+</p><p>
+<strong>Option B: Manual Upload (No CLI needed)</strong>
+</p><p>
+1. Go to https://vercel.com/new
+2. Click "Upload" instead of importing Git
+3. Drag/drop workspace folder
+4. Deploy instantly
+5. Get URL
+</p><p>
+---
+</p><p>
+<h2>🌊 Alternative: Netlify Drop</h2>
+</p><p>
+<strong>Even simpler — no account needed</strong>
+</p><p>
+1. Go to https://app.netlify.com/drop
+2. Drag/drop workspace folder
+3. Get instant URL (random-name.netlify.app)
+4. Claim site with email to keep it
+</p><p>
+---
+</p><p>
+<h2>📋 WHAT TO DEPLOY</h2>
+</p><p>
+<strong>Required files:</strong>
+<li>`index.html` (landing page)
+<li>`install.sh` (install script)
+<li>`og-image.png` (social preview)
+<li>`CNAME` (if using custom domain)
+</p><p>
+<strong>Optional:</strong>
+<li>`tools/` folder (for direct downloads)
+<li>`docs/` folder (documentation)
+</p><p>
+<strong>Total size:</strong> ~5MB
+</p><p>
+---
+</p><p>
+<h2>🎯 DEPLOYMENT CHECKLIST</h2>
+</p><p>
+<h3>Pre-Deploy (5 min)</h3>
+<li>[ ] Update index.html: 54 → 98 tools (search/replace)
+<li>[ ] Verify install.sh URL references
+<li>[ ] Check og-image.png exists
+</p><p>
+<h3>Deploy (5 min)</h3>
+<li>[ ] Run `vercel --prod` OR use Netlify Drop
+<li>[ ] Copy the deployed URL
+<li>[ ] Test the site loads
+</p><p>
+<h3>Post-Deploy (5 min)</h3>
+<li>[ ] Update affiliate applications with new URL
+<li>[ ] Update social drafts with new URL
+<li>[ ] Update MEMORY.md with new URL
+<li>[ ] Share new URL with Ryan
+</p><p>
+---
+</p><p>
+<h2>🔧 UPDATING INDEX.HTML FOR DEPLOY</h2>
+</p><p>
+Current issues to fix before deploy:
+</p><p>
+```bash
+<h1>Fix all "54" references to "98"</h1>
+sed -i 's/54 Free CLI Tools/98 Free CLI Tools/g' index.html
+sed -i 's/54 free CLI tools/98 free CLI tools/g' index.html
+sed -i 's/54 single-file/98 single-file/g' index.html
+sed -i 's/and 50 more/and 94 more/g' index.html
+</p><p>
+<h1>Fix Schema.org JSON</h1>
+sed -i 's/"54 free command-line tools/"98 free command-line tools/g' index.html
+```
+</p><p>
+Or manually edit these lines:
+<li>Line 5: `<title>54 Free CLI Tools...` → `<title>98 Free CLI Tools...`
+<li>Line 6: `content="54 free CLI tools...` → `content="98 free CLI tools...`
+<li>Line 12: `content="54 Free CLI Tools...` → `content="98 Free CLI Tools...`
+<li>Line 13: `content="54 single-purpose...` → `content="98 single-purpose...`
+<li>Line 19: `content="54 Free CLI Tools...` → `content="98 Free CLI Tools...`
+<li>Line 20: `content="54 single-purpose...` → `content="98 single-purpose...`
+<li>Line 37: `"54 free command-line tools...` → `"98 free command-line tools...`
+<li>Line 80: `<h1>54 Free CLI Tools</h1>` → `<h1>98 Free CLI Tools</h1>`
+</p><p>
+---
+</p><p>
+<h2>📊 URL STRATEGY</h2>
+</p><p>
+<h3>Immediate (Today)</h3>
+Deploy to: `pd-researcher.vercel.app`
+</p><p>
+<h3>Short-term (This Week)</h3>
+<li>Set up custom domain: `tools.sandstreet.io` or `pdresear.ch`
+<li>Update all links
+<li>Redirect old GitHub Pages URL
+</p><p>
+<h3>Long-term (When GitHub Unblocked)</h3>
+<li>Keep Vercel as primary (faster)
+<li>Or: GitHub Pages as primary, Vercel as backup
+<li>Both sync from same repo
+</p><p>
+---
+</p><p>
+<h2>💰 BUSINESS IMPACT</h2>
+</p><p>
+| Factor | Current (404) | With Backup Host |
+|--------|--------------|------------------|
+| Landing page | ❌ Down | ✅ Live |
+| Affiliate apps | ❌ Blocked | ✅ Can apply |
+| Social posts | ❌ Can't share | ✅ Ready to post |
+| Show HN | ❌ Can't submit | ✅ Ready |
+| Product Hunt | ❌ Blocked | ✅ Can schedule |
+| <strong>Est. revenue loss/day<em>* | **$13-32** | *</em>$0</strong> |
+</p><p>
+---
+</p><p>
+<h2>🚀 DEPLOY NOW — COPY/PASTE</h2>
+</p><p>
+```bash
+cd /home/barrowryan89/.openclaw/workspace
+</p><p>
+<h1>Fix the 54 -> 98 references first</h1>
+sed -i 's/54 Free/98 Free/g' index.html
+sed -i 's/54 free/98 free/g' index.html
+sed -i 's/54 single/98 single/g' index.html
+</p><p>
+<h1>Deploy to Vercel</h1>
+npx vercel --prod
+</p><p>
+<h1>Or use Netlify Drop (even easier)</h1>
+<h1>Go to https://app.netlify.com/drop and upload this folder</h1>
+```
+</p><p>
+---
+</p><p>
+<h2>✅ POST-DEPLOY ACTIONS</h2>
+</p><p>
+Once live:
+</p><p>
+1. <strong>Update affiliate applications</strong> with new URL
+2. <strong>Submit Show HN</strong> — content ready in `content/SHOW_HN_COPY_PASTE.txt`
+3. <strong>Post to Reddit</strong> — drafts ready in `content/social_drafts.md`
+4. <strong>Apply to Product Hunt</strong> — schedule for next Tuesday
+5. <strong>Update MEMORY.md</strong> with new live URL
+</p><p>
+---
+</p><p>
+<h2>📁 FILES TO VERIFY</h2>
+</p><p>
+| File | Purpose | Status |
+|------|---------|--------|
+| `index.html` | Landing page | ⚠️ Needs 54→98 fix |
+| `install.sh` | Install script | ✅ Ready |
+| `og-image.png` | Social preview | ✅ Ready |
+| `tools/` | 98 Python tools | ✅ Ready |
+</p><p>
+---
+</p><p>
+<strong>Recommendation:</strong> Deploy to Vercel in the next 15 minutes. Unblocks all distribution efforts immediately.
+</p><p>
+---
+</p><p>
+<em>Generated by PD Autonomous Promotion Engine — Engine Run #13</em>
+</article>
+</body></html>
