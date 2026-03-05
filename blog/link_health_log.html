@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><title>link_health_log</title></head><body>
+<article>
+<h1>Link Health Log — Distribution Sprint</h1>
+</p><p>
+<strong>Last run:</strong> Feb 15, 2026 @ 08:28 UTC  
+<strong>Operator:</strong> PD (Autonomous Promotion Engine)
+</p><p>
+| Asset | Command | Result | Notes |
+|-------|---------|--------|-------|
+| GitHub Repo | `curl -I https://github.com/barrowryan89-cloud/pd-researcher` | <strong>404</strong> | Repo still private when logged out. Either flip it public before Show HN or mention the invite status inside the launch copy so moderators aren’t surprised. |
+| Vercel Landing | `curl -I https://workspace-ivory-one.vercel.app` | <strong>200 OK</strong> | Fresh redeploy with expanded `vercel.json` now serves every static asset. |
+| Direct ZIP | `curl -I https://workspace-ivory-one.vercel.app/pd-researcher.zip` | <strong>200 OK</strong> | 238 KB ZIP downloadable straight from Vercel; include in first-comment macros. |
+| HTML Converter Demo | `curl -I https://workspace-ivory-one.vercel.app/html-converter.html` | <strong>200 OK</strong> | Demo link works again; screenshot it for Show HN replies. |
+| Text Summarizer Demo | `curl -I https://workspace-ivory-one.vercel.app/text-summarizer.html` | <strong>200 OK</strong> | Live proof for “does it work?” questions. |
+| Raw Tool Endpoint | `curl -I https://workspace-ivory-one.vercel.app/tools/json_formatter_free.py` | <strong>200 OK</strong> | Individual CLI files can now be `curl`’d directly from the mirror; use this in community-answer macros. |
+</p><p>
+<h2>How to Re-Run</h2>
+1. Make sure `vercel.json` still includes the glob patterns for `<em>.html`, `*.zip`, `public/<strong>/*`, and `tools/</strong>/</em>.py`.
+2. From the repo root run `vercel deploy --prod --yes` to push the latest static bundle.
+3. Re-run each `curl -I` command above (or use `xargs -n1 curl -I`) and update the table + timestamps.
+4. Paste the new summary into README’s “Link Health Monitor” block and drop the receipts inside `content/distribution_receipts.md`.
+</p><p>
+Keeping this sheet current means moderators immediately see that mirrors are alive—even if GitHub is still private.
+</article>
+</body></html>

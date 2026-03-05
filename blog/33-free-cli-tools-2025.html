@@ -1,0 +1,212 @@
+<!DOCTYPE html><html><head><title>33-free-cli-tools-2025</title></head><body>
+<article>
+<h1>33 Free CLI Tools Every Developer Needs in 2025</h1>
+</p><p>
+<em>A curated collection of zero-dependency Python utilities for everyday dev tasks.</em>
+</p><p>
+---
+</p><p>
+<h2>Why CLI Tools Still Matter in 2025</h2>
+</p><p>
+In an era of AI-powered IDEs and browser-based development environments, the command line remains the universal interface. It's fast. It's scriptable. It works over SSH on a Raspberry Pi or a fleet of cloud instances.
+</p><p>
+But here's the problem: most developers spend hours writing one-off scripts for tasks like:
+<li>Converting CSV files to JSON
+<li>Testing API endpoints
+<li>Generating secure passwords
+<li>Analyzing log files
+<li>Formatting messy data
+</p><p>
+<strong>What if you had a toolkit that handled 90% of these tasks out of the box?</strong>
+</p><p>
+No npm install. No Docker containers. No 500MB dependencies.
+</p><p>
+Just Python. Pure, simple, works-everywhere Python.
+</p><p>
+---
+</p><p>
+<h2>The PD Researcher Toolkit</h2>
+</p><p>
+I built [PD Researcher](https://github.com/barrowryan89-cloud/pd-researcher) — a collection of <strong>33 free command-line tools</strong> that solve real developer problems. Each tool is:
+</p><p>
+<li><strong>Zero dependencies</strong> (just Python 3.6+)
+<li><strong>Single-file</strong> (copy, paste, run)
+<li><strong>Unix-friendly</strong> (pipes, redirection, exit codes)
+<li><strong>Open source</strong> (MIT license, audit the code)
+</p><p>
+---
+</p><p>
+<h2>The Essential 15 (Start Here)</h2>
+</p><p>
+<h3>Data Processing</h3>
+| Tool | What It Does | Example |
+|------|--------------|---------|
+| `csv_to_json.py` | Convert CSV → JSON with type detection | `python csv_to_json.py data.csv -o out.json` |
+| `json_formatter_free.py` | Pretty-print or minify JSON | `python json_formatter_free.py messy.json` |
+| `html_cleaner_free.py` | Extract readable text from web pages | `python html_cleaner_free.py https://example.com` |
+| `text_summarizer_free.py` | TL;DR for articles and documents | `python text_summarizer_free.py article.txt` |
+</p><p>
+<h3>Security & Authentication</h3>
+| Tool | What It Does | Example |
+|------|--------------|---------|
+| `password_analyzer.py` | Generate + analyze password strength | `python password_analyzer.py -g -l 24` |
+| `password_gen_free.py` | Secure password generation | `python password_gen_free.py --length 32` |
+| `hash_generator_free.py` | MD5/SHA-256 hashing | `python hash_generator_free.py file.txt` |
+| `qr_generator_free.py` | Create QR codes | `python qr_generator_free.py "https://site.com"` |
+</p><p>
+<h3>Web Development</h3>
+| Tool | What It Does | Example |
+|------|--------------|---------|
+| `api_tester.py` | Test REST APIs with custom headers | `python api_tester.py https://api.com -m POST -d '{"key":"val"}'` |
+| `url_checker_free.py` | Bulk URL validation | `python url_checker_free.py urls.txt` |
+| `http_request_free.py` | Simple HTTP client | `python http_request_free.py https://api.com` |
+</p><p>
+<h3>System & DevOps</h3>
+| Tool | What It Does | Example |
+|------|--------------|---------|
+| `port_scanner_free.py` | Check open ports | `python port_scanner_free.py example.com` |
+| `ip_info_free.py` | IP geolocation | `python ip_info_free.py` |
+| `log_analyzer_free.py` | Parse web server logs | `python log_analyzer_free.py access.log` |
+| `process_monitor_free.py` | List running processes | `python process_monitor_free.py` |
+| `memory_monitor_free.py` | System memory usage | `python memory_monitor_free.py` |
+</p><p>
+---
+</p><p>
+<h2>Real-World Use Cases</h2>
+</p><p>
+<h3>Use Case 1: Data Migration</h3>
+You're moving user data from a legacy system. Export CSV → convert to JSON → import to new database:
+</p><p>
+```bash
+<h1>Convert with automatic type detection</h1>
+python csv_to_json.py users_export.csv -o users.json --verbose
+</p><p>
+<h1>Preview first 10 rows</h1>
+python csv_to_json.py users_export.csv --preview 10
+```
+</p><p>
+The tool detects integers, booleans, dates, and numbers automatically. No manual schema mapping required.
+</p><p>
+<h3>Use Case 2: API Debugging</h3>
+Your frontend team reports a 500 error. You need to test the endpoint quickly:
+</p><p>
+```bash
+<h1>Test with verbose output</h1>
+python api_tester.py https://api.yoursite.com/v1/users -m POST \
+  -H "Authorization: Bearer $TOKEN" \
+  -d '{"email": "test@example.com"}' \
+  -v
+```
+</p><p>
+See status codes, response headers, and formatted JSON instantly.
+</p><p>
+<h3>Use Case 3: Security Audit</h3>
+You need to generate a secure password and check if your team's passwords are strong enough:
+</p><p>
+```bash
+<h1>Generate 3 strong passwords</h1>
+python password_analyzer.py -g -c 3 -l 20
+</p><p>
+<h1>Check an existing password (returns error code if weak)</h1>
+python password_analyzer.py -a "password123"
+```
+</p><p>
+---
+</p><p>
+<h2>The Full List: 33 Tools</h2>
+</p><p>
+<strong>Data Processing (6)</strong>
+<li>`csv_to_json.py` — CSV to JSON with schema inference
+<li>`json_formatter_free.py` — JSON pretty-print/minify
+<li>`html_cleaner_free.py` — Web → Markdown extraction
+<li>`text_summarizer_free.py` — Article summarization
+<li>`csv_processor_free.py` — CSV filtering and processing
+<li>`base64_tool_free.py` — Encode/decode Base64
+</p><p>
+<strong>Security (5)</strong>
+<li>`password_analyzer.py` — Generate + analyze passwords
+<li>`password_gen_free.py` — Secure password generation
+<li>`hash_generator_free.py` — File/string hashing
+<li>`qr_generator_free.py` — QR code generator
+<li>`wallet_monitor_free.py` — Crypto wallet tracker
+</p><p>
+<strong>Web & Networking (5)</strong>
+<li>`api_tester.py` — REST API testing
+<li>`url_checker_free.py` — Bulk URL validation
+<li>`http_request_free.py` — HTTP client
+<li>`port_scanner_free.py` — Port scanning
+<li>`ip_info_free.py` — IP geolocation
+</p><p>
+<strong>System & Files (8)</strong>
+<li>`duplicate_finder_free.py` — Find duplicate files
+<li>`directory_size_free.py` — Directory analysis
+<li>`line_counter_free.py` — Count lines/words
+<li>`diff_tool_free.py` — File comparison
+<li>`log_analyzer_free.py` — Log parsing
+<li>`process_monitor_free.py` — Process listing
+<li>`memory_monitor_free.py` — Memory monitoring
+<li>`git_analyzer_free.py` — Git repository stats
+</p><p>
+<strong>Utilities (9)</strong>
+<li>`timestamp_converter_free.py` — Epoch/time conversion
+<li>`uuid_generator_free.py` — UUID generation
+<li>`color_converter_free.py` — Color format conversion
+<li>`unit_converter_free.py` — Unit conversion
+<li>`regex_tester_free.py` — Regex testing
+<li>`cron_parser_free.py` — Cron expression parser
+<li>`random_gen_free.py` — Random data generator
+<li>`uuid_generator_free.py` — UUID v4 generator
+</p><p>
+---
+</p><p>
+<h2>Installation</h2>
+</p><p>
+No installation required. Zero dependencies.
+</p><p>
+```bash
+<h1>Clone the repository</h1>
+git clone https://github.com/barrowryan89-cloud/pd-researcher.git
+cd pd-researcher/tools
+</p><p>
+<h1>Run any tool immediately</h1>
+python api_tester.py https://api.github.com/users/octocat
+```
+</p><p>
+Or download individual files — each tool is self-contained.
+</p><p>
+---
+</p><p>
+<h2>Why Free?</h2>
+</p><p>
+These tools solve common problems. Charging for them feels wrong.
+</p><p>
+The [PD_Researcher Suite](https://barrowryan89-cloud.github.io/pd-researcher/) (paid) adds:
+<li>Batch processing (1000+ files)
+<li>API integrations (OpenAI, Stripe, etc.)
+<li>Research automation pipelines
+<li>Custom tool generation
+</p><p>
+But the core 33 tools? <strong>Free forever.</strong>
+</p><p>
+---
+</p><p>
+<h2>Contribute</h2>
+</p><p>
+Found a bug? Want a new tool?
+</p><p>
+<li>Open an issue: [GitHub Issues](https://github.com/barrowryan89-cloud/pd-researcher/issues)
+<li>Submit a PR: [Contributing Guide](https://github.com/barrowryan89-cloud/pd-researcher/blob/main/CONTRIBUTING.md)
+</p><p>
+---
+</p><p>
+<h2>License</h2>
+</p><p>
+MIT License — use freely, modify freely, ship freely.
+</p><p>
+---
+</p><p>
+<strong>Get the tools:</strong> [github.com/barrowryan89-cloud/pd-researcher](https://github.com/barrowryan89-cloud/pd-researcher)
+</p><p>
+<em>Built with ❤️ by developers, for developers.</em>
+</article>
+</body></html>

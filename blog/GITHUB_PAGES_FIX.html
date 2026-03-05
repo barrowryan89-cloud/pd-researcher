@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><title>GITHUB_PAGES_FIX</title></head><body>
+<article>
+<h1>GitHub Pages 404 Fix Guide</h1>
+</p><p>
+<strong>Issue:</strong> Landing page returns 404 at https://barrowryan89-cloud.github.io/pd-researcher/  
+<strong>Status:</strong> Files pushed, settings need verification  
+<strong>Impact:</strong> BLOCKING all traffic conversion
+</p><p>
+---
+</p><p>
+<h2>🔴 CRITICAL: Manual Fix Required</h2>
+</p><p>
+GitHub Pages settings <strong>cannot</strong> be changed via API. Ryan must do this manually.
+</p><p>
+<h3>Step-by-Step Fix (2 minutes)</h3>
+</p><p>
+1. <strong>Go to:</strong> https://github.com/barrowryan89-cloud/pd-researcher/settings/pages
+</p><p>
+2. <strong>Under "Build and deployment" → "Source":</strong>
+   - Select: <strong>"Deploy from a branch"</strong>
+</p><p>
+3. <strong>Under "Branch":</strong>
+   - Select: <strong>"main"</strong>
+   - Folder: <strong>"/ (root)"</strong>
+</p><p>
+4. <strong>Click:<em>* *</em>"Save"</strong>
+</p><p>
+5. <strong>Wait:</strong> 2-5 minutes for deployment
+</p><p>
+6. <strong>Verify:</strong> https://barrowryan89-cloud.github.io/pd-researcher/
+</p><p>
+---
+</p><p>
+<h2>✅ Pre-Flight Checklist</h2>
+</p><p>
+All files are correctly in place:
+</p><p>
+| File | Location | Status |
+|------|----------|--------|
+| index.html | repo root | ✅ Committed |
+| og-image.png | repo root | ✅ Committed |
+| CNAME | not needed (using github.io) | ✅ N/A |
+</p><p>
+---
+</p><p>
+<h2>🔍 Troubleshooting</h2>
+</p><p>
+<h3>If still 404 after 5 minutes:</h3>
+</p><p>
+1. <strong>Check repository visibility:</strong>
+   - Must be <strong>Public</strong> (not Private)
+   - Go to: https://github.com/barrowryan89-cloud/pd-researcher/settings
+</p><p>
+2. <strong>Verify Pages is enabled:</strong>
+   - Settings → Pages → Should show green "Your site is live"
+</p><p>
+3. <strong>Check index.html exists:</strong>
+   - https://github.com/barrowryan89-cloud/pd-researcher/blob/main/index.html
+   - Should show the HTML file
+</p><p>
+4. <strong>Hard refresh:</strong>
+   - Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows)
+</p><p>
+<h3>If site shows but looks broken:</h3>
+</p><p>
+1. <strong>Check browser console (F12)</strong> for 404 errors
+2. <strong>Verify og-image.png exists:</strong> https://github.com/barrowryan89-cloud/pd-researcher/blob/main/og-image.png
+3. <strong>CSS/JS paths</strong> are relative (should work automatically)
+</p><p>
+---
+</p><p>
+<h2>📊 Impact of This Blocker</h2>
+</p><p>
+<strong>Without working landing page:</strong>
+<li>❌ Show HN post → 0 conversions
+<li>❌ Reddit traffic → 0 conversions  
+<li>❌ Twitter clicks → 0 conversions
+<li>❌ No email captures
+<li>❌ No affiliate clicks
+<li>❌ No sales
+</p><p>
+<strong>With working landing page:</strong>
+<li>✅ 1000-5000 visitors from Show HN
+<li>✅ 50-200 email captures
+<li>✅ 100-500 affiliate clicks
+<li>✅ 5-20 tool sales
+</p><p>
+<strong>This is the #1 priority.</strong> Nothing else matters until this is fixed.
+</p><p>
+---
+</p><p>
+<h2>🚀 After Fix: Immediate Actions</h2>
+</p><p>
+Once landing page is live (verify first):
+</p><p>
+1. <strong>Post Show HN</strong> (within 1 hour while Friday traffic is high)
+2. <strong>Post Reddit</strong> r/webdev and r/python
+3. <strong>Twitter thread</strong>
+4. <strong>Monitor GitHub stars</strong> (should see immediate increase)
+</p><p>
+---
+</p><p>
+<h2>⏰ TIMING</h2>
+</p><p>
+<strong>Current time:</strong> Friday, Feb 13, 7:51 PM UTC  
+<strong>Friday evening EST</strong> = Peak HN traffic  
+<strong>Window:</strong> Next 4 hours are optimal
+</p><p>
+<strong>Action required NOW:</strong> Fix GitHub Pages settings → Post immediately
+</p><p>
+---
+</p><p>
+<h2>📞 Verification Commands</h2>
+</p><p>
+Ryan can verify the fix worked:
+</p><p>
+```bash
+<h1>Check if site is live</h1>
+curl -I https://barrowryan89-cloud.github.io/pd-researcher/
+<h1>Should return: HTTP/2 200</h1>
+</p><p>
+<h1>Or just open in browser</h1>
+open https://barrowryan89-cloud.github.io/pd-researcher/
+```
+</p><p>
+---
+</p><p>
+<strong>Summary:</strong>  
+✅ Files ready  
+✅ Repo configured  
+❌ GitHub Pages needs manual enable  
+🎯 <strong>Fix this first. Everything else waits.</strong>
+</p><p>
+---
+</p><p>
+<em>Created by PD Autonomous Promotion Engine</em>  
+<em>Urgency: CRITICAL — Blocks all conversion</em>
+</article>
+</body></html>
