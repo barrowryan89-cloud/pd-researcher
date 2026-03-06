@@ -1,0 +1,67 @@
+{
+  "date": "2026-02-26T21:58:08.991378",
+  "wallets": 4,
+  "tasks": [
+    {
+      "protocol": "jupiter",
+      "action": "swap",
+      "wallet": "farm_wallet_4",
+      "amount_sol": 0.05,
+      "instructions": [
+        "1. Go to https://jup.ag",
+        "2. Connect wallet: farm_wallet_4",
+        "3. Swap 0.05 SOL \u2192 USDC (and back)",
+        "4. Set limit orders for future swaps",
+        "5. Use DCA feature for recurring swaps"
+      ],
+      "frequency": "Swap weekly",
+      "points": "Points for swap volume + limit orders"
+    },
+    {
+      "protocol": "drift",
+      "action": "trade",
+      "wallet": "farm_wallet_3",
+      "amount_sol": 0.1,
+      "instructions": [
+        "1. Go to https://app.drift.trade",
+        "2. Connect wallet: farm_wallet_3",
+        "3. Deposit 0.1 SOL as collateral",
+        "4. Make small perp trades (0.01-0.05 SOL size)",
+        "5. Close positions within 24hrs (avoid funding rates)"
+      ],
+      "frequency": "Trade 2-3x per week",
+      "points": "Points for trading volume + deposits"
+    },
+    {
+      "protocol": "marginfi",
+      "action": "deposit",
+      "wallet": "farm_wallet_1",
+      "amount_sol": 0.2,
+      "instructions": [
+        "1. Go to https://app.marginfi.com",
+        "2. Connect wallet: farm_wallet_1",
+        "3. Navigate to 'Lend' tab",
+        "4. Deposit 0.2 SOL or USDC",
+        "5. Optional: Borrow 50% of deposit value",
+        "6. Monitor health factor (keep > 1.2)"
+      ],
+      "frequency": "Check daily, rebalance weekly",
+      "points": "Points accrue automatically"
+    },
+    {
+      "protocol": "kamino",
+      "action": "deposit",
+      "wallet": "farm_wallet_2",
+      "amount_sol": 0.2,
+      "instructions": [
+        "1. Go to https://app.kamino.finance",
+        "2. Connect wallet: farm_wallet_2",
+        "3. Choose a vault (recommend: JitoSOL or mSOL)",
+        "4. Deposit 0.2 SOL",
+        "5. Optional: Use 'Multiply' feature for leverage"
+      ],
+      "frequency": "Check weekly",
+      "points": "Points accrue based on TVL and time"
+    }
+  ]
+}
