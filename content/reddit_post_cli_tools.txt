@@ -1,0 +1,30 @@
+# Reddit Post: r/commandline, r/webdev, r/devops
+
+**Title:** I got tired of rewriting bash scripts, so I open-sourced 59 CLI tools for devs/sysadmins (MIT License)
+
+**Body:**
+Hey everyone,
+
+Like many of you, I have a folder full of hacky bash scripts for repetitive tasks—formatting JSON, checking IP info, decoding JWTs, cleaning up Docker, etc.
+
+Recently, I decided to clean them up, rewrite the useful ones in Python/Go, and package them properly. The result is a collection of **59 CLI tools** designed to be dependency-free and "do one thing well."
+
+**The Tools Include:**
+*   **JSON Utilities:** `json-fmt`, `json-clean` (pretty print, validate without online pastebins)
+*   **Security Checks:** `audit-check`, `secret-scan` (basic local vulnerability & credential checks)
+*   **Networking:** `ip-lookup`, `dns-trace`, `port-scan-quick`
+*   **DevOps:** `docker-nuke` (safely remove unused containers/images), `log-tail-color`
+*   **Utilities:** `epoch-time`, `base64-url`, `uuid-gen`
+
+**Why I Built This:**
+Most "all-in-one" toolkits are bloated npm packages. I wanted simple, fast binaries/scripts I can curl onto a server and just use.
+
+**License:** MIT (Free for personal & commercial use)
+
+**Link to Repo/Docs:**
+[https://barrowryan89-cloud.github.io/pd-researcher/](https://barrowryan89-cloud.github.io/pd-researcher/)
+
+**Support:**
+I'm maintaining this in my free time. If you find a bug, open an issue! If you find it useful, there's a donation widget on the site (SOL/BTC) for coffee, or you can check out my **$49 Security Audit Service** if you want a second pair of eyes on your setup.
+
+Feedback welcome! What tools are missing from your daily workflow?

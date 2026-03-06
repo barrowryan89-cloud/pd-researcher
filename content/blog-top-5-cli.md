@@ -1,52 +1,67 @@
 ---
-title: Top 5 Free CLI Tools Every Developer Needs (Zero Dependencies)
-date: 2026-03-02
-description: Stop wrestling with npm packages. Use these single-file Python scripts instead.
-tags: cli, productivity, python, devops
+title: Top 5 Free CLI Tools Every Developer Needs in 2026
+date: 2026-03-03
+description: Stop rewriting bash scripts. Here are 5 essential open-source CLI utilities for JSON, security, and DevOps.
+tags: [cli, developer-tools, open-source, productivity]
 ---
 
-# Top 5 Free CLI Tools Every Developer Needs
+# Top 5 Free CLI Tools Every Developer Needs in 2026
 
-We've all been there: You need to check if a port is open, but `nmap` isn't installed. You need to format a JSON file, but don't want to paste it into a random website.
+As developers, we waste hours rewriting the same bash scripts. JSON formatting, JWT decoding, checking IP details—why isn't there a simple, standard tool for this?
 
-Here are 5 zero-dependency Python scripts you can copy-paste right now.
+I got tired of it, so I built a collection of **59 open-source CLI tools** that do one thing well. Zero dependencies. Single binary. MIT licensed.
 
-## 1. Port Scanner (`port_scanner_free.py`)
-Why use `nmap` when 50 lines of Python will do?
-- Scans common ports (80, 443, 22, 8080, etc.)
-- Grabs service banners
-- Threaded for speed
+Here are the top 5 you should install today.
 
-## 2. JSON Formatter (`json_formatter_free.py`)
-Stop using online JSON formatters.
-- Validates syntax
-- Pretty prints to stdout
-- Pipe-friendly: `cat data.json | python3 json_formatter_free.py`
+## 1. `json-clean` & `json-fmt`
 
-## 3. Password Generator (`password_gen_free.py`)
-Don't trust browser extensions.
-- Generates cryptographically secure passwords
-- entropy analysis included
-- Custom length/complexity
+How many times have you pasted sensitive JSON into an online formatter just to read it? Stop doing that.
 
-## 4. Website Monitor (`website_monitor_free.py`)
-Uptime Robot is overkill for a quick check.
-- Checks status codes
-- Measures response time
-- Logs to CSV
-- Perfect for cron jobs
+**`json-fmt`** instantly prettifies JSON responses in your terminal.
+**`json-clean`** validates structure and removes comments/trailing commas.
 
-## 5. Log Analyzer (`log_analyzer_free.py`)
-Parse Apache/Nginx logs without ELK stack.
-- Extracts IPs, status codes, paths
-- Generates summary report
-- Identifies potential attacks (404/500 bursts)
+```bash
+curl https://api.example.com/data | json-fmt
+```
+
+## 2. `audit-check` (Security)
+
+Security starts locally. Before you push code, run **`audit-check`**.
+
+It scans your project for:
+- Exposed `.env` files
+- AWS keys in git history
+- SSH key permissions
+
+It's like a linter for your security posture.
+
+## 3. `ip-lookup` (Networking)
+
+Debugging connectivity issues? **`ip-lookup`** gives you geo-info, ISP, and ASN details for any IP address instantly.
+
+```bash
+ip-lookup 8.8.8.8
+# Output: Google LLC, Mountain View, US
+```
+
+## 4. `docker-nuke` (DevOps)
+
+Docker taking up 50GB of disk space? **`docker-nuke`** is the nuclear option. It safely removes unused containers, images, and volumes to reclaim space.
+
+Run this weekly to keep your dev machine fast.
+
+## 5. `epoch-time` (Utilities)
+
+Stop Googling "epoch converter".
+
+**`epoch-time`** converts timestamps to human-readable dates and back, handling multiple timezones automatically.
 
 ---
 
-### Get the tools
-All 59 tools are available for free.
-[Download ZIP](https://workspace-ivory-one.vercel.app/download.zip)
-[View on GitHub](https://github.com/barrowryan89-cloud/pd-researcher)
+### Get the Full Toolkit (Free)
 
-*MIT Licensed. Zero Dependencies.*
+All 59 tools are open-source and available on GitHub.
+
+👉 **[Download the PD Researcher Toolkit](https://github.com/barrowryan89-cloud/pd-researcher)**
+
+*If these tools save you time, consider supporting the project via SOL/BTC on the site, or booking a **Security Audit** if you need personalized help.*

@@ -1,0 +1,97 @@
+# Twitter Thread: 59 Free CLI Tools (Developer Productivity)
+
+**Hook Tweet:**
+```
+Stop rewriting the same bash scripts.
+
+I built a collection of 59 FREE CLI tools for developers, sysadmins, and security researchers.
+
+Zero dependencies. Single binary. Open source.
+
+Here are the top 5 that save me hours every week: 🧵👇
+```
+
+**Tweet 2 (JSON Tools):**
+```
+1. `json-clean` & `json-fmt`
+
+• Instantly format ugly JSON responses
+• Validate structure without online pastebins (privacy first!)
+• Extract keys/values directly in terminal
+
+Perfect for debugging API responses on servers.
+```
+
+**Tweet 3 (Security):**
+```
+2. `audit-check`
+
+• Scans local project dependencies for known CVEs
+• Checks git config for exposed secrets
+• Verifies SSH key permissions
+
+Run this before every commit. Security starts at `git init`.
+```
+
+**Tweet 4 (Network):**
+```
+3. `ip-lookup` & `dns-trace`
+
+• Get geo-info for any IP instantly
+• Trace DNS propagation globally
+• Check port status without nmap overhead
+
+Essential for debugging connectivity issues in prod.
+```
+
+**Tweet 5 (DevOps):**
+```
+4. `docker-clean`
+
+• Nukes unused containers/images/volumes
+• Reclaims disk space safely
+• "The nuclear option" for when Docker acts up
+
+I run this weekly to keep my dev machine fast.
+```
+
+**Tweet 6 (Productivity):**
+```
+5. `epoch-time`
+
+• Convert timestamps <-> human dates
+• Handle multiple timezones
+• No more Googling "epoch converter"
+
+Simple. Fast. Done.
+```
+
+**Tweet 7 (The Collection):**
+```
+There are 54 more tools in the suite:
+• JWT decoders
+• Base64 utilities
+• Password generators
+• HTTP benchmarkers
+• Log analyzers
+
+All open source. MIT licensed.
+```
+
+**Tweet 8 (CTA):**
+```
+Grab the full toolkit here:
+🔗 https://barrowryan89-cloud.github.io/pd-researcher/
+
+If they save you time, consider buying me a coffee (SOL/BTC accepted on site). ☕️
+
+Or book a $49 Security Audit if you want me to check your setup personally. 👇
+[Link to Audit Service]
+```
+
+---
+
+**Image Ideas:**
+- Tweet 1: Collage of terminal screenshots showing colorful output.
+- Tweet 2: Before/after JSON formatting.
+- Tweet 8: Screenshot of the "Donation" widget on the site.

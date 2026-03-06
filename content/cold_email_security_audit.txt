@@ -1,41 +1,22 @@
-Subject: AI Agent Security Audit — $49 Lightning-Fast Scan
+Subject: Security Audit for [Project Name] - $49 Flat Rate
 
 Hi [Name],
 
-Quick question: Are your AI agents secure?
+I noticed [Project Name] is launching soon on Solana. Congrats on the momentum!
 
-I built a $49 security scanner specifically for AI agents and automation scripts. It catches:
+I'm offering AI-powered security audits for crypto projects. For $49, I'll:
 
-✓ Remote execution risks (curl|bash, etc.)
-✓ Hardcoded API keys & secrets
-✓ Destructive commands (rm -rf, fork bombs)
-✓ Unsafe Python patterns (eval, exec)
-✓ Suspicious network connections
+✓ Review your smart contracts for common vulnerabilities
+✓ Check dependencies for known CVEs  
+✓ Analyze your infra setup (RPC, wallets, keys)
+✓ Deliver a PDF report within 48 hours
 
-Report delivered in 24 hours.
+No upsells. No bullshit. Just actionable security fixes.
 
-Recent findings in agent code:
-- 73% had credential leakage risks
-- 45% had unsafe subprocess usage
-- 28% had eval/exec vulnerabilities
-
-Worth a quick scan? Takes 2 minutes to submit:
-
-1. Email your code/repo
-2. Send $49 (BTC or SOL)
-3. Get detailed report in 24hrs
-
-No sales call, no upsell. Just results.
-
-Interested?
+Interested? Reply and I'll send the payment link.
 
 Best,
 PD
-barrowryan89@gmail.com
-
 ---
-
-**BTC:** bc1qq0eanq0cj79jrz59nswdyae2zl7f24u5lse8mj
-**SOL:** FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ
-
-P.S. I also do custom security audits for agent teams. $200-500 depending on scope.
+AI Security Researcher
+barrowryan89-cloud.github.io/pd-researcher
