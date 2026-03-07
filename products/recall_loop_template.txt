@@ -1,0 +1,195 @@
+# Recall Loop - Setup Guide
+
+## What Is Recall Loop?
+
+Recall Loop is a memory-first workflow system that ensures nothing falls through the cracks. It creates a continuous cycle of capturing context, recalling it when needed, and following up automatically.
+
+## Core Principles
+
+1. **Search Before Acting** - Always check existing memory/context before responding
+2. **Capture Everything** - Log decisions, conversations, and tasks daily
+3. **Review Regularly** - Automated daily and weekly summaries
+4. **Follow Up Automatically** - Cron reminders ensure nothing is forgotten
+
+---
+
+## Step 1: Set Up Your Memory Structure
+
+Create a memory folder in your workspace:
+
+```
+workspace/
+├── memory/
+│   ├── YYYY-MM-DD.md    (daily logs)
+│   └── archive/         (older entries)
+├── MEMORY.md            (long-term curated memory)
+└── projects/            (active project notes)
+```
+
+**Daily Log Template** (memory/YYYY-MM-DD.md):
+
+```markdown
+# [Date]
+
+## Conversations
+- [Time] Topic: Key points discussed, decisions made
+
+## Tasks
+- [ ] Task description
+- [x] Completed task
+
+## Follow-Ups
+- Check on [project] in 3 days
+- Review [document] by [date]
+
+## Notes
+- Insights, observations, things to remember
+```
+
+---
+
+## Step 2: Implement Memory-Search-First Workflow
+
+Before responding to any request, your assistant should:
+
+1. **Search recent memory** - Check today's and yesterday's logs
+2. **Search relevant context** - Look for related projects, previous decisions
+3. **Check follow-ups** - Any pending items related to this topic?
+4. **Then respond** - With full context in mind
+
+Example prompt addition:
+"Before responding, search memory/ for any relevant context about [topic]. Reference previous decisions or conversations if found."
+
+---
+
+## Step 3: Daily Summary Automation
+
+Set up a daily cron job to compile what happened:
+
+**Time:** End of day (e.g., 10:00 PM local time)
+**Frequency:** Daily
+**Action:** Generate summary of the day's activities
+
+The summary should include:
+- Key conversations and decisions
+- Tasks completed
+- Tasks added but not completed
+- Follow-ups created
+- Interesting insights or learnings
+
+Save to: memory/YYYY-MM-DD.md (append at end)
+
+---
+
+## Step 4: Weekly Review Automation
+
+Set up a weekly cron job for broader reflection:
+
+**Time:** Sunday evening or Monday morning
+**Frequency:** Weekly
+**Action:** Review the past week
+
+The review should:
+- Summarize the week's major themes
+- List completed vs. incomplete tasks
+- Identify patterns or blockers
+- Update MEMORY.md with important learnings
+- Flag items needing follow-up
+
+---
+
+## Step 5: Follow-Up Reminders
+
+Create cron jobs for automatic check-ins on:
+
+**Active Projects** (every 3 days):
+- Check status of ongoing work
+- Remind about deadlines approaching
+- Surface stalled projects
+
+**Waiting-On Items** (daily):
+- Items waiting for external response
+- Follow up after reasonable time (3-5 days)
+
+**Long-Term Goals** (weekly):
+- Monthly goals progress check
+- Quarterly objectives review
+
+---
+
+## Step 6: Memory Maintenance
+
+Schedule periodic cleanup:
+
+**Weekly** (during weekly review):
+- Archive logs older than 30 days
+- Update MEMORY.md with distilled insights
+- Remove outdated follow-ups
+
+**Monthly**:
+- Review and reorganize MEMORY.md
+- Clean up project notes
+- Archive completed projects
+
+---
+
+## Usage Tips
+
+### For Maximum Effectiveness:
+
+1. **Be specific in your logs** - "Discussed pricing" is less useful than "Decided on $99/mo tier, starts March 1"
+
+2. **Tag follow-ups clearly** - Use consistent format like "FOLLOW-UP: [date] - [action]"
+
+3. **Review your summaries** - Automated summaries are starting points; refine them
+
+4. **Trust the system** - If it's not written down, it doesn't exist. Memory is unreliable; files are not.
+
+5. **Iterate your structure** - Adjust the format and frequency to match your workflow
+
+### Common Pitfalls:
+
+- **Too much detail** - Capture decisions and context, not verbatim transcripts
+- **Inconsistent logging** - Missing days break the loop
+- **Ignoring summaries** - If you don't review them, they're pointless
+- **Over-engineering** - Start simple, add complexity only when needed
+
+---
+
+## Integration with Your Assistant
+
+Your AI assistant should be configured to:
+
+1. **Auto-read memory files** at session start (today + yesterday minimum)
+2. **Search memory before acting** on any substantive request
+3. **Write to daily logs** when decisions or tasks emerge
+4. **Run scheduled jobs** for summaries and follow-ups
+5. **Update MEMORY.md** during weekly reviews
+
+---
+
+## Measuring Success
+
+You'll know Recall Loop is working when:
+
+- ✅ Your assistant remembers context from weeks ago
+- ✅ Nothing important gets forgotten
+- ✅ Follow-ups happen automatically
+- ✅ You have a searchable history of decisions
+- ✅ You can answer "What did I do last Tuesday?" instantly
+
+---
+
+## Next Steps
+
+1. Create your memory folder structure
+2. Set up the cron jobs (see recall_loop_cron_jobs.json)
+3. Configure your assistant to read memory at startup
+4. Log your first day
+5. Let the loop run for one week, then review and adjust
+
+---
+
+**Support:** For questions or customization help, contact PD support.
+**Version:** 1.0
+**Last Updated:** February 2026

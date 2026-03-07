@@ -1,0 +1,28 @@
+# Directory Status Board — Feb 15, 2026
+
+> **Purpose:** Single snapshot of where every high-leverage developer directory stands. Update this table after every submission or response so the next volunteer can pick up instantly.
+
+| Directory | Status (2026-02-15) | Owner | Assets to Use | Immediate Next Step | Notes / Links |
+|-----------|---------------------|-------|---------------|---------------------|----------------|
+| AlternativeTo | 🚧 **Ready to submit** — copy/screenshots staged | _Unassigned_ | `content/directory_form_prefills.md` → AlternativeTo, `public/pd-researcher.zip`, `assets/tool_shots/` | Submit listing + log confirmation email + date in `directory_submission_checklist.md` | — |
+| SaaSHub | 🚧 **Ready to submit** — hero + long description drafted | _Unassigned_ | `content/directory_form_prefills.md` → SaaSHub, `assets/tool_shots/` | File the SaaSHub form, add follow-up reminder for Feb 17 | — |
+| StackShare | ⏳ **Waiting** — email draft ready, needs sender | _Unassigned_ | `content/directory_form_prefills.md` → StackShare, `content/directory_pitch_emails.md` | Send pitch via contact form + support@stackshare.io, then DM @StackShare if no reply in 5 days | Add public thread link once response arrives |
+| DevHunt | 🚧 **Login ready** — submission not filed yet | Ryan | DevHunt dashboard, `content/directory_swipe_file.md` → DevHunt | Submit via dashboard, then DM @devhunt_app asking for daily email mention | Include listing URL after approval |
+| Console.dev | ✍️ **Pitch drafted** — proof needed | Ryan | `content/newsletter_curator_pitches.md` → Console.dev | Send once Show HN hits top 20 so we can cite traction | Drop sent date + reply status |
+| Toolify | 🚧 **Ready to submit** — needs narrator | _Unassigned_ | `content/directory_swipe_file.md` → Toolify, `og-image.png` | Submit form + attach og-image; copy volunteer + date here | — |
+| LaunchPedia | 🚧 **Ready to submit** — copy + tags staged | _Unassigned_ | `content/directory_form_prefills.md` → LaunchPedia, `assets/product-hunt-hero.png`, `assets/tool_shots/landing.png` | File Airtable form, then DM @LaunchpediaHQ w/ Vercel mirror + ZIP link | Log Airtable receipt + DM URL |
+| ToolDeck | 🚧 **Ready to submit** — comparison grid drafted | _Unassigned_ | `content/directory_form_prefills.md` → ToolDeck, `assets/tool_shots/terminal.png` | Submit listing + attach hero + CLI grid; set reminder for 48h follow-up | Add submission date + follow-up reminder |
+| Maker Stations | ✍️ **Story drafted** — needs proof screenshot | _Unassigned_ | `content/directory_swipe_file.md` → Maker Stations, `assets/tool_shots/war_room.png` | Paste founder story + distribution scoreboard screenshot; email editors@makerstations.com | Capture sent email + screenshot filename |
+| Product Hunt | 🛑 **Draft suspended** — waiting on maker approval | Ryan | `content/product_hunt_launch_kit.md`, `LAUNCH_PACK_FEB14.md` | Keep draft warm; re-request maker approval after Show HN window | Note maker response + new ETA |
+| BetaList | ✍️ **Pitch drafted** — not sent | _Unassigned_ | `content/directory_form_prefills.md` → BetaList | Submit form and note ETA (≈5 days) | Track submission ID + follow-up date |
+| Futurepedia | ⏳ **Queued** — AI angle copy ready | _Unassigned_ | `content/directory_swipe_file.md` → Futurepedia, `content/affiliate_comment_macros.md` (for AI privacy angle) | Fill submission + DM @futurepedia_io with mirror link | Capture DM link / ticket # |
+| Indie Hackers | 📅 **Scheduled** — story lives in Thread 9 | Ryan | `content/social_drafts.md` → Thread 9, README first comment template | Post 24h after Show HN to share learnings; reply to each comment w/ response bank | Paste thread URL after publishing |
+
+## How to Update
+1. After every submission, change the **Status** column (e.g., “✅ Submitted Feb 15 — waiting on approval”).
+2. Add your handle or initials in **Owner** so we know who’s on the hook.
+3. If a directory replies, document the response + requested changes in `content/directory_followup_macros.md` and drop a note here.
+4. Use the **Notes / Links** column to stash submission URLs, Stack Overflow answers, or proof-of-work screenshots so future volunteers can reference receipts.
+5. When something moves to “Approved,” add the live URL + announcement plan so we can stack social proof.
+
+Keeping this table fresh prevents duplicate submissions and shows progress when Ryan checks in.

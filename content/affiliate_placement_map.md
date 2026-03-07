@@ -1,0 +1,37 @@
+# Affiliate Placement Map — 59 CLI Tools
+
+**Purpose:** Prioritize the highest-intent tools for affiliate CTAs once approvals land (DigitalOcean, 1Password, Backblaze B2, Linode). Focus on the scripts that imply infrastructure, security, or storage spend.
+
+## Tier 1 — Immediate Inserts (Add footer first)
+| Tool | User Intent Signal | Recommended CTA | Copy Snippet |
+|------|--------------------|-----------------|--------------|
+| `port_scanner_free.py` | User is probing infrastructure → likely needs servers/firewalls | DigitalOcean Droplets | "Deploy this scanner on a $4/mo DigitalOcean droplet (includes $200 credit): https://m.do.co/c/YOUR_CODE" |
+| `wallet_monitor_free.py` | Crypto/web3 funds monitoring → needs backups + secrets storage | Backblaze B2 or 1Password | "Keep seed phrases backed up in encrypted Backblaze B2 buckets: https://www.backblaze.com/b2/cloud-storage.html#afid=YOUR_CODE" |
+| `password_gen_free.py` | Security-conscious user generating secrets | 1Password | "Generated a strong password? Store it in 1Password for Teams (25% off year one): https://1password.com/l/YOUR_CODE" |
+| `log_analyzer_free.py` | DevOps / observability workflows | Linode/Akamai or Sentry | "Pipe these logs into Sentry for instant alerts — $100 credit: https://sentry.io/signup/?utm_source=YOUR_CODE" |
+| `json_formatter_free.py` | API engineers building integrations | DigitalOcean Droplets | "Need a sandbox to test APIs? Spin up a DO Droplet in 55 seconds: https://m.do.co/c/YOUR_CODE" |
+
+## Tier 2 — Contextual Inserts (Add once Tier 1 live)
+| Tool | Affiliate CTA | Placement Idea |
+|------|---------------|----------------|
+| `api_tester_free.py` | Postman alt → promote DO App Platform | Add `print_footer("hosting")` after response summary |
+| `http_request_free.py` | Infrastructure testing | Link to Linode credits |
+| `process_monitor_free.py` | On-prem monitoring → promote Backblaze backups | Mention storing snapshots/logs |
+| `duplicate_finder_free.py` | Teams cleaning shared drives → promote Backblaze B2 | Inline note: "Archive redundant assets in B2 for $0.005/GB" |
+| `text_summarizer_free.py` | Content workflow → promote 1Password for storing research credentials | CTA inside `if __name__ == "__main__"` block |
+
+## Tier 3 — Evergreen Blog/README CTAs
+Use these outside the scripts (README, landing page, launch threads).
+- **DigitalOcean:** "Get $200 in credit to host every CLI tool on its own droplet." Link: `https://m.do.co/c/YOUR_CODE`
+- **1Password:** "Store API keys + customer secrets in 1Password Families (25% off first year)." Link: `https://1password.com/l/YOUR_CODE`
+- **Backblaze B2:** "Back up every automation artifact for $0.005/GB with Backblaze B2." Link: `https://www.backblaze.com/b2/cloud-storage.html#afid=YOUR_CODE`
+- **Linode/Akamai:** "Run cron-powered monitors on Linode Nanodes ($5/mo)." Link: `https://www.linode.com/?r=YOUR_CODE`
+
+## Implementation Notes
+1. **Centralize Codes:** Update `tools/affiliate_snippets.py` once approvals arrive. The map above references those helper calls.
+2. **Disclosure:** Add `[#ad]` or `[affiliate]` in CLI output per FTC guidance — already supported in snippet helper.
+3. **Tracking:** When embedding in README or landing page, append UTM tags defined in `content/utm_tracking_setup.md`.
+4. **A/B Hooks:** Security tools → "Protect secrets" framing. Infrastructure tools → "Deploy faster" framing. Content tools → "Backup + organize" framing.
+5. **Rollout Order:** Password generator + port scanner first (highest volume), then monitoring/log tools, then niche utilities.
+
+_Last updated: 2026-02-14 22:58 UTC_

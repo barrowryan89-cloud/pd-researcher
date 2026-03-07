@@ -1,0 +1,1634 @@
+[
+  {
+    "timestamp": "2026-02-26T19:47:50.704260",
+    "finding": {
+      "type": "Command Injection",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/git_analyzer_free.py",
+      "line": 38,
+      "snippet": "subprocess.run(\n            ['git'] +",
+      "severity": "critical"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.704645",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/subscriber_manager.py",
+      "line": 207,
+      "snippet": "http://localhost:{port}\")\n    print(f\"   POST /sub...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.705111",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/clawdbot_dispatch_daily.py",
+      "line": 15,
+      "snippet": "https://moltbook.com/api/v1\"\nSUBMOLTS = ['clawdbot...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.706104",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/payment_watcher.py",
+      "line": 54,
+      "snippet": "https://api.mainnet-beta.solana.com\"\n        paylo...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.707317",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/api_probe.py",
+      "line": 197,
+      "snippet": "https://api.github.com/users/octocat\n  api_probe h...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.708235",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/api_probe.py",
+      "line": 201,
+      "snippet": "https://httpbin.org/status/404  # See error handli...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.709380",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/gmail_smtp_client.py",
+      "line": 13,
+      "snippet": "PASSWORD = \"xjmqpmlofamnkkcq\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.710396",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/password_generator_free.py",
+      "line": 341,
+      "snippet": "Password:\")\n        \n        print(f\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.711432",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/password_generator_free.py",
+      "line": 367,
+      "snippet": "password: \")\n        \n        if not password:\n   ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.712312",
+    "finding": {
+      "type": "Command Injection",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/dns_probe.py",
+      "line": 22,
+      "snippet": "subprocess.run(\n            ['dig', '+",
+      "severity": "critical"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.713317",
+    "finding": {
+      "type": "Command Injection",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/dns_probe.py",
+      "line": 36,
+      "snippet": "subprocess.run(\n                ['nslookup', '-type=' +",
+      "severity": "critical"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.714429",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/password_strength_free.py",
+      "line": 198,
+      "snippet": "https://1password.com [affiliate]\")\n    print(\"=\" ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.715793",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/file_encrypt_free.py",
+      "line": 77,
+      "snippet": "Password: \") -> str:\n    \"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.719561",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/file_encrypt_free.py",
+      "line": 118,
+      "snippet": "password: \")\n        confirm = get_password(\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.725046",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/file_encrypt_free.py",
+      "line": 119,
+      "snippet": "password: \")\n        \n        if password != confi...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.726428",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/file_encrypt_free.py",
+      "line": 142,
+      "snippet": "password: \")\n        \n        success, result = de...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.728986",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/version.py",
+      "line": 213,
+      "snippet": "https://github.com/python/cpython/pull/107795\n# Ol...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.732027",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/_manylinux.py",
+      "line": 43,
+      "snippet": "https://static.docs.arm.com/ihi0044/g/aaelf32.pdf\n...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.733851",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/_elffile.py",
+      "line": 7,
+      "snippet": "https://refspecs.linuxfoundation.org/elf/gabi4+/ch...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.735276",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/android.py",
+      "line": 16,
+      "snippet": "https://android.stackexchange.com/a/216132>`_.\n\n  ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.737058",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/android.py",
+      "line": 124,
+      "snippet": "https://stackoverflow.com/a/61394121\n    if not TY...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.738403",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/unix.py",
+      "line": 28,
+      "snippet": "https://specifications.freedesktop.org/basedir-spe...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.739824",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/api.py",
+      "line": 62,
+      "snippet": "https://technet.microsoft.com/en-us/library/cc7664...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.741251",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/macos.py",
+      "line": 20,
+      "snippet": "https://developer.apple.com/library/archive/docume...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.743416",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/macos.py",
+      "line": 36,
+      "snippet": "https://brew.sh>`_, the directory\n          will b...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.745744",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/windows.py",
+      "line": 18,
+      "snippet": "https://learn.microsoft.com/en-us/windows/win32/sh...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.747571",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/truststore/_api.py",
+      "line": 51,
+      "snippet": "https://github.com/psf/requests/pull/6667\n    try:...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.749344",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/fields.py",
+      "line": 31,
+      "snippet": "https://tools.ietf.org/html/rfc2388#section-4.4>`_...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.750848",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py",
+      "line": 491,
+      "snippet": "https://github.com/urllib3/urllib3/issues/2513#iss...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.752370",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/__init__.py",
+      "line": 25,
+      "snippet": "https://github.com/urllib3/urllib3/issues/2680\ntry...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.754237",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "line": 42,
+      "snippet": "https://en.wikipedia.org/wiki/Server_Name_Indicati...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.755936",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/url.py",
+      "line": 143,
+      "snippet": "http://google.com/mail/')\n            >>> U.url\n  ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.758994",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/retry.py",
+      "line": 102,
+      "snippet": "http://example.com/')\n\n    Or per-request (which o...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.761830",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/requests/models.py",
+      "line": 12,
+      "snippet": "https://github.com/psf/requests/issues/3578.\nimpor...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.763371",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/requests/models.py",
+      "line": 253,
+      "snippet": "https://httpbin.org/get')\n      >>> req.prepare()\n...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.765313",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "line": 109,
+      "snippet": "https://github.com/pypa/pip/issues/12243\n\n\n_T = Ty...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.767049",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "line": 1756,
+      "snippet": "https://setuptools.pypa.io/en/latest/pkg_resources...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.769308",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "line": 2514,
+      "snippet": "https://setuptools.pypa.io/en/latest/references/\"\n...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.771068",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "line": 2620,
+      "snippet": "https://github.com/python/mypy/issues/16261\n    # ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.774610",
+    "finding": {
+      "type": "Path Traversal",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "line": 1771,
+      "snippet": "../..",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.780720",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/distro/distro.py",
+      "line": 8,
+      "snippet": "http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unl...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.786966",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/compat.py",
+      "line": 646,
+      "snippet": "http://code.activestate.com/recipes/576693/ (r9)\n ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.796370",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/util.py",
+      "line": 947,
+      "snippet": "https://www.red-dove.com/pypi/projects/'\n\n\ndef get...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.800929",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/util.py",
+      "line": 1154,
+      "snippet": "http://en.wikipedia.org/wiki/Tarjan%27s_strongly_c...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.808429",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/util.py",
+      "line": 1274,
+      "snippet": "https://docs.python.org/3/library/tarfile.html#ext...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.811438",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/syntax.py",
+      "line": 59,
+      "snippet": "https://github.com/pygments/pygments/blob/master/p...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.813771",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/syntax.py",
+      "line": 245,
+      "snippet": "https://pygments.org/docs/lexers/)\n        theme (...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.815899",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/syntax.py",
+      "line": 341,
+      "snippet": "https://pygments.org/docs/styles/#getting-a-list-o...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.820219",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_export_format.py",
+      "line": 21,
+      "snippet": "http://www.w3.org/2000/svg\">\n    <!-- Generated wi...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.822637",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_export_format.py",
+      "line": 28,
+      "snippet": "https://cdnjs.cloudflare.com/ajax/libs/firacode/6....",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.825066",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/progress.py",
+      "line": 808,
+      "snippet": "https://github.com/tqdm/tqdm/blob/master/tqdm/std....",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.827365",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_win32_console.py",
+      "line": 3,
+      "snippet": "https://docs.microsoft.com/en-us/windows/console/c...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.829747",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_win32_console.py",
+      "line": 107,
+      "snippet": "https://docs.microsoft.com/en-us/windows/console/g...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.832338",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_vendor/rich/console.py",
+      "line": 969,
+      "snippet": "https://force-color.org/\n        force_color = env...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.834519",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/cache.py",
+      "line": 60,
+      "snippet": "https://github.com/pypa/pip/issues/7296\n        ke...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.836965",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/req/constructors.py",
+      "line": 71,
+      "snippet": "https://peps.python.org/pep-0508/#complete-grammar...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.839252",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/req/req_uninstall.py",
+      "line": 70,
+      "snippet": "https://packaging.python.org/specifications/record...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.841595",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/vcs/git.py",
+      "line": 74,
+      "snippet": "https://github.com/pypa/pip/issues/1130\n    unset_...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.843901",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/vcs/git.py",
+      "line": 286,
+      "snippet": "https://git-scm.com/docs/partial-clone\n           ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.846255",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/vcs/git.py",
+      "line": 504,
+      "snippet": "https://article.gmane.org/gmane.comp.version-contr...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.848646",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/vcs/versioncontrol.py",
+      "line": 549,
+      "snippet": "https://github.com/python/mypy/issues/1174\n       ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.851269",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/vcs/versioncontrol.py",
+      "line": 669,
+      "snippet": "https://pip.pypa.io/en/latest/reference/pip_freeze...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.854527",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "line": 28,
+      "snippet": "https://wheel.readthedocs.io/en/latest/\n\n    'pip ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.862618",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/metadata/base.py",
+      "line": 173,
+      "snippet": "https://github.com/pypa/pip/issues/10243)\n        ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.866084",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/models/link.py",
+      "line": 190,
+      "snippet": "https://\", \"http://\")):\n        return url\n    els...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.868789",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/network/session.py",
+      "line": 68,
+      "snippet": "http://bit.ly/1qrySKC)\n    (\"https\", \"*\", \"*\"),\n  ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.871581",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/network/auth.py",
+      "line": 469,
+      "snippet": "Password: \")\n        return username, password, Tr...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.874388",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/network/auth.py",
+      "line": 122,
+      "snippet": "https://github.com/jaraco/keyring/blob/97689324abc...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.877250",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+      "line": 213,
+      "snippet": "https://github.com/pypa/pip/issues/5868\n    return...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.882012",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/utils/misc.py",
+      "line": 472,
+      "snippet": "password = \":****\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.884925",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/utils/misc.py",
+      "line": 127,
+      "snippet": "https://docs.python.org/3.12/whatsnew/3.12.html#sh...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.887576",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/utils/logging.py",
+      "line": 51,
+      "snippet": "https://bugs.python.org/issue19612\n    # https://b...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.893685",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/locations/__init__.py",
+      "line": 53,
+      "snippet": "https://github.com/pypa/pip/issues/10647\n\n    This...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.897754",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/pip/_internal/locations/__init__.py",
+      "line": 180,
+      "snippet": "https://github.com/pypa/pip/issues/10151\"\n    mess...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.900805",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/connection.py",
+      "line": 251,
+      "snippet": "https://github.com/python/cpython/commit/0d4026432...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.903922",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py",
+      "line": 116,
+      "snippet": "http://hg.python.org/cpython/file/7aaba721ebc0/Lib...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.907681",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/response.py",
+      "line": 522,
+      "snippet": "https://www.rfc-editor.org/rfc/rfc8259#section-8.1...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.911451",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/__init__.py",
+      "line": 38,
+      "snippet": "https://github.com/urllib3/urllib3/issues/3020\",\n ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.914503",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/contrib/pyopenssl.py",
+      "line": 36,
+      "snippet": "https://www.pyopenssl.org\n.. _cryptography: https:...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.918463",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/fetch.py",
+      "line": 7,
+      "snippet": "https://github.com/WebAssembly/js-promise-integrat...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.921623",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/http2/connection.py",
+      "line": 33,
+      "snippet": "https://httpwg.org/specs/rfc9113.html#n-field-vali...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.924779",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/util/url.py",
+      "line": 177,
+      "snippet": "https://google.com/mail/\")\n\n            print(U.ur...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.928031",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/util/url.py",
+      "line": 264,
+      "snippet": "http://tools.ietf.org/html/rfc3986#section-5.2.4 f...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.931456",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/util/ssl_.py",
+      "line": 42,
+      "snippet": "https://github.com/urllib3/urllib3/issues/2192#iss...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.934611",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/util/retry.py",
+      "line": 53,
+      "snippet": "https://example.com/\")\n\n    Or per-request (which ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.937796",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/.venv/lib/python3.14/site-packages/urllib3/util/timeout.py",
+      "line": 38,
+      "snippet": "https://example.com/\")\n\n        print(resp.status)...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.942640",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/examples/advertisements-agent-with-strands-agents-x402-cdp-chatbot/chatbot.py",
+      "line": 30,
+      "snippet": "http://{HOST}:{PORT}\")\n\n\ndef validate_environment(...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.945954",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/examples/advertisements-agent-with-strands-agents-x402-cdp-chatbot/paid_server.py",
+      "line": 126,
+      "snippet": "https://api.openweathermap.org/data/2.5/weather\"\n ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.949534",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/x402/x402_action_provider.py",
+      "line": 194,
+      "snippet": "https://api.example.com/weather\")\n- Local developm...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.953056",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/x402/x402_action_provider.py",
+      "line": 375,
+      "snippet": "http://localhost:3000/protected\")\n2. If you get a ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.956543",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/x402/x402_action_provider.py",
+      "line": 571,
+      "snippet": "https://api.example.com/data\")\n- Local dev: make_h...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.960066",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/nillion/nillion_action_provider.py",
+      "line": 47,
+      "snippet": "https://secret-vault-registration.replit.app/api/c...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.963709",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/nillion/nillion_action_provider.py",
+      "line": 153,
+      "snippet": "http://json-schema.org/draft-07/schema#\",\n        ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.968090",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/pyth/pyth_action_provider.py",
+      "line": 53,
+      "snippet": "https://hermes.pyth.network/v2/price_feeds?query={...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.971965",
+    "finding": {
+      "type": "Path Traversal",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/ssh/ssh_action_provider.py",
+      "line": 568,
+      "snippet": "open(known_hosts_file, \"a+\")",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.975661",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/coinbase_agentkit/action_providers/twitter/twitter_action_provider.py",
+      "line": 95,
+      "snippet": "https://x.com/{data['username']}\"\n\n            ret...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.979699",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/x402/conftest.py",
+      "line": 11,
+      "snippet": "https://api.example.com/data\"\nMOCK_ADDRESS = \"0x12...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.983559",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/cdp/test_cdp_smart_wallet_action_provider.py",
+      "line": 23,
+      "snippet": "https://paymaster.example.com\"\n\n\n@pytest.fixture\nd...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.987429",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/cdp/conftest.py",
+      "line": 32,
+      "snippet": "https://sepolia.basescan.org/tx\"\nMOCK_TX_HASH = \"0...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.991576",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/nillion/conftest.py",
+      "line": 13,
+      "snippet": "http://json-schema.org/draft-07/schema#\",\n    \"typ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.995115",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/nillion/conftest.py",
+      "line": 121,
+      "snippet": "https://nildb-a50d.nillion.network\",\n             ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:50.998989",
+    "finding": {
+      "type": "Private Key",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/ssh/test_ssh_connect.py",
+      "line": 104,
+      "snippet": "-----BEGIN RSA PRIVATE KEY-----",
+      "severity": "critical"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.002968",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/ssh/test_keys.py",
+      "line": 26,
+      "snippet": "password=\"testpass\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.007007",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/ssh/test_keys.py",
+      "line": 125,
+      "snippet": "password=\"keypass\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.019285",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/ssh/test_connection_pool.py",
+      "line": 21,
+      "snippet": "PASSWORD = \"testpass\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.028651",
+    "finding": {
+      "type": "Password",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/ssh/conftest.py",
+      "line": 15,
+      "snippet": "PASSWORD = \"test-pass\"",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.039541",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/action_providers/twitter/test_account_details.py",
+      "line": 31,
+      "snippet": "https://x.com/{MOCK_USERNAME}\"\n\n    expected_respo...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.046958",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/wallet_providers/cdp_evm_smart_wallet_provider/conftest.py",
+      "line": 25,
+      "snippet": "https://paymaster.example.com\"\nMOCK_RPC_URL = \"htt...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.051397",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/coinbase-agentkit/tests/wallet_providers/eth_account_wallet_provider/conftest.py",
+      "line": 25,
+      "snippet": "https://sepolia.base.org\"\n\nMOCK_TX_HASH = \"0xabcde...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.055594",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/agentkit/python/create-onchain-agent/create_onchain_agent/cli.py",
+      "line": 29,
+      "snippet": "https://api.github.com/repos/{GITHUB_REPO}/commits...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.059901",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 17,
+      "snippet": "https://github.com/python/cpython/pull/119891\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.064228",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 286,
+      "snippet": "https://github.com/python/cpython/pull/30530\nif sy...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.068510",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 292,
+      "snippet": "https://bugs.python.org/issue46342\n    def final(f...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.072897",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 357,
+      "snippet": "https://github.com/python/cpython/pull/29334\nif sy...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.077211",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 518,
+      "snippet": "https://github.com/python/cpython/pull/118681\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.081590",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 629,
+      "snippet": "https://github.com/python/cpython/pull/110683\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.086017",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 810,
+      "snippet": "https://github.com/python/cpython/pull/113401\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.090416",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 871,
+      "snippet": "https://github.com/python/cpython/pull/112717\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.094974",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 2480,
+      "snippet": "https://github.com/python/cpython/pull/104048\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.099569",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 2745,
+      "snippet": "https://github.com/python/cpython/pull/99958\nif sy...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.104255",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 2877,
+      "snippet": "https://github.com/python/cpython/pull/132160\nif s...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.108892",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 3007,
+      "snippet": "https://github.com/python/cpython/pull/99247\n     ...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.113708",
+    "finding": {
+      "type": "SQL Injection",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/typing_extensions.py",
+      "line": 2313,
+      "snippet": "f\"SELECT * FROM {input()}",
+      "severity": "critical"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.118386",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/soupsieve/css_match.py",
+      "line": 28,
+      "snippet": "http://www.w3.org/1999/xhtml'\nNS_XML = 'http://www...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.173871",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/dammit.py",
+      "line": 6,
+      "snippet": "https://pypi.org/project/feedparser/>`_, now maint...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.178032",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/dammit.py",
+      "line": 163,
+      "snippet": "https://html.spec.whatwg.org/multipage/named-chara...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.182374",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/dammit.py",
+      "line": 517,
+      "snippet": "https://html.spec.whatwg.org/multipage/parsing.htm...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.188935",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/element.py",
+      "line": 82,
+      "snippet": "https://peps.python.org/pep-0562/\n_deprecated_name...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.193731",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/element.py",
+      "line": 755,
+      "snippet": "https://github.com/microsoft/pyright/issues/10929\n...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.198645",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/element.py",
+      "line": 1647,
+      "snippet": "https://dev.w3.org/html5/spec-LC/syntax.html#cdata...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.203587",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/element.py",
+      "line": 1695,
+      "snippet": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitiona...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.208453",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/element.py",
+      "line": 2563,
+      "snippet": "https://docs.python.org/3/library/codecs.html#erro...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.213423",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/__init__.py",
+      "line": 3,
+      "snippet": "http://www.crummy.com/software/BeautifulSoup/\n\nBea...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.218275",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/_deprecation.py",
+      "line": 10,
+      "snippet": "https://peps.python.org/pep-0702/>`_\n\"\"\"\n\nimport f...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.225201",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/builder/_html5lib.py",
+      "line": 60,
+      "snippet": "https://github.com/html5lib/html5lib-python>`_ to\n...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  },
+  {
+    "timestamp": "2026-02-26T19:47:51.232747",
+    "finding": {
+      "type": "URL with creds",
+      "file": "/home/barrowryan89/.openclaw/workspace/tools/venv/lib/python3.14/site-packages/bs4/builder/__init__.py",
+      "line": 592,
+      "snippet": "https://html.spec.whatwg.org/#metadata-content) an...",
+      "severity": "high"
+    },
+    "status": "new",
+    "reported": false
+  }
+]

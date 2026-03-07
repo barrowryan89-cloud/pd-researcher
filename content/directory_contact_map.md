@@ -1,0 +1,21 @@
+# Directory Contact Map — Distribution Sprint
+
+Use this when you need a human to approve or fast-track a listing. Each row links back to the right asset so volunteers can move without pinging Ryan.
+
+| Directory | Contact Path | What to Send | Follow-Up Window | Asset Reference |
+|-----------|--------------|--------------|------------------|-----------------|
+| AlternativeTo | https://alternativeto.net/contact/ (select **“Submit or update an app”**) | 280-char pitch from `content/directory_swipe_file.md` + ZIP + mirror. Mention the project is MIT + zero-dependency. | 3 days — log outreach in `content/directory_submission_checklist.md`. | `content/directory_form_prefills.md` → AlternativeTo |
+| SaaSHub | https://saashub.com/contact (select **“Add a missing product”**) | Long description + hero screenshot + mirror pair. Include "no signup / no telemetry" angle. | 48 hours — they usually reply by email. | `content/directory_form_prefills.md` → SaaSHub |
+| StackShare | https://stackshare.io/contact (pick **“Suggest a tool”**) or email support@stackshare.io | Share the Show HN TL;DR, GitHub + Vercel links, and ask them to enable the "PD_Researcher" stack page. | 5 days — send follow-up DM on Twitter @StackShare if quiet. | `content/directory_form_prefills.md` → StackShare |
+| DevHunt | https://devhunt.org/submit (login required) + DM @devhunt_app on Twitter | Submit via dashboard, then DM the post with the ZIP mirror link so they feature it in the daily email. | Same day — DM after submission. | `content/directory_swipe_file.md` → DevHunt |
+| Console.dev | https://console.dev/submit-a-tool/ + email founders@console.dev | Highlight "zero dependencies" + "CLI focus". They prefer technical deep dives, so add a short paragraph from `content/devto_article.md`. | 1 week — reminder email if no response. | `content/directory_pitch_emails.md` → Console.dev |
+| Toolify | https://www.toolify.ai/contact (Press & Listings) | Attach the og-image, 2-sentence blurb, and mention the browser demos so they can embed GIFs. | 2 days — reply directly to their confirmation email with extra assets. | `content/directory_swipe_file.md` → Toolify |
+| Product Hunt | https://www.producthunt.com/products/pd-researcher (draft) + makers@producthunt.com (if blocked) | Use the Show HN copy but add maker's comment referencing the affiliate plan. Mention Vercel mirror as fallback. | 48 hours — PH team answers within 2 business days. | `content/LAUNCH_PACK_FEB14.md` |
+| BetaList | https://betalist.com/submit + hello@betalist.com | Position it as "59 developer utilities" and note that the toolkit is free + MIT. Attach hero screenshot. | 5 days — they batch approvals, so follow up once per week. | `content/directory_form_prefills.md` → BetaList |
+| Futurepedia | https://www.futurepedia.io/submit-tool + DM @futurepedia_io | They prefer AI-adjacent angles. Emphasize the text summarizer + automation focus. Include Vercel live demos. | 72 hours — DM on Twitter speeds things up. | `content/directory_swipe_file.md` → Futurepedia |
+| Indie Hackers | https://www.indiehackers.com/post (text post) + DM @csallen if flagged | Share the "Distribution Sprint" story + invite feedback on monetization. Link GitHub + mirror inside the post body. | Real-time — reply to every comment for 24h. | `content/social_drafts.md` → Thread 9 |
+
+## Usage Notes
+- Track every outreach in `content/directory_submission_checklist.md` so we don’t double-ping reviewers.
+- When emailing, paste the **Moderator-Proof Checklist** snippet from the README footer to show we respect community rules.
+- Attach `public/pd-researcher.zip` + `og-image.png` whenever the form allows uploads; directories promote assets faster when art is included.

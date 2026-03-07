@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Text Summarizer - Online Tool</title>
+    <meta name="description" content="Summarize any text instantly. Free online summarization tool. Extract key points from articles, papers, and documents.">
+    <meta name="keywords" content="text summarizer, article summarizer, online summary tool, free summarization">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; font-size: 1.1rem; }
+        .tool-container {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+        }
+        .input-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.5rem; color: #aaa; font-weight: 500; }
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-family: inherit;
+            font-size: 15px;
+            resize: vertical;
+            min-height: 200px;
+        }
+        textarea:focus { outline: none; border-color: #f5576c; }
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        .slider-group { display: flex; align-items: center; gap: 0.5rem; }
+        .slider-group label { margin: 0; }
+        input[type="range"] { width: 150px; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4); }
+        .btn-secondary { background: #333; color: #e0e0e0; }
+        .btn-secondary:hover { background: #444; }
+        .stats { 
+            display: flex; 
+            gap: 2rem; 
+            margin: 1rem 0; 
+            padding: 1rem;
+            background: #0a0a0a;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #f5576c; }
+        .stat-label { color: #888; }
+        .output-container { position: relative; margin-top: 1rem; }
+        #output {
+            width: 100%;
+            min-height: 200px;
+            padding: 1rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.7;
+            white-space: pre-wrap;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #333;
+            border: none;
+            border-radius: 6px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+        .copy-btn:hover { background: #444; }
+        .sentences { margin-top: 1rem; }
+        .sentence {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: #0f0f0f;
+            border-left: 3px solid #f5576c;
+            border-radius: 0 8px 8px 0;
+        }
+        .upgrade-banner {
+            background: linear-gradient(135deg, #3d1e3f 0%, #5a2d4e 100%);
+            border: 1px solid #f5576c;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .upgrade-banner h3 { color: #fff; margin-bottom: 0.5rem; }
+        .upgrade-banner p { color: #f0a0b0; margin-bottom: 1rem; }
+        .crypto-address {
+            background: #0a0a0a;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #4ade80;
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .feature h4 { color: #f5576c; margin-bottom: 0.5rem; }
+        .feature p { color: #888; font-size: 0.9rem; }
+        footer { text-align: center; padding: 2rem; color: #666; border-top: 1px solid #333; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Text Summarizer</h1>
+            <p class="subtitle">Extract key points from any text. Free. Instant. No signup.</p>
+        </header>
+
+        <div class="features">
+            <div class="feature">
+                <h4>🎯 Extractive</h4>
+                <p>Identifies and extracts the most important sentences from your text</p>
+            </div>
+            <div class="feature">
+                <h4>⚡ Real-time</h4>
+                <p>See your summary update as you adjust the length slider</p>
+            </div>
+            <div class="feature">
+                <h4>📊 Smart Scoring</h4>
+                <p>Uses word frequency and position to rank sentence importance</p>
+            </div>
+            <div class="feature">
+                <h4>🔒 Private</h4>
+                <p>All processing in browser. Your text never leaves your device.</p>
+            </div>
+        </div>
+
+        <div class="tool-container">
+            <div class="input-group">
+                <label for="input">Paste your text:</label>
+                <textarea id="input" placeholder="Paste an article, research paper, or any long text here. The summarizer will extract the most important sentences based on word frequency and sentence position."></textarea>
+            </div>
+            
+            <div class="controls">
+                <div class="slider-group">
+                    <label for="ratio">Summary length:</label>
+                    <input type="range" id="ratio" min="10" max="50" value="25">
+                    <span id="ratioValue">25%</span>
+                </div>
+                <div class="button-group">
+                    <button class="btn-primary" onclick="summarize()">Summarize</button>
+                    <button class="btn-secondary" onclick="clearAll()">Clear</button>
+                    <button class="btn-secondary" onclick="loadExample()">Load Example</button>
+                </div>
+            </div>
+            
+            <div class="stats" id="stats" style="display: none;">
+                <div class="stat">
+                    <div class="stat-value" id="originalWords">0</div>
+                    <div class="stat-label">Original Words</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="summaryWords">0</div>
+                    <div class="stat-label">Summary Words</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="compression">0%</div>
+                    <div class="stat-label">Compression</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="sentences">0</div>
+                    <div class="stat-label">Key Sentences</div>
+                </div>
+            </div>
+            
+            <div class="output-container">
+                <label>Summary:</label>
+                <div id="output"></div>
+                <button class="copy-btn" onclick="copyOutput()">Copy</button>
+            </div>
+        </div>
+
+        <div class="upgrade-banner">
+            <h3>🚀 Need More Power?</h3>
+            <p>Get <strong>PD_Researcher v1</strong> — Batch URL summarization, scheduled monitoring, sentiment analysis, and 25+ more tools.</p>
+            <p>One-time payment. Lifetime access. No subscriptions.</p>
+            <div class="crypto-address">
+                Pay $29 in SOL/USDC to:<br>
+                FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ
+            </div>
+            <p style="font-size: 0.9rem; color: #888;">Email screenshot of payment to support@sandstreet.holdings for instant download link</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Part of the <a href="https://workspace-ivory-one.vercel.app/" style="color: #f5576c;">PD Developer Tools</a> collection</p>
+        <p style="margin-top: 0.5rem; font-size: 0.875rem;">Built by Sand Street Holdings</p>
+    </footer>
+
+    <script>
+        const ratioSlider = document.getElementById('ratio');
+        const ratioValue = document.getElementById('ratioValue');
+        
+        ratioSlider.addEventListener('input', (e) => {
+            ratioValue.textContent = e.target.value + '%';
+        });
+        
+        function summarize() {
+            const text = document.getElementById('input').value.trim();
+            if (!text) {
+                document.getElementById('output').innerHTML = '<p style="color: #888;">Please enter some text to summarize.</p>';
+                return;
+            }
+            
+            const ratio = parseInt(ratioSlider.value) / 100;
+            const summary = extractiveSummarize(text, ratio);
+            
+            // Display stats
+            const originalWords = text.split(/\s+/).length;
+            const summaryWords = summary.split(/\s+/).length;
+            const compression = Math.round((1 - summaryWords / originalWords) * 100);
+            const sentenceCount = summary.split(/[.!?]+/).filter(s => s.trim()).length;
+            
+            document.getElementById('originalWords').textContent = originalWords.toLocaleString();
+            document.getElementById('summaryWords').textContent = summaryWords.toLocaleString();
+            document.getElementById('compression').textContent = compression + '%';
+            document.getElementById('sentences').textContent = sentenceCount;
+            document.getElementById('stats').style.display = 'flex';
+            
+            // Display summary as bullet points
+            const sentences = summary.match(/[^.!?]+[.!?]+/g) || [summary];
+            let html = '<div class="sentences">';
+            sentences.forEach(sentence => {
+                if (sentence.trim()) {
+                    html += `<div class="sentence">${sentence.trim()}</div>`;
+                }
+            });
+            html += '</div>';
+            document.getElementById('output').innerHTML = html;
+        }
+        
+        function extractiveSummarize(text, ratio) {
+            // Split into sentences
+            const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+            if (sentences.length <= 3) return text;
+            
+            // Calculate word frequencies
+            const words = text.toLowerCase().match(/\b[a-z]+\b/g) || [];
+            const freq = {};
+            words.forEach(word => {
+                if (word.length > 3) {
+                    freq[word] = (freq[word] || 0) + 1;
+                }
+            });
+            
+            // Score sentences
+            const scored = sentences.map((sentence, index) => {
+                const sWords = sentence.toLowerCase().match(/\b[a-z]+\b/g) || [];
+                let score = 0;
+                sWords.forEach(word => {
+                    score += freq[word] || 0;
+                });
+                // Boost first and last sentences
+                if (index === 0) score *= 1.5;
+                if (index === sentences.length - 1) score *= 1.3;
+                // Normalize by length
+                score = score / (sWords.length + 1);
+                return { sentence: sentence.trim(), score, index };
+            });
+            
+            // Sort by score and take top sentences
+            const numSentences = Math.max(3, Math.floor(sentences.length * ratio));
+            const topSentences = scored
+                .sort((a, b) => b.score - a.score)
+                .slice(0, numSentences)
+                .sort((a, b) => a.index - b.index);
+            
+            return topSentences.map(s => s.sentence).join(' ');
+        }
+        
+        function clearAll() {
+            document.getElementById('input').value = '';
+            document.getElementById('output').innerHTML = '';
+            document.getElementById('stats').style.display = 'none';
+        }
+        
+        function loadExample() {
+            document.getElementById('input').value = `Artificial intelligence (AI) has emerged as one of the most transformative technologies of the 21st century. From virtual assistants like Siri and Alexa to complex systems that can diagnose diseases, AI is reshaping how we live and work.
+
+The history of AI dates back to the 1950s when computer scientists first began exploring whether machines could think. Early pioneers like Alan Turing and John McCarthy laid the groundwork for what would become a revolution in computing. Turing's famous test proposed that a machine could be considered intelligent if a human couldn't distinguish it from another human in conversation.
+
+In recent years, advances in machine learning and deep learning have accelerated AI development exponentially. Neural networks, inspired by the human brain, can now process vast amounts of data to recognize patterns and make decisions. This has led to breakthroughs in computer vision, natural language processing, and robotics.
+
+However, the rapid advancement of AI also raises important ethical questions. Concerns about job displacement, privacy, and the potential for autonomous weapons have sparked debates among policymakers and technologists. Many experts argue for responsible AI development that prioritizes human welfare and safety.
+
+Looking ahead, AI is expected to continue its integration into various sectors including healthcare, finance, transportation, and education. The technology holds promise for solving complex global challenges like climate change and disease, but success will depend on thoughtful implementation and governance.`;
+        }
+        
+        function copyOutput() {
+            const output = document.getElementById('output').innerText;
+            navigator.clipboard.writeText(output).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = 'Copy', 2000);
+            });
+        }
+    </script>
+</body>
+</html>

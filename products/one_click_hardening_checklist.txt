@@ -1,0 +1,29 @@
+PD ONE-CLICK HARDENING (CHECKLIST)
+
+Goal: turn “OpenClaw running” into “OpenClaw reliable.”
+
+1) Stability
+- Set conservative concurrency (main + subagents)
+- Confirm gateway restarts cleanly
+
+2) Backups
+- Hourly Drive backups enabled
+- Backup includes: MEMORY.md, daily memory file, products artifacts, zips
+
+3) Cost guardrails
+- Daily token/cost log on
+- Alerts when spend spikes
+- Default model = Kimi
+
+4) Security baseline
+- Disable risky skills by default
+- Run Audit Lite on any downloaded skill packs before installing
+
+5) Comms reliability
+- Email check cron active
+- Hourly activity summary active
+- Twilio “call me” works (optional)
+
+6) Delivery
+- Generate a Setup Doctor report and attach it to the client’s handoff
+- Provide “first 24 hours” checklist to operator

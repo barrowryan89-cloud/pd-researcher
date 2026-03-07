@@ -1,0 +1,194 @@
+#!/usr/bin/env python3
+"""
+timestamp — The universal time converter
+Epoch ↔ ISO8601 ↔ Human-readable in one command
+"""
+
+import argparse
+import sys
+import time
+from datetime import datetime, timezone
+from typing import Optional
+
+
+def parse_input(value: str) -> Optional[datetime]:
+    """Parse various time formats into datetime object."""
+    value = value.strip()
+    
+    # Try epoch (integer or float)
+    try:
+        epoch = float(value)
+        if 1000000000 < epoch < 20000000000:  # Seconds
+            return datetime.fromtimestamp(epoch, tz=timezone.utc)
+        elif epoch > 1000000000000:  # Milliseconds
+            return datetime.fromtimestamp(epoch / 1000, tz=timezone.utc)
+        elif epoch > 1000000000000000:  # Microseconds
+            return datetime.fromtimestamp(epoch / 1000000, tz=timezone.utc)
+    except ValueError:
+        pass
+    
+    # Try ISO 8601 formats
+    iso_formats = [
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S.%f",
+        "%Y-%m-%dT%H:%M:%S",
+        "%Y-%m-%d %H:%M:%S",
+        "%Y-%m-%d",
+    ]
+    
+    for fmt in iso_formats:
+        try:
+            dt = datetime.strptime(value, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except ValueError:
+            continue
+    
+    return None
+
+
+def format_output(dt: datetime, formats: list) -> dict:
+    """Format datetime into various output formats."""
+    results = {}
+    
+    for fmt in formats:
+        if fmt == "epoch":
+            results["Epoch (seconds)"] = int(dt.timestamp())
+        elif fmt == "epoch_ms":
+            results["Epoch (ms)"] = int(dt.timestamp() * 1000)
+        elif fmt == "iso":
+            results["ISO 8601"] = dt.isoformat()
+        elif fmt == "iso_z":
+            results["ISO 8601 (Z)"] = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+        elif fmt == "rfc2822":
+            results["RFC 2822"] = dt.strftime("%a, %d %b %Y %H:%M:%S %z")
+        elif fmt == "human":
+            results["Human (UTC)"] = dt.strftime("%B %d, %Y at %H:%M:%S UTC")
+        elif fmt == "date":
+            results["Date only"] = dt.strftime("%Y-%m-%d")
+        elif fmt == "time":
+            results["Time only"] = dt.strftime("%H:%M:%S")
+        elif fmt == "relative":
+            results["Relative"] = format_relative(dt)
+    
+    return results
+
+
+def format_relative(dt: datetime) -> str:
+    """Format relative time (e.g., '2 hours ago')."""
+    now = datetime.now(timezone.utc)
+    diff = now - dt
+    seconds = abs(diff.total_seconds())
+    
+    if diff.total_seconds() > 0:
+        suffix = "ago"
+    else:
+        suffix = "from now"
+    
+    if seconds < 60:
+        return f"{int(seconds)} seconds {suffix}"
+    elif seconds < 3600:
+        return f"{int(seconds / 60)} minutes {suffix}"
+    elif seconds < 86400:
+        return f"{int(seconds / 3600)} hours {suffix}"
+    elif seconds < 604800:
+        return f"{int(seconds / 86400)} days {suffix}"
+    elif seconds < 2592000:
+        return f"{int(seconds / 604800)} weeks {suffix}"
+    else:
+        return f"{int(seconds / 2592000)} months {suffix}"
+
+
+def guess_format(value: str) -> str:
+    """Guess the format of input and return description."""
+    try:
+        num = float(value)
+        if num > 1000000000000000:
+            return "microseconds"
+        elif num > 1000000000000:
+            return "milliseconds"
+        else:
+            return "seconds (Unix epoch)"
+    except ValueError:
+        pass
+    
+    if "T" in value:
+        if "Z" in value:
+            return "ISO 8601 (UTC)"
+        elif any(c in value for c in "+-"):
+            return "ISO 8601 (with timezone)"
+        return "ISO 8601"
+    
+    return "human-readable date"
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Universal timestamp converter",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  timestamp 1704067200              # Convert epoch to all formats
+  timestamp "2024-01-01T00:00:00Z"  # Convert ISO to epoch
+  timestamp now                       # Current time in all formats
+  timestamp 1704067200 --format iso   # Specific output format
+
+Supported input formats:
+  - Unix epoch (seconds, milliseconds, microseconds)
+  - ISO 8601 (2024-01-01T00:00:00Z, 2024-01-01T00:00:00+00:00)
+  - Human readable (2024-01-01 00:00:00, 2024-01-01)
+  - "now" for current time
+        """
+    )
+    parser.add_argument("value", nargs="?", default="now", 
+                        help="Timestamp to convert (default: now)")
+    parser.add_argument("--format", "-f", 
+                        choices=["epoch", "epoch_ms", "iso", "iso_z", "rfc2822", 
+                                "human", "date", "time", "relative", "all"],
+                        default="all",
+                        help="Output format (default: all)")
+    parser.add_argument("--tz", default="UTC",
+                        help="Timezone for human-readable output (default: UTC)")
+    parser.add_argument("--parse", action="store_true",
+                        help="Only show what format was detected")
+    
+    args = parser.parse_args()
+    
+    # Handle 'now'
+    if args.value.lower() == "now":
+        dt = datetime.now(timezone.utc)
+        print("🕐 Current time:")
+    else:
+        dt = parse_input(args.value)
+        if dt is None:
+            print(f"❌ Cannot parse: {args.value}", file=sys.stderr)
+            print("Try: epoch timestamp, ISO 8601, or 'YYYY-MM-DD HH:MM:SS'", file=sys.stderr)
+            sys.exit(1)
+        
+        detected = guess_format(args.value)
+        if args.parse:
+            print(f"🔍 Detected format: {detected}")
+            return
+        print(f"🔍 Input detected as: {detected}")
+    
+    # Determine output formats
+    if args.format == "all":
+        formats = ["epoch", "epoch_ms", "iso", "iso_z", "rfc2822", "human", "relative", "date", "time"]
+    else:
+        formats = [args.format]
+    
+    # Generate and display output
+    results = format_output(dt, formats)
+    
+    print()
+    max_key_len = max(len(k) for k in results.keys())
+    for key, value in results.items():
+        print(f"  {key.ljust(max_key_len)} : {value}")
+
+
+if __name__ == "__main__":
+    main()

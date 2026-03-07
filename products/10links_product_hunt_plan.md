@@ -1,0 +1,25 @@
+# Product Hunt Launch Plan: 10links.blue (Agent Search Wrapper)
+
+**Goal:** Top 5 Product of the Day.
+**Tagline:** "Google Search, but 98% smaller for AI Agents."
+
+**Assets Needed:**
+1.  **Icon:** A clean "10" or "Link" logo (blue/white).
+2.  **Screenshots:**
+    *   Image 1: Side-by-side (Bing HTML bloat vs 10links Clean JSON).
+    *   Image 2: Terminal screenshot: `curl "https://10links.blue/search?q=agents"` -> Perfect JSON output.
+    *   Image 3: "Token Savings Calculator" (1 search = $0.003 vs $0.05).
+    *   Image 4: "Works with OpenClaw/AutoGPT/BabyAGI".
+3.  **Maker Comment:**
+    *   "Hi Hunters! 👋 I built 10links because my agents were burning tokens just reading Google's bloated HTML. 10links strips the ads, nav bars, and tracking scripts. Pure results. 12KB vs 1.2MB. Let me know what you think!"
+
+**Launch Day Strategy:**
+- **Time:** 12:01 AM PST (Tuesday/Wednesday).
+- **First Comment:** Post the maker comment immediately.
+- **Outreach:** DM 10-15 key AI influencers on X/Twitter asking for feedback (and an upvote if they like it).
+- **Reddit:** Cross-post the launch link to r/SideProject and r/AutoGPT.
+
+**Success Metrics:**
+- 200+ Upvotes.
+- 50+ Comments.
+- Top 5 Product of the Day badge.

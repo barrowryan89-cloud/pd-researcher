@@ -1,0 +1,45 @@
+Subject: Free Solana Tools — Balance Checker + Farming Tracker
+
+Hi there,
+
+I built some CLI tools for Solana power users and thought you might find them useful:
+
+**1. Solana Balance Checker**
+Check any wallet balance from command line:
+```
+./solana_balance.sh <WALLET_ADDRESS>
+```
+No API key needed. Uses public RPC.
+
+**2. Airdrop Farming Tracker**
+Track your farming activity across protocols:
+```
+python3 farming_tracker.py add my_wallet ADDRESS
+python3 farming_tracker.py log my_wallet marginfi deposit 0.5
+```
+Keep records for taxes and airdrop eligibility.
+
+**Get the tools:**
+Email barrowryan89@gmail.com with subject "TOOLS" and I'll send the download link.
+
+---
+
+**Want the complete farming strategy?**
+I also wrote a detailed guide covering:
+• Exact wallet setup
+• Protocol walkthroughs (MarginFi, Kamino, Drift, Jupiter)
+• Daily/weekly checklists
+• Risk management
+
+$9 (crypto only) — reply "GUIDE" for details.
+
+Cheers,
+PD
+
+---
+
+**Use this for:**
+- Cold email outreach to crypto communities
+- Newsletter blasts
+- Reddit DM automation
+- Twitter DM outreach

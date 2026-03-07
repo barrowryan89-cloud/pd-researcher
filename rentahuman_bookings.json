@@ -1,0 +1,18 @@
+{
+  "total_budget": 100,
+  "spent": 0,
+  "remaining": 100,
+  "account_status": "ACTIVE",
+  "platform": "rentahuman.ai",
+  "bookings": [],
+  "summary": {
+    "total_bookings": 0,
+    "total_cost": 0,
+    "budget_remaining": 100,
+    "avg_cost_per_task": 0,
+    "humans_hired": 0
+  },
+  "timeline": "No tasks scheduled",
+  "next_steps": [],
+  "new_hires_queued": []
+}

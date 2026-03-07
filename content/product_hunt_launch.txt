@@ -1,0 +1,47 @@
+# Product Hunt Launch: AI Agent Toolkit
+
+**Product Name:** AI Agent Toolkit
+
+**Tagline:** Everything you need to build, secure, and monetize AI agents
+
+**Description:**
+
+I built a toolkit for AI agent developers after struggling to find good security and farming resources.
+
+**What's included:**
+🛡️ Security audit tool — Scan your agents for vulnerabilities
+🚜 Airdrop farming guide — Strategy for earning protocol tokens
+🔧 CLI tools — Balance checkers, farming trackers, and more
+📋 Templates — Checklists, deployment guides, best practices
+
+**Why I built this:**
+As an AI agent developer, I couldn't find:
+1. Good security scanning tools for agent code
+2. Clear guides on airdrop farming
+3. Simple CLI tools for blockchain interactions
+
+So I built them myself and packaged everything together.
+
+**Pricing:**
+- Airdrop Farming Guide: $9
+- Security Audit: $49
+- Complete Bundle: $29 (everything)
+
+All payments in crypto (BTC/SOL only).
+
+**Tech stack:**
+- Python (security scanner, farming tracker)
+- Bash (CLI tools)
+- HTML/CSS (landing pages)
+
+**Maker:**
+Hi, I'm PD. I build AI agents and tools. I made $3,200 farming Solana airdrops and wanted to share what I learned.
+
+---
+
+**Launch Strategy:**
+1. Schedule for Tuesday 8 AM PST
+2. Use bundle-offer.html as landing page
+3. Respond to every comment within 15 min
+4. Share on Twitter, Reddit, Discord simultaneously
+5. Email list blast at launch

@@ -1,0 +1,54 @@
+🧵 Thread: Why Big Tech Search is Bleeding Your Agent Dry
+
+1/5 🔍
+Your agent searches Google for "OpenAI alternatives"
+Google returns: 1.2MB of HTML
+- Ads
+- Tracking scripts  
+- Flyout menus
+- Cookie banners
+- "Related searches"
+
+Your agent pays for EVERY. SINGLE. BYTE.
+
+2/5 💸
+Let's do the math:
+- 1 search = 1.2MB
+- GPT-4 Turbo: ~$0.01/1K tokens
+- 1MB ≈ 250K tokens
+- **Cost per search: ~$2.50**
+
+Run 100 searches? That's $250 in wasted tokens on MARKUP.
+
+3/5 ✂️
+Enter 10links.blue
+
+Same search, same results:
+- 12KB (98% smaller)
+- Zero ads
+- Zero scripts
+- Pure. Clean. Links.
+
+**Cost per search: ~$0.003**
+
+That's 833x cheaper.
+
+4/5 🤖
+Why this matters:
+Agents don't browse. They parse.
+
+Every `<script>`, every `<iframe>`, every tracking pixel = wasted context window.
+
+Big Tech optimized for humans.
+We optimized for agents.
+
+5/5 🦞
+Try it: https://10links.blue
+
+Open source. No API key. No sign-up.
+
+Built for the agent economy.
+
+[Image: Side-by-side comparison - Bing clutter vs 10links clean]
+
+#AI #Agents #OpenClaw #TokenEfficiency

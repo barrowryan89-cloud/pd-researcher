@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free HTML to Markdown Converter - Online Tool</title>
+    <meta name="description" content="Convert HTML to Markdown instantly. Free online tool. No signup required. Clean, formatted Markdown output.">
+    <meta name="keywords" content="html to markdown converter, online html converter, free markdown tool, html parser">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; font-size: 1.1rem; }
+        .tool-container {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+        }
+        .input-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.5rem; color: #aaa; font-weight: 500; }
+        textarea, input[type="url"] {
+            width: 100%;
+            padding: 1rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            resize: vertical;
+        }
+        textarea { min-height: 200px; }
+        input[type="url"] { font-family: inherit; }
+        textarea:focus, input:focus { outline: none; border-color: #667eea; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); }
+        .btn-secondary { background: #333; color: #e0e0e0; }
+        .btn-secondary:hover { background: #444; }
+        .output-container { position: relative; }
+        #output {
+            width: 100%;
+            min-height: 200px;
+            padding: 1rem;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #4ade80;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #333;
+            border: none;
+            border-radius: 6px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+        .copy-btn:hover { background: #444; }
+        .upgrade-banner {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            border: 1px solid #4a90c2;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .upgrade-banner h3 { color: #fff; margin-bottom: 0.5rem; }
+        .upgrade-banner p { color: #a0c4e8; margin-bottom: 1rem; }
+        .crypto-address {
+            background: #0a0a0a;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #4ade80;
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .feature h4 { color: #667eea; margin-bottom: 0.5rem; }
+        .feature p { color: #888; font-size: 0.9rem; }
+        footer { text-align: center; padding: 2rem; color: #666; border-top: 1px solid #333; margin-top: 3rem; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧹 HTML to Markdown Converter</h1>
+            <p class="subtitle">Free online tool. No signup. Instant conversion. Clean output.</p>
+        </header>
+
+        <div class="features">
+            <div class="feature">
+                <h4>⚡ Instant</h4>
+                <p>Convert HTML to Markdown in real-time as you type</p>
+            </div>
+            <div class="feature">
+                <h4>🔒 Private</h4>
+                <p>All processing happens in your browser. No data sent to servers.</p>
+            </div>
+            <div class="feature">
+                <h4>🎯 Accurate</h4>
+                <p>Handles tables, lists, links, images, and code blocks</p>
+            </div>
+            <div class="feature">
+                <h4>💯 Free</h4>
+                <p>No limits. No watermarks. Use it as much as you need.</p>
+            </div>
+        </div>
+
+        <div class="tool-container">
+            <div class="input-group">
+                <label for="input">Paste HTML or enter URL:</label>
+                <textarea id="input" placeholder="<h1>Hello World</h1>
+<p>This is a <strong>test</strong> paragraph.</p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+Or enter a URL like: https://example.com/article"></textarea>
+            </div>
+            <div class="button-group">
+                <button class="btn-primary" onclick="convertHtml()">Convert to Markdown</button>
+                <button class="btn-secondary" onclick="clearAll()">Clear</button>
+                <button class="btn-secondary" onclick="loadExample()">Load Example</button>
+            </div>
+            <div class="output-container">
+                <label>Markdown Output:</label>
+                <pre id="output"></pre>
+                <button class="copy-btn" onclick="copyOutput()">Copy</button>
+            </div>
+        </div>
+
+        <div class="upgrade-banner">
+            <h3>🚀 Need More Power?</h3>
+            <p>Get <strong>PD_Researcher v1</strong> — Batch processing, URL lists, scheduled monitoring, and 25+ more tools.</p>
+            <p>One-time payment. Lifetime access. No subscriptions.</p>
+            <div class="crypto-address">
+                Pay $29 in SOL/USDC to:<br>
+                FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ
+            </div>
+            <p style="font-size: 0.9rem; color: #888;">Email screenshot of payment to support@sandstreet.holdings for instant download link</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Part of the <a href="https://workspace-ivory-one.vercel.app/" style="color: #667eea;">PD Developer Tools</a> collection</p>
+        <p style="margin-top: 0.5rem; font-size: 0.875rem;">Built by Sand Street Holdings</p>
+    </footer>
+
+    <script>
+        function convertHtml() {
+            const input = document.getElementById('input').value.trim();
+            const output = document.getElementById('output');
+            
+            if (!input) {
+                output.textContent = 'Please enter some HTML to convert.';
+                return;
+            }
+            
+            // Check if input is a URL
+            if (input.startsWith('http://') || input.startsWith('https://')) {
+                output.textContent = 'URL fetching requires the desktop version. Download PD_Researcher v1 for URL batch processing.';
+                return;
+            }
+            
+            // Convert HTML to Markdown
+            let markdown = htmlToMarkdown(input);
+            output.textContent = markdown;
+        }
+        
+        function htmlToMarkdown(html) {
+            // Create a temporary div to parse HTML
+            const div = document.createElement('div');
+            div.innerHTML = html;
+            
+            // Process nodes recursively
+            return processNode(div).trim();
+        }
+        
+        function processNode(node) {
+            let result = '';
+            
+            for (const child of node.childNodes) {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    result += child.textContent;
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    const tag = child.tagName.toLowerCase();
+                    const content = processNode(child);
+                    
+                    switch (tag) {
+                        case 'h1': result += `# ${content}\n\n`; break;
+                        case 'h2': result += `## ${content}\n\n`; break;
+                        case 'h3': result += `### ${content}\n\n`; break;
+                        case 'h4': result += `#### ${content}\n\n`; break;
+                        case 'h5': result += `##### ${content}\n\n`; break;
+                        case 'h6': result += `###### ${content}\n\n`; break;
+                        case 'p': result += `${content}\n\n`; break;
+                        case 'br': result += '\n'; break;
+                        case 'strong':
+                        case 'b': result += `**${content}**`; break;
+                        case 'em':
+                        case 'i': result += `*${content}*`; break;
+                        case 'code': result += `\`${content}\``; break;
+                        case 'pre': result += `\`\`\`\n${content}\n\`\`\`\n\n`; break;
+                        case 'a': result += `[${content}](${child.getAttribute('href') || ''})`; break;
+                        case 'img': result += `![${child.getAttribute('alt') || ''}](${child.getAttribute('src') || ''})`; break;
+                        case 'ul': result += content + '\n'; break;
+                        case 'ol': result += content + '\n'; break;
+                        case 'li': result += `- ${content}\n`; break;
+                        case 'blockquote': result += `> ${content.replace(/\n/g, '\n> ')}\n\n`; break;
+                        case 'hr': result += `---\n\n`; break;
+                        case 'table': result += convertTable(child); break;
+                        case 'tr': break; // handled in table
+                        case 'td':
+                        case 'th': result += content + ' | '; break;
+                        default: result += content;
+                    }
+                }
+            }
+            
+            return result;
+        }
+        
+        function convertTable(table) {
+            let result = '\n';
+            const rows = table.querySelectorAll('tr');
+            
+            rows.forEach((row, index) => {
+                const cells = row.querySelectorAll('td, th');
+                let rowContent = '| ';
+                cells.forEach(cell => {
+                    rowContent += cell.textContent.trim() + ' | ';
+                });
+                result += rowContent + '\n';
+                
+                // Add separator after header
+                if (index === 0) {
+                    result += '|' + ' --- |'.repeat(cells.length) + '\n';
+                }
+            });
+            
+            return result + '\n';
+        }
+        
+        function clearAll() {
+            document.getElementById('input').value = '';
+            document.getElementById('output').textContent = '';
+        }
+        
+        function loadExample() {
+            document.getElementById('input').value = `<article>
+  <h1>Getting Started with Markdown</h1>
+  <p>Markdown is a <strong>lightweight markup language</strong> that you can use to add formatting elements to plaintext text documents.</p>
+  
+  <h2>Why Use Markdown?</h2>
+  <ul>
+    <li>It's <em>easy</em> to learn</li>
+    <li>It's <em>portable</em> — works everywhere</li>
+    <li>It's <em>future proof</em></li>
+  </ul>
+  
+  <h2>Basic Syntax</h2>
+  <p>Here's a <a href="https://example.com">link to learn more</a> and an image:</p>
+  <img src="example.png" alt="Markdown Example">
+  
+  <blockquote>
+    <p>"The best code is no code at all."</p>
+  </blockquote>
+  
+  <pre><code>function hello() {
+  console.log("Hello, Markdown!");
+}</code></pre>
+</article>`;
+        }
+        
+        function copyOutput() {
+            const output = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(output).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = 'Copy', 2000);
+            });
+        }
+        
+        // Auto-convert on paste
+        document.getElementById('input').addEventListener('paste', () => {
+            setTimeout(convertHtml, 100);
+        });
+    </script>
+</body>
+</html>

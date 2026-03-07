@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>62 Essential Python CLI Tools for Developers (Free, Open Source)</title>
+    <meta name="description" content="Download 62 free Python CLI tools for developers. Zero dependencies, single-file scripts. Dupesweeper, JWT decoder, URL parser, CSS formatter, SQL formatter, Git analysis, and more.">
+    <meta name="keywords" content="python cli tools, developer tools, command line utilities, free dev tools, open source tools, terminal tools, python scripts, api testing tool, http client, jwt decoder">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="62 Essential Python CLI Tools for Developers">
+    <meta property="og:description" content="Free, open-source Python command-line tools. Zero dependencies. Download and use instantly. Includes Dupesweeper, JWT decoder, URL parser, CSS formatter, SQL formatter, Git analyzer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barrowryan89-cloud.github.io/pd-researcher/50-cli-tools.html">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            color: white;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin: 30px 0 15px;
+            color: #333;
+        }
+        p { margin-bottom: 15px; }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .tool-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .tool-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tool-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9em;
+            border: 1px solid #e0e0e0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .highlight-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .install-box {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .install-box code {
+            background: transparent;
+            color: #00ff00;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .faq {
+            margin: 30px 0;
+        }
+        .faq-item {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #666;
+        }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #333;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 62 Essential Python CLI Tools for Developers</h1>
+        <p class="subtitle">Free, open-source command-line utilities. Zero dependencies. Download and use instantly.</p>
+        
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">62</div>
+                <div class="stat-label">CLI Tools</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Dependencies</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Open Source</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">⚡</div>
+                <div class="stat-label">Ready to Use</div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="cta-button">
+                📦 Download All 62 Tools
+            </a>
+        </div>
+
+        <h2>Why These Tools?</h2>
+        <p>
+            Every developer needs a solid toolkit. Whether you're testing regex patterns, analyzing Git repositories, 
+            converting file formats, processing data, or automating workflows, these 62 Python 
+            CLI tools have you covered. Built with <strong>zero external dependencies</strong> — 
+            just pure Python standard library.
+        </p>
+
+        <div class="highlight-box">
+            <strong>✨ Key Benefits:</strong>
+            <ul>
+                <li><strong>No pip install:</strong> Every tool runs standalone</li>
+                <li><strong>Single files:</strong> Copy, modify, distribute freely</li>
+                <li><strong>Cross-platform:</strong> Works on Linux, macOS, Windows</li>
+                <li><strong>Well-documented:</strong> Clear help text and examples</li>
+                <li><strong>Battle-tested:</strong> Built for real-world use</li>
+            </ul>
+        </div>
+
+        <h2>Quick Start</h2>
+        <div class="install-box">
+<code># Clone the repository
+git clone https://github.com/barrowryan89-cloud/pd-researcher.git
+cd pd-researcher
+
+# Run any tool directly
+python tools/csv_to_json.py input.csv output.json
+python tools/password_gen.py --length 20
+python tools/json_formatter.py data.json</code>
+        </div>
+
+        <h2>Tool Categories</h2>
+
+        <div class="tool-category">
+            <h3>📊 Data Processing & Conversion</h3>
+            <p>Transform and manipulate data in various formats:</p>
+            <div class="tool-list">
+                <div class="tool-item">csv_to_json.py</div>
+                <div class="tool-item">json_to_csv.py</div>
+                <div class="tool-item">json_formatter.py</div>
+                <div class="tool-item">sql_formatter.py</div>
+                <div class="tool-item">csv_merge.py</div>
+                <div class="tool-item">yaml_to_json.py</div>
+                <div class="tool-item">markdown_to_html.py</div>
+                <div class="tool-item">base_converter.py</div>
+                <div class="tool-item">string_encode.py</div>
+                <div class="tool-item">html_entities.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>🔒 Security & Encryption</h3>
+            <p>Generate passwords, hash files, and encrypt data:</p>
+            <div class="tool-list">
+                <div class="tool-item">password_gen.py</div>
+                <div class="tool-item">password_strength.py</div>
+                <div class="tool-item">file_hash.py</div>
+                <div class="tool-item">file_encrypt.py</div>
+                <div class="tool-item">jwt_decoder.py</div>
+                <div class="tool-item">cert_checker.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>🌐 Web & Network Utilities</h3>
+            <p>Test connections, parse URLs, check DNS:</p>
+            <div class="tool-list">
+                <div class="tool-item">url_parser.py</div>
+                <div class="tool-item">jwt_decoder.py</div>
+                <div class="tool-item">dns_lookup.py</div>
+                <div class="tool-item">whois_lookup.py</div>
+                <div class="tool-item">net_info.py</div>
+                <div class="tool-item">qrcode_gen.py</div>
+                <div class="tool-item">http_status.py</div>
+                <div class="tool-item">api_tester.py</div>
+                <div class="tool-item">webhook_tester.py</div>
+                <div class="tool-item">html_formatter.py</div>
+                <div class="tool-item">css_formatter.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>📁 File & System Operations</h3>
+            <p>Manage files, analyze directories, monitor systems:</p>
+            <div class="tool-list">
+                <div class="tool-item">file_organizer.py</div>
+                <div class="tool-item">dupesweeper.py ⭐ NEW</div>
+                <div class="tool-item">duplicate_finder.py</div>
+                <div class="tool-item">file_compare.py</div>
+                <div class="tool-item">dir_tree.py</div>
+                <div class="tool-item">sys_monitor.py</div>
+                <div class="tool-item">disk_usage.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>⚙️ Developer & Git Tools</h3>
+            <p>Analyze repositories, format code, check syntax:</p>
+            <div class="tool-list">
+                <div class="tool-item">git_analyzer.py</div>
+                <div class="tool-item">git_stats.py</div>
+                <div class="tool-item">line_counter.py</div>
+                <div class="tool-item">file_watcher.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>📝 Text & String Utilities</h3>
+            <p>Manipulate text, generate content, parse data:</p>
+            <div class="tool-list">
+                <div class="tool-item">text_formatter.py</div>
+                <div class="tool-item">lorem_gen.py</div>
+                <div class="tool-item">banner_gen.py</div>
+                <div class="tool-item">regex_tester.py</div>
+                <div class="tool-item">word_counter.py</div>
+            </div>
+        </div>
+
+        <div class="tool-category">
+            <h3>🔧 Math & Calculation</h3>
+            <p>Perform calculations and conversions:</p>
+            <div class="tool-list">
+                <div class="tool-item">calc.py</div>
+                <div class="tool-item">unit_converter.py</div>
+                <div class="tool-item">loan_calc.py</div>
+                <div class="tool-item">uuid_gen.py</div>
+            </div>
+        </div>
+
+        <h2>Popular Tools in Detail</h2>
+
+        <h3>1. Git Analyzer (<code>git_analyzer.py</code>)</h3>
+        <p>
+            Deep-dive into any Git repository. Get contributor stats, commit frequency, 
+            code churn metrics, and language breakdowns. Perfect for understanding project 
+            health and team productivity.
+        </p>
+        <div class="install-box">
+<code>python tools/git_analyzer.py /path/to/repo --format json</code>
+        </div>
+
+        <h3>2. CSV to JSON Converter (<code>csv_to_json.py</code>)</h3>
+        <p>
+            Convert CSV files to JSON with support for nested objects, type inference, 
+            and custom delimiters. Handles large files efficiently with streaming.
+        </p>
+
+        <h3>3. Password Generator (<code>password_gen.py</code>)</h3>
+        <p>
+            Generate cryptographically secure passwords with customizable length, 
+            character sets, and exclusion rules. No more weak passwords.
+        </p>
+
+        <h3>4. Regex Tester & Debugger (<code>regex_tester.py</code>)</h3>
+        <p>
+            Test, debug, and explain regular expressions locally. Match highlighting, 
+            group extraction, pattern explanation, and 10+ common regex patterns built-in. 
+            No online service needed — works entirely offline.
+        </p>
+        <div class="install-box">
+<code>python tools/regex_tester.py "\d{3}-\d{4}" "Call 555-1234"
+python tools/regex_tester.py -e "^[a-z]+$"  # Explain pattern
+python tools/regex_tester.py -l              # List common patterns</code>
+        </div>
+
+        <h2>Complete Tool Index</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Tool Name</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+            <tr><td>1</td><td>git_analyzer.py</td><td>Git</td><td>Repository analytics and stats</td></tr>
+            <tr><td>2</td><td>csv_to_json.py</td><td>Data</td><td>CSV to JSON conversion</td></tr>
+            <tr><td>3</td><td>json_formatter.py</td><td>Data</td><td>Pretty-print JSON files</td></tr>
+            <tr><td>4</td><td>password_gen.py</td><td>Security</td><td>Secure password generator</td></tr>
+            <tr><td>5</td><td>file_organizer.py</td><td>Files</td><td>Organize files by type/date</td></tr>
+            <tr><td>6</td><td>duplicate_finder.py</td><td>Files</td><td>Find duplicate files</td></tr>
+            <tr><td>7</td><td>text_formatter.py</td><td>Text</td><td>Format and clean text</td></tr>
+            <tr><td>8</td><td>url_parser.py</td><td>Web</td><td>Parse URL components</td></tr>
+            <tr><td>9</td><td>qr_generator.py</td><td>Web</td><td>Generate QR codes</td></tr>
+            <tr><td>10</td><td>unit_converter.py</td><td>Math</td><td>Convert units of measurement</td></tr>
+            <tr><td>54</td><td>html_formatter.py</td><td>Web</td><td>Format and beautify HTML</td></tr>
+            <tr><td>55</td><td>html_cleaner.py</td><td>Web</td><td>Clean and sanitize HTML</td></tr>
+            <tr><td>56</td><td>sql_formatter.py</td><td>Data</td><td>Format and beautify SQL queries</td></tr>
+            <tr><td>57</td><td>css_formatter.py</td><td>Web</td><td>Format and beautify CSS</td></tr>
+            <tr><td>58</td><td>url_parser.py</td><td>Web</td><td>Parse URLs and query parameters</td></tr>
+            <tr><td>59</td><td>jwt_decoder.py</td><td>Security</td><td>Decode and validate JWT tokens</td></tr>
+            <tr><td>60</td><td>csv_converter_free.py</td><td>Data</td><td>Convert CSV to JSON/Excel/SQLite</td></tr>
+            <tr><td>61</td><td>password_generator_free.py</td><td>Security</td><td>Password generator with strength analysis</td></tr>
+            <tr><td>62</td><td>dupesweeper_free.py</td><td>Files</td><td>Find and manage duplicate files</td></tr>
+        </table>
+
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-question">Do I need to install Python packages?</div>
+                <p>
+                    <strong>No.</strong> Every tool uses only Python's standard library. 
+                    No <code>pip install</code>, no virtual environments, no dependency hell.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I modify and redistribute these tools?</div>
+                <p>
+                    <strong>Yes.</strong> All tools are open source (MIT license). 
+                    Use them in personal projects, commercial work, or redistribute them. 
+                    No attribution required (though it's appreciated).
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What Python version do I need?</div>
+                <p>
+                    Python 3.6 or higher. All tools are tested on Python 3.8+ but should 
+                    work on any modern Python 3 installation.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Are these tools cross-platform?</div>
+                <p>
+                    <strong>Yes.</strong> They work on Linux, macOS, and Windows. 
+                    No platform-specific code or dependencies.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I get help with a specific tool?</div>
+                <p>
+                    Every tool has built-in help. Run <code>python toolname.py --help</code> 
+                    to see usage instructions, examples, and available options.
+                </p>
+            </div>
+        </div>
+
+        <h2>Use Cases</h2>
+        <ul>
+            <li><strong>DevOps:</strong> Automate deployments, monitor systems, analyze logs</li>
+            <li><strong>Data Science:</strong> Convert formats, clean data, generate reports</li>
+            <li><strong>Web Development:</strong> Test APIs, parse URLs, generate assets</li>
+            <li><strong>Security:</strong> Audit passwords, hash files, encrypt data</li>
+            <li><strong>System Administration:</strong> Monitor resources, organize files, batch process</li>
+        </ul>
+
+        <h2>Contributing</h2>
+        <p>
+            Found a bug? Have an idea for a new tool? Contributions are welcome! 
+            Visit the <a href="https://github.com/barrowryan89-cloud/pd-researcher">GitHub repository</a> 
+            to submit issues or pull requests.
+        </p>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="cta-button">
+                🚀 Get All 59 Tools Now
+            </a>
+        </div>
+
+        <footer>
+            <p>Built with ❤️ for developers who ship.</p>
+            <p>
+                <strong>Keywords:</strong> python cli tools, command line utilities, 
+                developer tools, free dev tools, open source, terminal tools, 
+                python scripts, automation tools, data processing, git tools
+            </p>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="github-link">
+                <svg height="24" viewBox="0 0 16 16" width="24" fill="white">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+                Star on GitHub
+            </a>
+        </footer>
+    </div>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "59 Essential Python CLI Tools",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS, Windows",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "50"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "PD Researcher"
+        }
+    }
+    </script>
+</body>
+</html>

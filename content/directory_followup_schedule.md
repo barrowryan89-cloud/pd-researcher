@@ -1,0 +1,34 @@
+# Directory Follow-Up Schedule — Feb 2026
+
+> **Use this after every directory submission.** The goal is to keep AlternativeTo, SaaSHub, StackShare, DevHunt, Toolify, Console.dev, and Futurepedia warm without annoying moderators. Pair this schedule with the copy inside `content/directory_followup_macros.md` and log receipts in `content/directory_status_board.md`.
+
+## Tiered Cadence
+| Day | Action | Script | Proof to Capture |
+|-----|--------|--------|------------------|
+| 0 (Submission) | File the form + attach hero screenshot + ZIP link. | `content/directory_swipe_file.md` + directory-specific notes. | Confirmation email or screenshot → `assets/receipts/` + row in `content/distribution_receipts.md`. |
+| 2 | Send a lightweight "just confirming you received this" nudge (if no auto-reply). | Macro A from `content/directory_followup_macros.md`. | Reply screenshot + update status board. |
+| 5 | Provide social proof: mention Show HN rehearsal, scoreboard updates, or newsletter mentions. | Macro B ("Proof Pack follow-up"). | Link to README receipts section + paste in `directory_contact_map.md`. |
+| 7 | Offer edits: "Happy to add screenshots, adjust copy, or record a Loom." | Macro C ("Editor support"). | Note their request + owner in status board. |
+| 10 | Escalate gently—tag directory account on Twitter/LinkedIn or use alternate contact email. | Macro D ("Public nudge"). | Log public link + keep tone positive. |
+| 14 | Final check-in before archiving: "We'll resubmit next sprint if we don't hear back." | Macro E. | Update board to "Dormant" or "Approved". |
+
+## Priority Notes
+- **AlternativeTo / SaaSHub:** They prefer concise updates. Keep follow-ups short and include direct ZIP + mirror links each time.
+- **StackShare:** Responds faster via support email + Twitter DM combo. Mention the audit offer to frame business value.
+- **DevHunt:** Requires login. After submission, post a public comment on your listing so moderators see activity.
+- **Toolify / Futurepedia:** Love visual proof. Attach the scoreboard screenshot or Show HN rehearsal proof with every follow-up.
+- **Console.dev / Newsletters:** Wait until Show HN hits top 20 so you can cite traffic + engagement numbers.
+
+## Logging Template
+After each touchpoint add a quick note to `content/directory_status_board.md`:
+```
+2026-02-15 — Day 2 follow-up sent to SaaSHub via email, linked rehearsal screenshot, waiting reply. — @pd
+```
+Also update `content/distribution_receipts.md` if you DM or post publicly. Receipts keep the scoreboard credible.
+
+## Escalation Rules
+1. Never send more than one follow-up per 48 hours to the same reviewer.
+2. If a directory rejects the submission, document the reason and immediately draft the fix in `content/directory_angle_bank.md`.
+3. When a listing is approved, capture the live URL + screenshot, drop it into README "Distribution Receipts", and schedule a social post using `content/social_drafts.md` to celebrate.
+
+Keeping this cadence tight ensures we look professional while staying relentless on distribution.

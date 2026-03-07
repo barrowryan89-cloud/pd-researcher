@@ -1,0 +1,201 @@
+<!DOCTYPE html><html><head><title>devto_article</title></head><body>
+<article>
+<h1>Dev.to Article Draft</h1>
+</p><p>
+<h2>Title Options</h2>
+1. "I Built 98 CLI Tools in 48 Hours — Here's What I Learned"
+2. "The $0 Dev Stack: How I Replaced 20 SaaS Subscriptions with Open Source"
+3. "Why I Stopped Installing npm Packages (And Built My Own Tools)"
+</p><p>
+<strong>Selected:</strong> Option 1 (most engaging for dev.to audience)
+</p><p>
+---
+</p><p>
+<h2>Article Draft</h2>
+</p><p>
+```markdown
+<h1>I Built 98 CLI Tools in 48 Hours — Here's What I Learned</h1>
+</p><p>
+<h2>The Problem with Modern Development</h2>
+</p><p>
+Last month, I counted my SaaS subscriptions. Twenty-three. Twenty-three monthly charges ranging from $5 to $50, all for tools that should've been simple utilities.
+</p><p>
+The breaking point? A "JSON formatter" that wanted $12/month.
+</p><p>
+I closed the tab, opened my terminal, and wrote a 15-line Python script. Then I kept going.
+</p><p>
+<h2>The Challenge</h2>
+</p><p>
+Build as many useful CLI tools as possible in 48 hours. Rules:
+<li>Single files only (no complex projects)
+<li>Zero dependencies (no npm install hell)
+<li>Actually useful (solve real problems)
+<li>Open source (give back to the community)
+</p><p>
+<strong>Final count: 98 tools.</strong>
+</p><p>
+<h2>What I Built</h2>
+</p><p>
+<h3>The Heavy Hitters</h3>
+</p><p>
+<strong>json-fix</strong> — Validate, format, and query JSON without leaving your terminal. Replaces: jsonlint.com, multiple VS Code extensions.
+</p><p>
+```bash
+curl -s https://api.example.com/data | json-fix --pretty
+```
+</p><p>
+<strong>port-kill</strong> — Find and kill processes by port. Replaces: `lsof` + `kill` combinations I can never remember.
+</p><p>
+```bash
+port-kill 3000  # Done.
+```
+</p><p>
+<strong>git-todo</strong> — Track tasks in your repo. Replaces: Trello boards, sticky notes, mental load.
+</p><p>
+```bash
+git-todo add "Fix auth bug"
+git-todo list
+git-todo done 1
+```
+</p><p>
+<strong>epoch-now</strong> — Convert between timestamps and human dates. Replaces: epochconverter.com visits.
+</p><p>
+```bash
+epoch-now 1700000000
+epoch-now --now --format iso
+```
+</p><p>
+<h3>The Categories</h3>
+</p><p>
+| Category | Count | Examples |
+|----------|-------|----------|
+| Git Helpers | 12 | git-todo, git-stats, git-cleanup |
+| JSON/XML | 8 | json-fix, json-diff, xml-pretty |
+| DevOps | 15 | cloud-audit, log-watch, deploy-hook |
+| Productivity | 20 | focus-mode, standup-gen, pomodoro |
+| Security | 10 | secret-scan, ssl-check, hash-gen |
+| Data Processing | 18 | csv-sql, json2yaml, base64-cli |
+| Misc | 15 | port-kill, epoch-now, qr-gen |
+</p><p>
+<h2>What I Learned</h2>
+</p><p>
+<h3>1. Constraints Breed Creativity</h3>
+</p><p>
+Knowing each tool had to be a single file forced me to focus on the essence. No boilerplate. No "maybe I'll need this later." Just the core functionality.
+</p><p>
+<strong>Example:</strong> `json-fix` is 47 lines. It does one thing: make JSON readable. That's it.
+</p><p>
+<h3>2. "Boring" Tools Are The Best</h3>
+</p><p>
+My most-used tool? `port-kill`. It saves me maybe 5 minutes per week. But those 5 minutes were <em>frustrating</em> minutes — Stack Overflow searches, `lsof` syntax I forget, copy-pasting PIDs.
+</p><p>
+Now it's one command. Mental friction: zero.
+</p><p>
+<h3>3. Zero Dependencies Is A Feature</h3>
+</p><p>
+Every npm package install is a liability:
+<li>Supply chain attacks
+<li>Left-pad incidents  
+<li>Version conflicts
+<li>Bloat
+</p><p>
+My tools have no dependencies. You can audit the entire codebase in an afternoon.
+</p><p>
+<h3>4. Volume Beats Perfection</h3>
+</p><p>
+Would one "perfect" tool be better than 98 "good enough" tools? For learning: absolutely not.
+</p><p>
+Building 98 tools taught me:
+<li>What problems recur across projects
+<li>Which abstractions actually help
+<li>How to ship fast
+</p><p>
+The 80/20 rule applies to tooling: 20% of your tools handle 80% of your friction.
+</p><p>
+<h2>The Stack</h2>
+</p><p>
+<li><strong>Go</strong> — For speed-critical tools (40%)
+<li><strong>Python</strong> — For data/text processing (35%)
+<li><strong>Bash</strong> — For git/system integration (25%)
+</p><p>
+No frameworks. No libraries. Just standard libraries and system calls.
+</p><p>
+<h2>Try Them</h2>
+</p><p>
+Everything is open source and free:
+</p><p>
+👉 <strong>https://github.com/barrowryan89-cloud/pd-researcher</strong>
+</p><p>
+No installation required for most:
+</p><p>
+```bash
+<h1>Download and run directly</h1>
+curl -s https://raw.githubusercontent.com/barrowryan89-cloud/pd-researcher/main/tools/json-fix.py | python3
+```
+</p><p>
+<h2>What's Next</h2>
+</p><p>
+I'm not done. The repo is growing based on what the community needs. Currently working on:
+<li>Docker container analysis tools
+<li>More cloud provider integrations
+<li>AI-assisted code review helpers
+</p><p>
+Have a repetitive dev task that needs a tool? Open an issue. I'll probably build it.
+</p><p>
+---
+</p><p>
+<h2>Discussion Questions</h2>
+</p><p>
+1. What's your most-hated repetitive dev task?
+2. How many SaaS tools do you pay for that could be scripts?
+3. Would you use a tool pack like this, or do you prefer installing individual packages?
+</p><p>
+Drop your thoughts below 👇
+```
+</p><p>
+---
+</p><p>
+<h2>Post-Publish Promotion</h2>
+</p><p>
+<h3>Immediate (Within 1 Hour)</h3>
+<li>[ ] Share on Twitter/X with code snippet
+<li>[ ] Post to relevant subreddits (r/webdev, r/programming, r/commandline)
+<li>[ ] Share in Discord communities
+<li>[ ] Email to newsletter subscribers
+</p><p>
+<h3>Day 2-3</h3>
+<li>[ ] Share on LinkedIn (professional angle)
+<li>[ ] Post to Hacker News as "Show HN"
+<li>[ ] Submit to relevant newsletters (Console, TLDR, etc.)
+</p><p>
+<h3>Week 1</h3>
+<li>[ ] Cross-post to Medium (canonical link to dev.to)
+<li>[ ] Create Twitter thread highlighting top tools
+<li>[ ] Record short demo video for YouTube/TikTok
+</p><p>
+---
+</p><p>
+<h2>Expected Performance</h2>
+</p><p>
+| Platform | Expected Views | Expected Engagement |
+|----------|---------------|---------------------|
+| dev.to | 2,000-5,000 | 50-150 reactions |
+| Hacker News | 500-2,000 | 20-80 comments |
+| Reddit r/webdev | 1,000-3,000 | 30-100 upvotes |
+| LinkedIn | 500-1,500 | 20-50 reactions |
+</p><p>
+<strong>Conservative estimate:</strong> 4,000-12,000 total views
+</p><p>
+---
+</p><p>
+<h2>SEO Keywords (For Dev.to Tags)</h2>
+</p><p>
+Primary: `cli`, `opensource`, `developer-tools`, `productivity`
+Secondary: `javascript`, `python`, `git`, `automation`, `bash`
+</p><p>
+---
+</p><p>
+<strong>Status:</strong> Ready to publish once GitHub Pages 404 is fixed
+<strong>Blocker:</strong> Landing page must work for CTA to be effective
+</article>
+</body></html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD_Researcher Terminal Screenshots</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .terminal-window {
+            background-color: #0f0f0f;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 800px;
+            margin: 40px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .terminal-header {
+            background-color: #2d2d2d;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .terminal-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .close { background-color: #ff5f56; }
+        .minimize { background-color: #ffbd2e; }
+        .maximize { background-color: #27c93f; }
+
+        .terminal-title {
+            color: #ccc;
+            font-size: 14px;
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 50px; /* Balance the buttons */
+        }
+
+        .terminal-content {
+            padding: 20px;
+            color: #00ff00; /* Classic terminal green */
+            font-size: 16px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .prompt {
+            color: #fff;
+        }
+
+        .command {
+            color: #fff;
+        }
+        
+        .output-header {
+            color: #00d084;
+            font-weight: bold;
+        }
+        
+        .output-text {
+            color: #ddd;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: #fff;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SCENE 1: Port Scanner -->
+    <div id="port-scanner" class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="btn close"></div>
+                <div class="btn minimize"></div>
+                <div class="btn maximize"></div>
+            </div>
+            <div class="terminal-title">user@devbox: ~/pd-researcher/tools</div>
+        </div>
+        <div class="terminal-content">
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <span class="command">python3 port_scanner_free.py --host 192.168.1.10 --ports 22,80,443,8080</span>
+
+<span class="output-header">╔════════════════════════════════════════════════════════════╗
+║                   PORT SCANNER v1.0                        ║
+║              Free Tool by Sand Street Holdings             ║
+╠════════════════════════════════════════════════════════════╣</span>
+<span class="output-text">║  Scanning: 192.168.1.10                                    ║
+║  Start Time: 2026-02-15 09:00:00 UTC                       ║
+╚════════════════════════════════════════════════════════════╝</span>
+
+[+] Port 22   (SSH)    : OPEN
+[+] Port 80   (HTTP)   : OPEN
+[+] Port 443  (HTTPS)  : OPEN
+[-] Port 8080 (HTTP-ALT): CLOSED
+
+<span class="output-text">Scan Complete: 3 open ports found in 0.45s.</span>
+
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <div class="cursor"></div>
+        </div>
+    </div>
+
+    <!-- SCENE 2: JSON Formatter -->
+    <div id="json-formatter" class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="btn close"></div>
+                <div class="btn minimize"></div>
+                <div class="btn maximize"></div>
+            </div>
+            <div class="terminal-title">user@devbox: ~/pd-researcher/tools</div>
+        </div>
+        <div class="terminal-content">
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <span class="command">cat ugly.json | python3 json_formatter_free.py</span>
+
+<span class="output-header">╔════════════════════════════════════════════════════════════╗
+║                   JSON FORMATTER v1.0                      ║
+║              Free Tool by Sand Street Holdings             ║
+╠════════════════════════════════════════════════════════════╣</span>
+<span class="output-text">{
+    "project": "PD_Researcher",
+    "status": "active",
+    "tools": [
+        "json_formatter",
+        "port_scanner",
+        "html_cleaner"
+    ],
+    "metrics": {
+        "downloads": 1250,
+        "stars": 42
+    },
+    "zero_dependencies": true
+}</span>
+
+<span class="output-text">✔ Valid JSON detected. Formatted successfully.</span>
+
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <div class="cursor"></div>
+        </div>
+    </div>
+
+    <!-- SCENE 3: HTML Cleaner -->
+    <div id="html-cleaner" class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="btn close"></div>
+                <div class="btn minimize"></div>
+                <div class="btn maximize"></div>
+            </div>
+            <div class="terminal-title">user@devbox: ~/pd-researcher/tools</div>
+        </div>
+        <div class="terminal-content">
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <span class="command">python3 html_cleaner_free.py --url https://example.com/article</span>
+
+<span class="output-header">╔════════════════════════════════════════════════════════════╗
+║                   HTML CLEANER v1.0                        ║
+║              Free Tool by Sand Street Holdings             ║
+╠════════════════════════════════════════════════════════════╣</span>
+<span class="output-text">║  Target: https://example.com/article                       ║
+║  Extracting: Main Content Only                             ║
+╚════════════════════════════════════════════════════════════╝</span>
+
+<span class="output-text">Fetching URL... 200 OK
+Parsing DOM...
+Removing scripts... Done
+Removing ads... Done
+Formatting text... Done</span>
+
+Title: 59 Free CLI Tools for Developers
+Author: Ryan Barrow
+
+Content:
+Stop writing "quick scripts" that take 2 hours. Start shipping in 10 seconds.
+This repository contains 59 battle-tested, single-file CLI tools.
+Zero dependencies. Just copy, paste, and run.
+
+<span class="output-text">✔ Output saved to article_clean.txt</span>
+
+<span class="prompt">user@devbox:~/pd-researcher/tools$</span> <div class="cursor"></div>
+        </div>
+    </div>
+
+</body>
+</html>

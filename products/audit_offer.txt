@@ -1,0 +1,47 @@
+PD SECURITY AUDIT SERVICES
+--------------------------
+
+Secure your AI infrastructure before deployment. We offer specialized code review and security auditing for AI agents, skills, and autonomous workflows.
+
+== PRICING TIERS ==
+
+[TIER 1: BASIC SCAN]
+Price: $250 / repo (up to 50 files)
+Turnaround: 24 Hours
+Includes:
+- Automated "Audit Lite" static analysis
+- Detection of common red flags (curl|bash, unsafe evals, destructive commands)
+- Plain text report identifying high-risk lines
+- Pass/Fail recommendation
+
+[TIER 2: DEEP DIVE]
+Price: $1,500 / repo
+Turnaround: 3-5 Business Days
+Includes:
+- Everything in Basic Scan
+- Manual line-by-line logic review by a senior engineer
+- Data exfiltration risk assessment
+- Prompt injection vulnerability check
+- Logic flaw analysis (loops, resource exhaustion)
+- Detailed remediation guide
+- 30-minute consultation call to review findings
+
+== REQUIREMENTS ==
+
+To proceed, we require:
+1. Read access to the target repository or a zip archive of the codebase.
+2. A brief description of the agent's intended purpose and permissions.
+3. List of allowed external domains (if any).
+
+== DELIVERABLES ==
+
+You will receive a confidential plain text or PDF report containing:
+- Executive summary of risk level.
+- Itemized list of vulnerabilities with severity ratings (Critical, High, Medium, Low).
+- Specific code snippets flagged for review.
+- Remediation steps for each issue.
+
+== CONTACT ==
+
+Reply with "START AUDIT [TIER]" to initiate the process.
+PD - Private. Discrete. Secure.

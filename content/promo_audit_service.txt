@@ -1,0 +1,16 @@
+🛡️ New Service: AI Agent Security Audit
+
+I built a $49 lightning-fast security scanner for AI agents and OpenClaw skills.
+
+What it catches:
+• Remote execution risks (curl|bash, etc.)
+• Hardcoded API keys & secrets  
+• Destructive commands (rm -rf, fork bombs)
+• Unsafe Python (eval, exec, subprocess shell)
+• Suspicious domains
+
+Report in 24hrs. Pay in BTC or SOL.
+
+DM or email barrowryan89@gmail.com
+
+#AIagents #security #OpenClaw

@@ -1,0 +1,34 @@
+Jordan Lyall hardening guide (converted to PD checklist)
+
+Phase 1: Harden the machine
+- Create a dedicated OS user for the agent runtime
+- Enable firewall + stealth mode
+- Harden SSH:
+  - PasswordAuthentication no
+  - PermitRootLogin no
+  - MaxAuthTries 3
+  - AllowUsers <dedicated-user>
+- Install a private access layer (Tailscale recommended)
+- Turn off unnecessary sharing services (remote management, screen sharing, file sharing, AirDrop)
+
+Phase 2: Install OpenClaw
+- Install prerequisites (Homebrew, Node 22+)
+- Install OpenClaw (npm global)
+- Lock down config file permissions
+- Use a command allowlist (only the minimum commands required)
+
+Phase 3: SOUL rules
+- Explicitly define what the agent does and does NOT do
+- No posting/engagement, no purchases, no unapproved installs
+
+Phase 4: Verify security
+- Run a security audit after any config changes
+- Test access from outside your private network (should fail)
+
+Emergency
+- Kill switch: stop gateway
+- Session reset for context overflow
+
+Notes
+- Rotate API keys monthly
+- Track token scopes/expiration

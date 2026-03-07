@@ -1,0 +1,26 @@
+{
+  "total_budget": 100.0,
+  "spent": 0.0,
+  "remaining": 100.0,
+  "authorization": "FULL_AUTONOMY",
+  "decision_rights": "I decide what to hire for, when, and how much (within budget)",
+  "notification_policy": "Only notify on: critical blockers, completed deliveries, budget milestones, or revenue generated",
+  "approval_required": "NONE",
+  "weekly_budget_cap": 50.0,
+  "daily_spend_limit": 25.0,
+  "priorities": [
+    "Revenue-generating tasks first",
+    "Tasks that unblock other work",
+    "High ROI activities",
+    "Scalable systems"
+  ],
+  "constraints": [
+    "Never exceed $100 total",
+    "Never spend >$25/day",
+    "Never hire without clear deliverable",
+    "Track all expenses",
+    "Report results, not requests"
+  ],
+  "current_strategy": "Week 1: Revenue foundation (affiliate apps, Stripe setup, basic assets)",
+  "notes": "User is too busy/important for approvals. I execute autonomously and report results."
+}

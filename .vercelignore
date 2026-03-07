@@ -1,0 +1,22 @@
+# Ignore system/tool artifacts
+.git
+.DS_Store
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore tools junk
+tools/*/node_modules
+tools/__pycache__
+tools/venv
+tools/agentkit
+tools/marketing
+tools/puppeteer
+tools/ralph
+
+# Ignore root junk
+node_modules
+content/social_drafts_old.md
+content/drafts

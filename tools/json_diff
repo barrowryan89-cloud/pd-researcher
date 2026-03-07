@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+"""
+json_diff — Compare two JSON files with precision
+Like git diff but purpose-built for JSON structure
+"""
+
+import json
+import sys
+import argparse
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
+
+
+def load_json(path: str) -> Any:
+    """Load JSON from file or stdin."""
+    if path == '-':
+        return json.load(sys.stdin)
+    with open(path, 'r') as f:
+        return json.load(f)
+
+
+def get_type_name(obj: Any) -> str:
+    """Get human-readable type name."""
+    if obj is None:
+        return "null"
+    if isinstance(obj, bool):
+        return "boolean"
+    if isinstance(obj, (int, float)):
+        return "number"
+    if isinstance(obj, str):
+        return "string"
+    if isinstance(obj, list):
+        return "array"
+    if isinstance(obj, dict):
+        return "object"
+    return type(obj).__name__
+
+
+def truncate(value: Any, max_len: int = 60) -> str:
+    """Truncate long values for display."""
+    s = json.dumps(value)
+    if len(s) > max_len:
+        return s[:max_len-3] + "..."
+    return s
+
+
+def find_differences(a: Any, b: Any, path: str = "") -> List[Tuple[str, str, Any, Any]]:
+    """Recursively find differences between two objects."""
+    differences = []
+    
+    # Type mismatch
+    type_a, type_b = get_type_name(a), get_type_name(b)
+    if type_a != type_b:
+        differences.append((path, "type_changed", f"{type_a} → {type_b}", f"{truncate(a)} → {truncate(b)}"))
+        return differences
+    
+    # Both null
+    if a is None and b is None:
+        return differences
+    
+    # Primitive comparison
+    if not isinstance(a, (dict, list)):
+        if a != b:
+            differences.append((path, "modified", a, b))
+        return differences
+    
+    # Array comparison
+    if isinstance(a, list):
+        if len(a) != len(b):
+            differences.append((path, "length_changed", len(a), len(b)))
+        
+        max_len = max(len(a), len(b))
+        for i in range(max_len):
+            item_path = f"{path}[{i}]" if path else f"[{i}]"
+            if i >= len(a):
+                differences.append((item_path, "added", None, b[i]))
+            elif i >= len(b):
+                differences.append((item_path, "removed", a[i], None))
+            else:
+                differences.extend(find_differences(a[i], b[i], item_path))
+        return differences
+    
+    # Object comparison
+    keys_a, keys_b = set(a.keys()), set(b.keys())
+    
+    # Removed keys
+    for key in keys_a - keys_b:
+        key_path = f"{path}.{key}" if path else key
+        differences.append((key_path, "removed", a[key], None))
+    
+    # Added keys
+    for key in keys_b - keys_a:
+        key_path = f"{path}.{key}" if path else key
+        differences.append((key_path, "added", None, b[key]))
+    
+    # Common keys - check for modifications
+    for key in keys_a & keys_b:
+        key_path = f"{path}.{key}" if path else key
+        differences.extend(find_differences(a[key], b[key], key_path))
+    
+    return differences
+
+
+def format_diff(differences: List[Tuple], color: bool = True) -> str:
+    """Format differences for display."""
+    if not differences:
+        return "✅ No differences found"
+    
+    RED = "\033[91m" if color else ""
+    GREEN = "\033[92m" if color else ""
+    YELLOW = "\033[93m" if color else ""
+    RESET = "\033[0m" if color else ""
+    BOLD = "\033[1m" if color else ""
+    
+    lines = []
+    lines.append(f"{BOLD}Found {len(differences)} difference(s):{RESET}\n")
+    
+    for path, change_type, old_val, new_val in differences:
+        if change_type == "added":
+            lines.append(f"{GREEN}+ {path}{RESET}")
+            lines.append(f"    {GREEN}{truncate(new_val)}{RESET}")
+        elif change_type == "removed":
+            lines.append(f"{RED}- {path}{RESET}")
+            lines.append(f"    {RED}{truncate(old_val)}{RESET}")
+        elif change_type == "modified":
+            lines.append(f"{YELLOW}~ {path}{RESET}")
+            lines.append(f"    {RED}- {truncate(old_val)}{RESET}")
+            lines.append(f"    {GREEN}+ {truncate(new_val)}{RESET}")
+        elif change_type == "type_changed":
+            lines.append(f"{YELLOW}≠ {path} ({old_val}){RESET}")
+        elif change_type == "length_changed":
+            lines.append(f"{YELLOW}# {path} length: {old_val} → {new_val}{RESET}")
+        lines.append("")
+    
+    return "\n".join(lines)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Compare two JSON files with precision",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  json_diff file1.json file2.json
+  json_diff config.prod.json config.dev.json --no-color
+  cat data.json | json_diff - other.json
+  json_diff old.json new.json --summary
+        """
+    )
+    parser.add_argument("file1", help="First JSON file (or - for stdin)")
+    parser.add_argument("file2", help="Second JSON file")
+    parser.add_argument("--no-color", action="store_true", help="Disable colored output")
+    parser.add_argument("--summary", action="store_true", help="Only show summary count")
+    
+    args = parser.parse_args()
+    
+    try:
+        json1 = load_json(args.file1)
+        json2 = load_json(args.file2)
+    except json.JSONDecodeError as e:
+        print(f"❌ Invalid JSON: {e}", file=sys.stderr)
+        sys.exit(1)
+    except FileNotFoundError as e:
+        print(f"❌ File not found: {e.filename}", file=sys.stderr)
+        sys.exit(1)
+    
+    differences = find_differences(json1, json2)
+    
+    if args.summary:
+        print(f"{len(differences)} difference(s) found")
+        sys.exit(0 if len(differences) == 0 else 1)
+    
+    print(format_diff(differences, color=not args.no_color))
+    
+    # Exit with error code if differences found (useful for CI)
+    sys.exit(0 if len(differences) == 0 else 1)
+
+
+if __name__ == "__main__":
+    main()

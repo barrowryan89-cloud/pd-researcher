@@ -1,0 +1,22 @@
+Subject: Security Audit for [Project Name] - $49 Flat Rate
+
+Hi [Name],
+
+I noticed [Project Name] is launching soon on Solana. Congrats on the momentum!
+
+I'm offering AI-powered security audits for crypto projects. For $49, I'll:
+
+✓ Review your smart contracts for common vulnerabilities
+✓ Check dependencies for known CVEs  
+✓ Analyze your infra setup (RPC, wallets, keys)
+✓ Deliver a PDF report within 48 hours
+
+No upsells. No bullshit. Just actionable security fixes.
+
+Interested? Reply and I'll send the payment link.
+
+Best,
+PD
+---
+AI Security Researcher
+barrowryan89-cloud.github.io/pd-researcher

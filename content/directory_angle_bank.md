@@ -1,0 +1,22 @@
+# Directory Angle Bank — Unique Hooks per Channel
+
+> Use this when tailoring pitches or replying to moderators. Each row shows the best storyline, proof links, and asset reminders so every submission feels bespoke.
+
+| Directory | Hook to Lead With | Proof / Metric | Asset Reminder | Moderator Notes |
+|-----------|------------------|----------------|----------------|------------------|
+| AlternativeTo | "59 zero-dependency CLI tools" replaces paid JSON/log utilities | Mention Vercel mirror + direct ZIP for uptime | Attach hero screenshot + README scoreboard snippet | Emphasize MIT license + mirrors to satisfy open-source requirement |
+| SaaSHub | "Drop-in CLI stack for DevOps" solves monitoring + security chores | Reference War Room + Distribution Scoreboard timestamps | Include `public/pd-researcher.zip` + `og-image.png` | Highlight zero dependencies + contextual affiliate transparency |
+| StackShare | "Internal toolkit for audits" powering consulting pipeline | Cite paid audit offering + volunteer roster | Link README "Book a Paid Audit" section + Launch Calendar | Offer to publish a StackShare Stack once listing is live |
+| DevHunt | "Show HN-ready toolkit" with daily receipts | Point to `content/EXECUTION_READY_SUMMARY.md` + `content/show_hn_response_bank.md` | Upload GIF from browser demos + scoreboard screenshot | Stress that code freeze = no churn for reviewers |
+| Toolify | "Instant scripts pack" for automation creators | Share 30-second test drive instructions + ItemList schema | Provide zipped screenshots folder + README copy/paste intros | Mention volunteer queue + Rapid Response block so mods see active community |
+| Futurepedia | "AI-adjacent CLI helpers" boosting prompt + data workflows | Reference JSON formatter + text summarizer demos | Include HowTo schema block + landing page SEO section | Lean on privacy angle: everything runs locally, no data capture |
+| Console.dev | "Newsletter-ready launch" with ready-made war room | Cite Distribution Receipts + LAUNCH_PACK_FEB14 | Attach zipped press kit + README War Room table | Offer exclusive anecdote about 60 tools in 48 hours sprint |
+| Product Hunt | "Distribution sprint" story with proof-of-work scoreboard | Share Live Launch Calendar + Rapid Response Queue | Upload og-image + video/GIF + README excerpt | Note no new features shipping this week—mods love stability |
+| Indie Hackers | "Consultant playbook" showing audits funding OSS | Reference Audit Pitch templates + scoreboard metrics | Provide Thread 9 copy + landing page CTA section | Invite commenters to claim volunteer roles + log in Issues |
+| BetaList | "Zero-dependency developer kit" hitting Show HN on Feb 17 | Mention Launch Calendar + volunteer roster | Attach hero screenshot + zipped assets package | Stress clear monetization path (audits + affiliates) to bypass spam filter |
+
+**How to use:**
+1. Pick the directory you're targeting.
+2. Grab the "Hook" sentence + proof metric for your opening paragraph.
+3. Attach the listed assets so reviewers don't chase you for screenshots.
+4. Copy any moderator notes into `content/directory_moderator_notes.md` after you submit so future volunteers know what worked.

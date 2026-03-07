@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Free CLI Tools Every Developer Needs in 2026 - PD Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+        body { font-family: 'Space Mono', monospace; background-color: #0f172a; color: #e2e8f0; }
+        .glow-text { text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); }
+        code { background-color: #1e293b; padding: 2px 6px; rounded: 4px; color: #38bdf8; }
+        pre { background-color: #1e293b; padding: 15px; overflow-x: auto; border-radius: 8px; border: 1px solid #334155; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-400 glow-text flex items-center gap-2">
+                <i class="fas fa-terminal"></i> PD Researcher
+            </a>
+            <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-xl"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-3xl">
+        <article class="prose prose-invert prose-lg mx-auto">
+            <h1 class="text-4xl font-bold mb-6 text-blue-400">Top 5 Free CLI Tools Every Developer Needs in 2026</h1>
+            <p class="text-gray-400 mb-8">Stop rewriting bash scripts. Here are 5 essential open-source CLI utilities for JSON, security, and DevOps.</p>
+
+            <p class="mb-4">As developers, we waste hours rewriting the same bash scripts. JSON formatting, JWT decoding, checking IP details—why isn't there a simple, standard tool for this?</p>
+            <p class="mb-8">I got tired of it, so I built a collection of <strong>59 open-source CLI tools</strong> that do one thing well. Zero dependencies. Single binary. MIT licensed.</p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-blue-300">1. json-clean & json-fmt</h2>
+            <p class="mb-4">How many times have you pasted sensitive JSON into an online formatter just to read it? Stop doing that.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-300">
+                <li><strong>json-fmt</strong> instantly prettifies JSON responses in your terminal.</li>
+                <li><strong>json-clean</strong> validates structure and removes comments/trailing commas.</li>
+            </ul>
+            <pre class="mb-8"><code>curl https://api.example.com/data | json-fmt</code></pre>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-blue-300">2. audit-check (Security)</h2>
+            <p class="mb-4">Security starts locally. Before you push code, run <strong>audit-check</strong>.</p>
+            <p class="mb-4">It scans your project for:</p>
+            <ul class="list-disc pl-6 mb-8 text-gray-300">
+                <li>Exposed .env files</li>
+                <li>AWS keys in git history</li>
+                <li>SSH key permissions</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-blue-300">3. ip-lookup (Networking)</h2>
+            <p class="mb-4">Debugging connectivity issues? <strong>ip-lookup</strong> gives you geo-info, ISP, and ASN details for any IP address instantly.</p>
+            <pre class="mb-8"><code>ip-lookup 8.8.8.8
+# Output: Google LLC, Mountain View, US</code></pre>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-blue-300">4. docker-nuke (DevOps)</h2>
+            <p class="mb-4">Docker taking up 50GB of disk space? <strong>docker-nuke</strong> is the nuclear option. It safely removes unused containers, images, and volumes to reclaim space.</p>
+            <p class="mb-8">Run this weekly to keep your dev machine fast.</p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-blue-300">5. epoch-time (Utilities)</h2>
+            <p class="mb-4">Stop Googling "epoch converter". <strong>epoch-time</strong> converts timestamps to human-readable dates and back, handling multiple timezones automatically.</p>
+
+            <hr class="border-gray-700 my-12">
+
+            <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 text-center">
+                <h3 class="text-2xl font-bold mb-4 text-blue-400">Get the Full Toolkit (Free)</h3>
+                <p class="text-gray-300 mb-6">All 59 tools are open-source and available on GitHub.</p>
+                <a href="https://github.com/barrowryan89-cloud/pd-researcher" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors mb-4">
+                    Download the Toolkit
+                </a>
+                <p class="text-sm text-gray-400 mt-4">
+                    If these tools save you time, consider supporting the project via SOL/BTC on the site, or booking a <a href="https://cal.com/barrowryan89-cloud/security-audit" class="text-blue-400 underline">Security Audit ($49)</a>.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 p-8 mt-12 text-center text-gray-500 text-sm">
+        <p>© 2026 PD Researcher. MIT License.</p>
+    </footer>
+
+    <!-- Crypto Donation Sticky Footer (Same as Index) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 shadow-lg border-t border-gray-700">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-2 md:mb-0 text-center md:text-left">
+                <p class="font-bold text-lg">💡 Support Open Source</p>
+                <p class="text-sm text-gray-400">If these tools saved you time, buy me a coffee.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+                <div class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded border border-gray-600">
+                    <span class="text-orange-400 font-bold">SOL:</span>
+                    <span class="font-mono text-xs select-all">FEKY6bDoqBnsQZVT3XbEYS4b1DJ8QoA64G5hXycfTAhQ</span>
+                </div>
+                <div class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded border border-gray-600">
+                    <span class="text-yellow-500 font-bold">BTC:</span>
+                    <span class="font-mono text-xs select-all">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
